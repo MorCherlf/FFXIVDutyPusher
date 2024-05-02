@@ -1,0 +1,13 @@
+{
+    "PluginName": "狒狒排本小助手",
+    "PushChannel": "推送渠道",
+    "Bark": "Bark",
+    "ChannelDetails": "渠道URL",
+    "Test": "测试",
+    "AlwaysPush": "总是推送",
+    "Save": "保存",
+    "PushTitle": "狒狒排本小助手",
+    "PushContent": "你的副本已经排到了！",
+    "TestContent": "这是一条来自卫月插件<狒狒排本小助手>的测试推送!",
+    "LocalizationLoading":"成功加载语言：中文！" 
+}
