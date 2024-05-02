@@ -16,10 +16,10 @@
   "LoadPriority": 0,
   "Punchline": "Push notify to your device when your duty is ready",
   "AcceptsFeedback": true,
-  "DownloadLinkInstall": "https://github.com/MorCherlf/FFXIVDutyPusher/raw/main/Release/latest.zip",
+  "DownloadLinkInstall": "https://github.com/MorCherlf/FFXIVDutyPusher/raw/master/Release/latest.zip",
   "IsHide": false,
   "IsTestingExclusive": false,
-  "DownloadLinkTesting": "https://github.com/MorCherlf/FFXIVDutyPusher/raw/main/Release/latest.zip",
-  "DownloadLinkUpdate": "https://github.com/MorCherlf/FFXIVDutyPusher/raw/main/Release/latest.zip",
+  "DownloadLinkTesting": "https://github.com/MorCherlf/FFXIVDutyPusher/raw/master/Release/latest.zip",
+  "DownloadLinkUpdate": "https://github.com/MorCherlf/FFXIVDutyPusher/raw/master/Release/latest.zip",
   "LastUpdate": "1714614671"
 }
