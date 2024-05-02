@@ -1,21 +1,23 @@
-{
-  "Author": "MorCherlf",
-  "Name": "DutyPusher",
-  "Punchline": "Push notify to your device when your duty is ready",
-  "Description": "You can use this plugin to push notify to your device when your duty is ready",
-  "InternalName": "DutyPusher",
-  "AssemblyVersion": "0.1.0.0",
-  "RepoUrl": "https://github.com/MorCherlf/FFXIVDutyPusher",
-  "ApplicableVersion": "any",
-  "Tags": [
-    "utility"
-  ],
-  "DalamudApiLevel": 9,
-  "AcceptsFeedback": true,
-  "DownloadLinkInstall": "https://github.com/MorCherlf/FFXIVDutyPusher/raw/master/Release/latest.zip",
-  "IsHide": false,
-  "IsTestingExclusive": false,
-  "DownloadLinkTesting": "https://github.com/MorCherlf/FFXIVDutyPusher/raw/master/Release/latest.zip",
-  "DownloadLinkUpdate": "https://github.com/MorCherlf/FFXIVDutyPusher/raw/master/Release/latest.zip",
-  "LastUpdate": "1714614671"
-}
+[
+    {
+      "Author": "MorCherlf",
+      "Name": "DutyPusher",
+      "Punchline": "Push notify to your device when your duty is ready",
+      "Description": "You can use this plugin to push notify to your device when your duty is ready",
+      "InternalName": "DutyPusher",
+      "AssemblyVersion": "0.1.0.0",
+      "RepoUrl": "https://github.com/MorCherlf/FFXIVDutyPusher",
+      "ApplicableVersion": "any",
+      "Tags": [
+        "utility"
+      ],
+      "DalamudApiLevel": 9,
+      "AcceptsFeedback": true,
+      "DownloadLinkInstall": "https://github.com/MorCherlf/FFXIVDutyPusher/raw/master/Release/latest.zip",
+      "IsHide": false,
+      "IsTestingExclusive": false,
+      "DownloadLinkTesting": "https://github.com/MorCherlf/FFXIVDutyPusher/raw/master/Release/latest.zip",
+      "DownloadLinkUpdate": "https://github.com/MorCherlf/FFXIVDutyPusher/raw/master/Release/latest.zip",
+      "LastUpdate": "1714614671"
+    }
+]
