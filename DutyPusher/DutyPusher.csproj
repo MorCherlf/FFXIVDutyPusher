@@ -3,7 +3,7 @@
   <Import Project="Dalamud.Plugin.Bootstrap.targets" />
 
   <PropertyGroup>
-    <Version>0.1.0</Version>
+    <Version>0.1.1</Version>
     <Description>DutyPusher</Description>
     <PackageProjectUrl>https://github.com/MorCherlf/FFXIVDutyPusher</PackageProjectUrl>
     <PackageLicenseExpression>AGPL-3.0-or-later</PackageLicenseExpression>
@@ -11,7 +11,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Dalamud.Loc" Version="1.1.2" />
+    <PackageReference Include="Dalamud.Loc" Version="1.2.1" />
   </ItemGroup>
 
   <ItemGroup>

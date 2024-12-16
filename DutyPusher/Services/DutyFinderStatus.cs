@@ -34,7 +34,7 @@ namespace DutyPusher.Services
             // 启用 DutyFinderStatus 的功能
             if (selectedChannel != null && barkServer != null)
             {
-                PluginLog.Log("Enabling Duty Finder Status Listener...");
+                //PluginLog.Log("Enabling Duty Finder Status Listener...");
                 this.isActive = true;
 
                 // 初始化定时器，每秒触发一次检查队列状态的操作
@@ -50,7 +50,7 @@ namespace DutyPusher.Services
         public void Disable()
         {
             // 停用 DutyFinderStatus 的功能
-            PluginLog.Log("Disabling Duty Finder Status Listener...");
+            //PluginLog.Log("Disabling Duty Finder Status Listener...");
             this.isActive = false;
             this.queueStatusTimer?.Change(Timeout.Infinite, Timeout.Infinite); // 停止定时器
         }
@@ -73,13 +73,13 @@ namespace DutyPusher.Services
             else if (currentQueueState == ContentsFinderQueueInfo.QueueStates.InContent)
             {
                 // 如果队列状态变为 InContent，则设置标志位为 true
-                PluginLog.Log("Duty Finder queue status changed to InContent!");
+                //PluginLog.Log("Duty Finder queue status changed to InContent!");
                 Disable();
             }
             else if (currentQueueState == ContentsFinderQueueInfo.QueueStates.None)
             {
                 // 如果队列状态变为 None，则停用 DutyFinderStatus
-                PluginLog.Log("Duty Finder queue status changed to None!");
+                //PluginLog.Log("Duty Finder queue status changed to None!");
                 Disable();
             }
             else
@@ -91,7 +91,7 @@ namespace DutyPusher.Services
         private void CheckAmnesty()
         {
             // 在队列状态为 Ready 时执行的操作
-            PluginLog.Log("Executing action when Duty Finder queue is ready...");
+            //PluginLog.Log("Executing action when Duty Finder queue is ready...");
             Push(loc.GetString("PushContent"));
         }
 
@@ -116,36 +116,36 @@ namespace DutyPusher.Services
                 }
                 try
                 {
-                    PluginLog.Log("Tring to push notify to " + barkServer + " from " + selectedChannel);
+                    //PluginLog.Log("Tring to push notify to " + barkServer + " from " + selectedChannel);
                     using (var client = new HttpClient())
                     {
                         var response = await client.GetAsync(url);
                         response.EnsureSuccessStatusCode();
                         string responseBody = await response.Content.ReadAsStringAsync();
-                        PluginLog.Log("Already send a push to your device");
+                        //PluginLog.Log("Already send a push to your device");
                     }
                 }
                 catch (Exception ex)
                 {
-                    PluginLog.Error("Please check your Bark Server");
+                    //PluginLog.Error("Please check your Bark Server");
                 }
             }else if(selectedChannel == "PushDeer" && !string.IsNullOrWhiteSpace(pushdeerKey))
             {
                 url = "https://api2.pushdeer.com/message/push?pushkey="+ pushdeerKey + "&text=" + loc.GetString("PushTitle") + "    " + text;
                 try
                 {
-                    PluginLog.Log("Tring to push notify to " + pushdeerKey + " from " + selectedChannel);
+                    //PluginLog.Log("Tring to push notify to " + pushdeerKey + " from " + selectedChannel);
                     using (var client = new HttpClient())
                     {
                         var response = await client.GetAsync(url);
                         response.EnsureSuccessStatusCode();
                         string responseBody = await response.Content.ReadAsStringAsync();
-                        PluginLog.Log("Already send a push to your device");
+                        //PluginLog.Log("Already send a push to your device");
                     }
                 }
                 catch (Exception ex)
                 {
-                    PluginLog.Error("Please check your PushDeer Key");
+                    //PluginLog.Error("Please check your PushDeer Key");
                 }
             }
         }

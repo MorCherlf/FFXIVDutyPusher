@@ -25,7 +25,7 @@ namespace DutyPusher
         private const string CommandName = "/dutypusher";
 
         // 初始化对象
-        private DalamudPluginInterface PluginInterface { get; init; }
+        private IDalamudPluginInterface PluginInterface { get; init; }
         public static IGameGui GameGui { get; private set; }
 
         private ICommandManager CommandManager { get; init; }
@@ -49,7 +49,7 @@ namespace DutyPusher
         // 插件 主类
         public Plugin(
             // 引用依赖
-            DalamudPluginInterface pluginInterface,
+            IDalamudPluginInterface pluginInterface,
             ICommandManager commandManager,
             ITextureProvider textureProvider,
             IGameGui gameGui,
@@ -70,7 +70,7 @@ namespace DutyPusher
             var zhLoc = File.ReadAllText(PluginInterface.AssemblyLocation.Directory + "/loc/zh.json");
             var enLoc = File.ReadAllText(PluginInterface.AssemblyLocation.Directory + "/loc/en.json");
 
-            var loc = new Dalamud.Loc.Localization(pluginInterface);
+            var loc = new Localization(pluginInterface);
             loc.LoadLanguage(Dalamud.Loc.Enums.Language.ChineseSimplified, zhLoc);
             loc.LoadLanguage(Dalamud.Loc.Enums.Language.English, enLoc);
             switch (PluginInterface.UiLanguage)
@@ -113,7 +113,7 @@ namespace DutyPusher
             }
             else
             {
-                PluginLog.LogWarning("DtrBar is null. Skipping DtrBar initialization.");
+                //PluginLog.LogWarning("DtrBar is null. Skipping DtrBar initialization.");
             }
 
 
@@ -146,12 +146,12 @@ namespace DutyPusher
 
         public void InitializeDtrBar(IDtrBar dtrBar, Localization loc)
         {
-            PluginLog.Log("Initializing Dtr Bar...");
+            //PluginLog.Log("Initializing Dtr Bar...");
             var dtrBarTitle = "DutyPusher";
             var enable = Configuration.Enable;
             try
             {
-                dtrEntry = dtrBar.Get(dtrBarTitle);
+                dtrEntry = (DtrBarEntry)dtrBar.Get(dtrBarTitle);
                 if (enable)
                 {
                     dtrEntry.Text = loc.GetString("PluginName") + ": " + loc.GetString("On");
@@ -183,7 +183,7 @@ namespace DutyPusher
             }
             catch (Exception e)
             {
-                PluginLog.Log(e,$"Failed to acquire DtrBarEntry {dtrBarTitle}");
+                //PluginLog.Log(e,$"Failed to acquire DtrBarEntry {dtrBarTitle}");
             }
         }
 

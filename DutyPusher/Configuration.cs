@@ -20,16 +20,16 @@ public class Configuration : IPluginConfiguration
 
     // the below exist just to make saving less cumbersome
     [NonSerialized]
-    private DalamudPluginInterface? PluginInterface;
+    private IDalamudPluginInterface? PluginInterface;
 
-    public void Initialize(DalamudPluginInterface pluginInterface)
+    public void Initialize(IDalamudPluginInterface pluginInterface)
     {
         PluginInterface = pluginInterface;
     }
 
     public void Save()
     {
-        PluginLog.Log("Saving Configuration!");
+        //PluginLog.Log("Saving Configuration!");
         PluginInterface!.SavePluginConfig(this);
     }
 }

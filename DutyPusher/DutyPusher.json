@@ -1,12 +1,12 @@
 {
     "Author": "MorCherlf",
     "Name": "DutyPusher",
-    "AssemblyVersion": "0.1.0",
+    "AssemblyVersion": "0.1.1",
     "RepoUrl": "https://github.com/MorCherlf/FFXIVDutyPusher",
     "Punchline": "Push notify to your device when your duty is ready",
     "Description": "You can use this plugin to push notify to your device when your duty is ready",
     "ApplicableVersion": "any",
-    "DalamudApiLevel": 9,
+    "DalamudApiLevel": 10,
     "Tags": [
         "utility"
     ]
