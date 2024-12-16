@@ -21,6 +21,7 @@ Copy this URL to your Dalamud's Custom Plugin Repositories，click the + button,
 ## Plugin Install
 
 **PLEASE DON'T SEND ANY ISSUE TO Dalamud WHEN YOU HAVE ANY PROBLEM WHEN YOU'RE USING DutyPusher!!!!!!**
+
 **Update: 2024/12/16 support Dalamud APIX (FinalFantasy XIV 7.0 Patch)**
 
 Please ensure you're already using Dalamud
@@ -108,6 +109,7 @@ Click the Key Label in PushDeer, and copy your key to the Channel URL/KEY in Dut
 ## 插件安装
 
 **在使用本插件过程中遇到了问题，请不要向Dalamud发送反馈！！！**
+
 **更新: 2024/12/16 支持Dalamud APIX (最终幻想14 7.0 资料片)**
 
 首先请你确认是否已使用Dalamud 
