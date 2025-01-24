@@ -1,5 +1,7 @@
 {
     "PluginName": "DutyPusher",
+    "WelcomeLine": "Welcome to use the DutyPusher, please read the guide before using",
+    "GuideURL": "https://github.com/MorCherlf/FFXIVDutyPusher?tab=readme-ov-file#device-setting",
     "PushChannel": "Push Channel",
     "Bark": "Bark",
     "PushDeer": "PushDeer",
@@ -8,6 +10,7 @@
     "TimeSensitive": "Time Sensitive",
     "Enable": "Enable",
     "Save": "Save",
+    "Guide": "Guide",
     "PushTitle": "DutyPusher",
     "PushContent": "Your Duty is ready!",
     "TestContent": "This is a test notify from FFXIV Dalamud Plugin <DutyPusher>!",

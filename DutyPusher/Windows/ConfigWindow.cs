@@ -11,6 +11,7 @@ using Dalamud.Plugin.Services;
 using Dalamud.Loc;
 using Dalamud.Interface.Utility.Table;
 using DutyPusher.Services;
+using System.Diagnostics;
 
 namespace DutyPusher.Windows
 {
@@ -47,6 +48,29 @@ namespace DutyPusher.Windows
 
         public override void Draw()
         {
+
+            ImGui.Text(Loc.GetString("WelcomeLine"));
+            ImGui.SameLine();
+            if (ImGui.Button(Loc.GetString("Guide")))
+            {
+                string url = Loc.GetString("GuideURL");
+
+                try
+                {
+                    // 使用系统默认浏览器打开 URL
+                    Process.Start(new ProcessStartInfo
+                    {
+                        FileName = url,
+                        UseShellExecute = true // 在跨平台环境中必须启用
+                    });
+                }
+                catch (Exception ex)
+                {
+                    // 在 Dalamud 日志中记录错误
+                    PluginLog.Error($"Error: {ex.Message}");
+                }
+            }
+
             // 第一个下拉菜单，选择 Push Channel
             if (ImGui.BeginCombo(Loc.GetString("PushChannel"), selectedChannel))
             {
@@ -95,6 +119,7 @@ namespace DutyPusher.Windows
                 SaveConfig();
                 Plugin.InitializeDtrBar(Plugin.DtrBar, Loc);
             }
+
         }
 
         private void SaveConfig()

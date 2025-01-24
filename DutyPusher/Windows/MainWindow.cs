@@ -21,7 +21,7 @@ internal class MainWindow : Window, IDisposable
     // So that the user will see "My Amazing Window" as window title,
     // but for ImGui the ID is "My Amazing Window##With a hidden ID"
     public MainWindow(Plugin plugin, Localization loc, Configuration configuration, DutyFinderStatus dutyFinderStatus)
-        : base(loc.GetString("PluginName") + "##With a hidden ID", ImGuiWindowFlags.NoScrollbar | ImGuiWindowFlags.NoScrollWithMouse)
+        : base(loc.GetString("PluginName") + "##By MorCherlf", ImGuiWindowFlags.NoScrollbar | ImGuiWindowFlags.NoScrollWithMouse)
     {
         Configuration = configuration;
         this.Plugin = plugin;
