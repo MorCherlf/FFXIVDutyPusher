@@ -6,23 +6,13 @@ This plugin is a Dalamud plugin for the game **Final Fantasy XIV**
 
 It can push a notification to your device when your duty's queue is ready
 
-## Repository
-
-    https://raw.githubusercontent.com/MorCherlf/FFXIVDutyPusher/master/Release/DutyPusher.json
-
-Copy this URL to your Dalamud's Custom Plugin Repositories，click the + button, and please remember to save your config
-
-**TO MAKE SURE FOR YOUR ACCOUNT'S SAFETY, PLEASE DON'T USE THE RANDOM REPOSITORIES' LINK OR PLUGIN!!!!!!**
+## Notice
 
 **BEFORE YOU USE THIS PLUGIN, YOU SHOULD KNOW THAT YOUR ACCOUNT COULD BE BANNED WHEN YOU ARE USING ANY THIRD PLUGIN AND UNOFFICIAL SOFTWARE!!!!!!**
 
 **DON'T SEND YOUR PLUGIN'S CONFIG TO ANYONE!!!!!! YOU SHOULD BEAR YOUR OWN RESPONSIBILITY FOR ANY LOSSES CAUSED BY THIS!!!!!!**
 
-## Plugin Install
-
 **PLEASE DON'T SEND ANY ISSUE TO Dalamud WHEN YOU HAVE ANY PROBLEM WHEN YOU'RE USING DutyPusher!!!!!!**
-
-**Update: 2024/12/16 support Dalamud APIX (FinalFantasy XIV 7.0 Patch)**
 
 Please ensure you're already using Dalamud
 
@@ -30,17 +20,9 @@ To use Dalamud, the easiest way is to launch your game with XIVLanucher
 
 [XIVLanucher](https://goatcorp.github.io/)  [XIVLanucher CN](https://ottercorp.github.io/)
 
-Open the Dalamud's settings
-
-Click the tab 'Test'
-
-Copy Repository URL to your Dalamud's Custom Plugin Repositories，click the + button, and please remember to save your config
-
-And open the Plugin Center, search DutyPusher and install it
+## Device Setting
 
 You can open the setting page of the DutyPusher by click the DutyPusher's setting button in plugin center or input the command /dutypusher in game
-
-## Device Setting
 
 Until now, the DutyPusher supported two push channel: **Bark** and **PushDeer**. And for this time, both of these channels only support iOS/iPadOS/macOS.
 
@@ -94,11 +76,7 @@ Click the Key Label in PushDeer, and copy your key to the Channel URL/KEY in Dut
 
 可以当游戏内任务器搜索到任务时，给您的设备发送一则通知
 
-## 仓库链接
-
-    https://raw.githubusercontent.com/MorCherlf/FFXIVDutyPusher/master/Release/DutyPusher.json
-
-请将此链接复制到Dalamud的Custom Plugin Repositories中，点击后面的加号并保存设置
+## 注意事项
 
 **请不要使用来源不明的仓库链接及插件，可能会损害您的账号财产安全！！！**
 
@@ -106,11 +84,7 @@ Click the Key Label in PushDeer, and copy your key to the Channel URL/KEY in Dut
 
 **不要将您的插件配置文件发送给任何人，如因此造成的损失，请您自己承担！！！**
 
-## 插件安装
-
 **在使用本插件过程中遇到了问题，请不要向Dalamud发送反馈！！！**
-
-**更新: 2024/12/16 支持Dalamud APIX (最终幻想14 7.0 资料片)**
 
 首先请你确认是否已使用Dalamud 
 
@@ -118,17 +92,9 @@ Click the Key Label in PushDeer, and copy your key to the Channel URL/KEY in Dut
 
 [XIVLanucher](https://goatcorp.github.io/)  [XIVLanucher CN](https://ottercorp.github.io/)
 
-打开Dalamud的设置页面
-
-点击选项卡*测试版*
-
-在自定义插件仓库中，将仓库链接复制到URL列表中，点击后面的加号和页面上的保存按钮
-
-之后，打开插件中心，搜索DutyPusher安装就完成了
+## 手机配置
 
 在插件中心点击DutyPusher的设置按钮或是在游戏内输入/dutypusher指令均可打开DutyPusher的设置页面
-
-## 手机配置
 
 目前狒狒排本小助手支持**Bark**和**PushDeer**两个推送渠道，其两者日前均仅支持iOS/iPadOS/macOS端
 
