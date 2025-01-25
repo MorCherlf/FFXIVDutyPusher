@@ -35,7 +35,8 @@ namespace DutyPusher
 
         public readonly WindowSystem WindowSystem = new("DutyPusher");
 
-        public DtrBarEntry dtrEntry;
+        private IDtrBarEntry dtrEntry;
+
         [PluginService] public static IDtrBar DtrBar { get; private set; } = null!;
 
         private ConfigWindow ConfigWindow { get; init; }
@@ -140,7 +141,7 @@ namespace DutyPusher
             this.ChatListener.Disable();
             ConfigWindow.Dispose();
             // MainWindow.Dispose();
-            dtrEntry?.Dispose();
+            dtrEntry?.Remove();
             CommandManager.RemoveHandler(CommandName);
         }
 
@@ -151,7 +152,7 @@ namespace DutyPusher
             var enable = Configuration.Enable;
             try
             {
-                dtrEntry = (DtrBarEntry)dtrBar.Get(dtrBarTitle);
+                dtrEntry = dtrBar.Get(dtrBarTitle);
                 if (enable)
                 {
                     dtrEntry.Text = loc.GetString("PluginName") + ": " + loc.GetString("On");
