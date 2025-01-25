@@ -35,7 +35,7 @@ namespace DutyPusher
 
         public readonly WindowSystem WindowSystem = new("DutyPusher");
 
-        private DtrBarEntry dtrEntry;
+        public DtrBarEntry dtrEntry;
         [PluginService] public static IDtrBar DtrBar { get; private set; } = null!;
 
         private ConfigWindow ConfigWindow { get; init; }
