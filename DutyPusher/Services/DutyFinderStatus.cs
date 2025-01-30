@@ -3,9 +3,11 @@ using Dalamud.Logging;
 using Dalamud.Plugin;
 using DutyPusher.Windows;
 using FFXIVClientStructs.FFXIV.Client.Game.UI;
+using Serilog;
 using System;
 using System.Net.Http;
 using System.Threading;
+using System.Threading.Channels;
 
 namespace DutyPusher.Services
 {
@@ -20,6 +22,8 @@ namespace DutyPusher.Services
         private string selectedChannel = "";
         private string barkServer = "";
         private string pushdeerKey = "";
+        private string telegramBotToken  = "";
+        private string telegramChatID = "";
         private bool barkTimeSensitive = false;
 
         public DutyFinderStatus(Plugin plugin, Configuration configuration, Localization loc) // 传入 Configuration 对象
@@ -101,6 +105,8 @@ namespace DutyPusher.Services
             barkServer = Configuration.BarkServer;
             barkTimeSensitive = Configuration.BarkTimeSensitive;
             pushdeerKey = Configuration.PushDeerKey;
+            telegramBotToken = Configuration.TelegramBotToken;
+            telegramChatID = Configuration.TelegramChatID;
 
             var url = "";
 
@@ -147,7 +153,26 @@ namespace DutyPusher.Services
                 {
                     //PluginLog.Error("Please check your PushDeer Key");
                 }
+            }else if (selectedChannel == "Telegram_Offical_API" && !string.IsNullOrWhiteSpace(telegramBotToken))
+            {
+                url = "https://api.telegram.org/bot" + telegramBotToken + "/sendMessage?chat_id=" + telegramChatID + "&parse_mode=MarkdownV2&text=" + loc.GetString("TelegramPushTitle") + "%0D%0A" + text;
+                try
+                {
+                    //PluginLog.Log("Tring to push notify to " + telegramChatID + " from " + selectedChannel);
+                    using (var client = new HttpClient())
+                    {
+                        var response = await client.GetAsync(url);
+                        response.EnsureSuccessStatusCode();
+                        string responseBody = await response.Content.ReadAsStringAsync();
+                        //PluginLog.Log("Already send a push to your device");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    //PluginLog.Error("Please check your Telegram configuration");
+                }
             }
+
         }
     }
 }

@@ -14,7 +14,9 @@ public class Configuration : IPluginConfiguration
 
     public string PushChannel { get; set; } = ""; // Push Channel
     public string BarkServer { get; set; } = ""; // Bark Server 字段
-    public string PushDeerKey { get; set; } = ""; 
+    public string PushDeerKey { get; set; } = "";
+    public string TelegramBotToken { get; set; } = "";
+    public string TelegramChatID { get; set; } = "";
     public bool Enable { get; set; } = false; 
     public bool BarkTimeSensitive { get; set; } = false; 
 

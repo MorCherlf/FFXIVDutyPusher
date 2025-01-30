@@ -12,6 +12,8 @@ using Dalamud.Loc;
 using Dalamud.Interface.Utility.Table;
 using DutyPusher.Services;
 using System.Diagnostics;
+using System.Threading.Channels;
+using Newtonsoft.Json.Linq;
 
 namespace DutyPusher.Windows
 {
@@ -21,6 +23,8 @@ namespace DutyPusher.Windows
         private string selectedChannel = ""; 
         private string barkServer = ""; // Bark Server 字段
         private string pushdeerKey = ""; // PushDeer 字段
+        private string telegramBotToken = "";
+        private string chatID = "";
         private bool enable = false;
         private bool barkTimeSensitive = false;
         private Plugin Plugin;
@@ -40,6 +44,8 @@ namespace DutyPusher.Windows
             selectedChannel = Configuration.PushChannel;
             barkServer = Configuration.BarkServer;
             pushdeerKey = Configuration.PushDeerKey;
+            telegramBotToken = Configuration.TelegramBotToken; 
+            chatID = Configuration.TelegramChatID;
             enable = Configuration.Enable;
             barkTimeSensitive = Configuration.BarkTimeSensitive;
         }
@@ -84,21 +90,33 @@ namespace DutyPusher.Windows
                     selectedChannel = "PushDeer";
                 }
 
+                if (ImGui.Selectable(Loc.GetString("TelegramOfficalAPI")))
+                {
+                    selectedChannel = "Telegram_Offical_API";
+                }
+
                 ImGui.EndCombo();
             }
 
             // 第二个文本框，根据选择的 Push Channel 改变内容
-            ImGui.Text(Loc.GetString("ChannelDetails"));
-            ImGui.SameLine();
             switch (selectedChannel)
             {
                 case "Bark":
-                    ImGui.InputText("", ref barkServer, 256);
+                    ImGui.Text(Loc.GetString("BarkURL"));
+                    ImGui.SameLine();
+                    ImGui.InputText("##Bark", ref barkServer, 256);
                     ImGui.SameLine();
                     ImGui.Checkbox(Loc.GetString("TimeSensitive"), ref barkTimeSensitive);
                     break;
                 case "PushDeer":
-                    ImGui.InputText("", ref pushdeerKey, 256);
+                    ImGui.Text(Loc.GetString("PushDeerKey"));
+                    ImGui.SameLine();
+                    ImGui.InputText("##PushDeer", ref pushdeerKey, 256);
+                    break;
+                case "Telegram_Offical_API":
+                    ImGui.Text(Loc.GetString("TelegramBotToken"));
+                    ImGui.SameLine();
+                    ImGui.InputText("##BotToken", ref telegramBotToken, 256);
                     break;
             }
             ImGui.SameLine();
@@ -106,9 +124,22 @@ namespace DutyPusher.Windows
             {
                 TestRequest();
             }
+            switch (selectedChannel)
+            {
+                case "Telegram_Offical_API":
+                    ImGui.Text(Loc.GetString("Chat_ID"));
+                    ImGui.SameLine();
+                    ImGui.InputText("##ChatID", ref chatID, 256);
+                    ImGui.SameLine();
+                    if (ImGui.Button(Loc.GetString("Get_Chat_ID")))
+                    {
+                        GetChatID();
+                    }
+                    break;
+            }
 
 
-            // 第三个复选框，Always Push
+            // 第三个复选框
             ImGui.Checkbox(Loc.GetString("Enable"), ref enable);
 
 
@@ -122,12 +153,50 @@ namespace DutyPusher.Windows
 
         }
 
+        private async void GetChatID()
+        {
+            var channel = selectedChannel;
+            var url = "";
+
+            if (channel == "Telegram_Offical_API" && !string.IsNullOrWhiteSpace(telegramBotToken))
+            {
+                url = "https://api.telegram.org/bot" + telegramBotToken + "/getUpdates";
+                try
+                {
+                    using (var client = new HttpClient())
+                    {
+                        var response = await client.GetAsync(url);
+                        response.EnsureSuccessStatusCode();
+                        string responseBody = await response.Content.ReadAsStringAsync();
+                        var json = JObject.Parse(responseBody);
+
+                        // 直接遍历获取chat.id
+                        foreach (var update in json["result"])
+                        {
+                            var chatId = update["message"]?["chat"]?["id"]?.Value<long>();
+                            if (chatId != null)
+                            {
+                                chatID = chatId.ToString();
+                            }
+                        }
+                        PluginLog.Info("Get the user chat ID");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    PluginLog.Error("Something wrong, please check your bot token or verify that you already sent a message to your bot");
+                }
+            }
+        }
+
         private void SaveConfig()
         {
             Configuration.PushChannel = selectedChannel;
             Configuration.BarkServer = barkServer;
             Configuration.BarkTimeSensitive = barkTimeSensitive;
             Configuration.PushDeerKey = pushdeerKey;
+            Configuration.TelegramBotToken = telegramBotToken;
+            Configuration.TelegramChatID = chatID;
             Configuration.Enable = enable;
             Configuration.Save();
         }
@@ -178,6 +247,25 @@ namespace DutyPusher.Windows
                 catch (Exception ex)
                 {
                     PluginLog.Error("Please check your PushDeer Key");
+                }
+            }
+            else if(channel == "Telegram_Offical_API" && !string.IsNullOrWhiteSpace(telegramBotToken))
+            {
+                url = "https://api.telegram.org/bot" + telegramBotToken + "/sendMessage?chat_id=" + chatID + "&parse_mode=MarkdownV2&text=" + Loc.GetString("TelegramPushTitle") + "%0D%0A" + Loc.GetString("TelegramTestContent");
+                try
+                {
+                    using (var client = new HttpClient())
+                    {
+                        var response = await client.GetAsync(url);
+                        response.EnsureSuccessStatusCode();
+                        string responseBody = await response.Content.ReadAsStringAsync();
+                        PluginLog.Info("Already send a push to your device");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    PluginLog.Error("Please check your Telegram configuration");
+                    PluginLog.Error(url);
                 }
             }
         }
