@@ -1,7 +1,5 @@
 using System;
 using System.Numerics;
-using Dalamud.Interface.Internal;
-using Dalamud.Interface.Utility;
 using Dalamud.Interface.Windowing;
 using Dalamud.Loc;
 using DutyPusher.Services;
@@ -14,20 +12,16 @@ internal class MainWindow : Window, IDisposable
     private Plugin Plugin;
     private Localization loc;
     public Configuration Configuration;
-    private readonly DutyFinderStatus dutyFinderStatus;
-    private bool alwaysPush = false;
 
     // We give this window a hidden ID using ##
     // So that the user will see "My Amazing Window" as window title,
     // but for ImGui the ID is "My Amazing Window##With a hidden ID"
-    public MainWindow(Plugin plugin, Localization loc, Configuration configuration, DutyFinderStatus dutyFinderStatus)
+    public MainWindow(Plugin plugin, Localization loc, Configuration configuration, DutyListener dutyListener)
         : base(loc.GetString("PluginName") + "##By MorCherlf", ImGuiWindowFlags.NoScrollbar | ImGuiWindowFlags.NoScrollWithMouse)
     {
         Configuration = configuration;
         this.Plugin = plugin;
         this.loc = loc;
-       // this.alwaysPush = configuration.AlwaysPush;
-        this.dutyFinderStatus = dutyFinderStatus;
 
         SizeConstraints = new WindowSizeConstraints
         {
@@ -42,13 +36,13 @@ internal class MainWindow : Window, IDisposable
 
     public override void Draw()
     {
-        if (alwaysPush)
+        if (Configuration.Enable)
         {
             ImGui.Text(loc.GetString("IsPluginActive") + ": " + loc.GetString("On"));
             if(ImGui.Button(loc.GetString("Disable")))
             {
-                dutyFinderStatus.Disable();
-                alwaysPush = false;
+                Configuration.Enable = false;
+                Configuration.Save();
             }
         } else
         {
@@ -56,8 +50,8 @@ internal class MainWindow : Window, IDisposable
 
             if (ImGui.Button(loc.GetString("Enable")))
             {
-                dutyFinderStatus.Enable();
-                alwaysPush = true;
+                Configuration.Enable = true;
+                Configuration.Save();
             }
         }
 

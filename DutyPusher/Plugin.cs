@@ -1,7 +1,4 @@
 using System;
-using System.Linq;
-using FFXIVClientStructs.Attributes;
-
 using Dalamud.Game.Command;
 using Dalamud.IoC;
 using Dalamud.Plugin;
@@ -9,13 +6,9 @@ using System.IO;
 using Dalamud.Interface.Windowing;
 using Dalamud.Plugin.Services;
 using DutyPusher.Windows;
-using DutyPusher.Services;
-using FFXIVClientStructs.FFXIV.Component.GUI;
-using System.Reflection;
 using Dalamud.Game.Gui.Dtr;
-using Dalamud.Logging;
-using Dalamud.Interface.Utility.Table;
 using Dalamud.Loc;
+using DutyPusher.Services;
 
 namespace DutyPusher
 {
@@ -42,10 +35,10 @@ namespace DutyPusher
         private ConfigWindow ConfigWindow { get; init; }
         // private MainWindow MainWindow { get; init; }
 
-        private readonly IPluginLog pluginLog; // 添加插件日志
-        private ChatListener ChatListener { get; set; }
-        private DutyFinderStatus DutyFinderStatus { get; set; }
+        private readonly IPluginLog pluginLog; 
         public Dalamud.Loc.Localization loc;
+        private PushService pushService;
+        private DutyListener dutyListener;
 
         // 插件 主类
         public Plugin(
@@ -55,9 +48,10 @@ namespace DutyPusher
             ITextureProvider textureProvider,
             IGameGui gameGui,
             IAddonLifecycle addonLifecycle,
-            IAddonEventManager addonEventManager, 
+            IAddonEventManager addonEventManager,
             IDtrBar dtrBar,
-            IPluginLog pluginLog)
+            IPluginLog pluginLog,
+            IClientState clientState)
         {
             // 初始化
             PluginInterface = pluginInterface;
@@ -66,27 +60,82 @@ namespace DutyPusher
 
             // 获取配置并装载
             Configuration = PluginInterface.GetPluginConfig() as Configuration ?? new Configuration();
+            Configuration.OnSaved += HandleConfigurationSaved;
             Configuration.Initialize(PluginInterface);
 
-            var zhLoc = File.ReadAllText(PluginInterface.AssemblyLocation.Directory + "/loc/zh.json");
+            
+            var deLoc = File.ReadAllText(PluginInterface.AssemblyLocation.Directory + "/loc/de.json");
             var enLoc = File.ReadAllText(PluginInterface.AssemblyLocation.Directory + "/loc/en.json");
+            var esLoc = File.ReadAllText(PluginInterface.AssemblyLocation.Directory + "/loc/es.json");
+            var frLoc = File.ReadAllText(PluginInterface.AssemblyLocation.Directory + "/loc/fr.json");
+            var itLoc = File.ReadAllText(PluginInterface.AssemblyLocation.Directory + "/loc/it.json");
+            var jaLoc = File.ReadAllText(PluginInterface.AssemblyLocation.Directory + "/loc/ja.json");
+            var koLoc = File.ReadAllText(PluginInterface.AssemblyLocation.Directory + "/loc/ko.json");
+            var noLoc = File.ReadAllText(PluginInterface.AssemblyLocation.Directory + "/loc/no.json");
+            var ruLoc = File.ReadAllText(PluginInterface.AssemblyLocation.Directory + "/loc/ru.json");
+            var twLoc = File.ReadAllText(PluginInterface.AssemblyLocation.Directory + "/loc/tw.json");
+            var zhLoc = File.ReadAllText(PluginInterface.AssemblyLocation.Directory + "/loc/zh.json");
 
             var loc = new Localization(pluginInterface);
-            loc.LoadLanguage(Dalamud.Loc.Enums.Language.ChineseSimplified, zhLoc);
+
+            loc.LoadLanguage(Dalamud.Loc.Enums.Language.German, deLoc);
             loc.LoadLanguage(Dalamud.Loc.Enums.Language.English, enLoc);
+            loc.LoadLanguage(Dalamud.Loc.Enums.Language.Spanish, esLoc);
+            loc.LoadLanguage(Dalamud.Loc.Enums.Language.French, frLoc);
+            loc.LoadLanguage(Dalamud.Loc.Enums.Language.Italian, itLoc);
+            loc.LoadLanguage(Dalamud.Loc.Enums.Language.Japanese, jaLoc);
+            loc.LoadLanguage(Dalamud.Loc.Enums.Language.Korean, koLoc);
+            loc.LoadLanguage(Dalamud.Loc.Enums.Language.Norwegian, noLoc);
+            loc.LoadLanguage(Dalamud.Loc.Enums.Language.Russian, ruLoc);
+            loc.LoadLanguage(Dalamud.Loc.Enums.Language.ChineseTraditional, twLoc);
+            loc.LoadLanguage(Dalamud.Loc.Enums.Language.ChineseSimplified, zhLoc);
+
+            // 根据UI语言设置当前语言
             switch (PluginInterface.UiLanguage)
             {
                 case "zh":
                     loc.CurrentLanguage = Dalamud.Loc.Enums.Language.ChineseSimplified;
-                    pluginLog.Info("Chinese");
+                    pluginLog.Info("Loaded Simplified Chinese localization");
                     break;
-                case "en":
-                    loc.CurrentLanguage = Dalamud.Loc.Enums.Language.English;
-                    pluginLog.Info("English");
+                case "tw":
+                    loc.CurrentLanguage = Dalamud.Loc.Enums.Language.ChineseTraditional;
+                    pluginLog.Info("Loaded Traditional Chinese localization");
+                    break;
+                case "de":
+                    loc.CurrentLanguage = Dalamud.Loc.Enums.Language.German;
+                    pluginLog.Info("Loaded German localization");
+                    break;
+                case "es":
+                    loc.CurrentLanguage = Dalamud.Loc.Enums.Language.Spanish;
+                    pluginLog.Info("Loaded Spanish localization");
+                    break;
+                case "fr":
+                    loc.CurrentLanguage = Dalamud.Loc.Enums.Language.French;
+                    pluginLog.Info("Loaded French localization");
+                    break;
+                case "it":
+                    loc.CurrentLanguage = Dalamud.Loc.Enums.Language.Italian;
+                    pluginLog.Info("Loaded Italian localization");
+                    break;
+                case "ja":
+                    loc.CurrentLanguage = Dalamud.Loc.Enums.Language.Japanese;
+                    pluginLog.Info("Loaded Japanese localization");
+                    break;
+                case "ko":
+                    loc.CurrentLanguage = Dalamud.Loc.Enums.Language.Korean;
+                    pluginLog.Info("Loaded Korean localization");
+                    break;
+                case "no":
+                    loc.CurrentLanguage = Dalamud.Loc.Enums.Language.Norwegian;
+                    pluginLog.Info("Loaded Norwegian localization");
+                    break;
+                case "ru":
+                    loc.CurrentLanguage = Dalamud.Loc.Enums.Language.Russian;
+                    pluginLog.Info("Loaded Russian localization");
                     break;
                 default:
                     loc.CurrentLanguage = Dalamud.Loc.Enums.Language.English;
-                    pluginLog.Info("Default");
+                    pluginLog.Info("Loaded default English localization");
                     break;
             }
 
@@ -95,14 +144,15 @@ namespace DutyPusher
             var languageLoad = loc.GetString("LocalizationLoading");
             pluginLog.Info(languageLoad);
 
+            pushService = new PushService(Configuration, pluginLog);
 
-            this.DutyFinderStatus = new DutyFinderStatus(this, Configuration, loc);
-            this.ChatListener = new ChatListener(this, pluginInterface, this.DutyFinderStatus, Configuration);
+            dutyListener = new DutyListener( () => Configuration.Enable,pluginLog, loc, clientState, pushService);
+            UpdateDutyListenerState();
 
             if (DtrBar != null)
             {
                 // 窗口初始化
-                ConfigWindow = new ConfigWindow(this, pluginLog, loc);
+                ConfigWindow = new ConfigWindow(this, pushService, pluginLog, loc);
                 // MainWindow = new MainWindow(this, loc, Configuration, DutyFinderStatus);
 
                 // 添加窗口
@@ -114,11 +164,10 @@ namespace DutyPusher
             }
             else
             {
-                //PluginLog.LogWarning("DtrBar is null. Skipping DtrBar initialization.");
+                pluginLog.Error("DtrBar is null. Skipping DtrBar initialization.");
             }
 
 
-            // 注册命令 和 帮助信息
             CommandManager.AddHandler(CommandName, new CommandInfo(OnCommand)
             {
                 HelpMessage = "A useful message to display in /xlhelp"
@@ -126,68 +175,109 @@ namespace DutyPusher
 
             PluginInterface.UiBuilder.Draw += DrawUI;
 
-            // 绘制一个配置按钮
             PluginInterface.UiBuilder.OpenConfigUi += ToggleConfigUI;
+        }
+
+        private void UpdateDutyListenerState()
+        {
+            try
+            {
+                dutyListener?.UpdateSubscriptionState();
+                pluginLog.Debug($"Duty listener state updated: {Configuration.Enable}");
+            }
+            catch (Exception ex)
+            {
+                pluginLog.Error($"Duty listener error: {ex}");
+            }
+        }
+
+        private void HandleConfigurationSaved(Configuration configuration)
+        {
+            try
+            {
+                pluginLog.Info("Configuration saved");
+                pushService.Reload(configuration);
+                UpdateDutyListenerState();
+            }
+            catch (Exception ex)
+            {
+                pluginLog.Error($"Configuration save error: {ex}");
+            }
         }
 
         // 释放资源
         public void Dispose()
         {
-            WindowSystem.RemoveAllWindows();
+            try
+            {
+                // 释放托管资源
+                Configuration.OnSaved -= HandleConfigurationSaved;
+                dtrEntry?.Remove();
+                dutyListener?.Dispose();
+                pushService?.Dispose();
+                WindowSystem.RemoveAllWindows();
 
-            Configuration.Save();
+                // 移除命令和钩子
+                CommandManager.RemoveHandler(CommandName);
+                PluginInterface.UiBuilder.Draw -= DrawUI;
+                PluginInterface.UiBuilder.OpenConfigUi -= ToggleConfigUI;
 
-            this.DutyFinderStatus.Disable();
-            this.ChatListener.Disable();
-            ConfigWindow.Dispose();
-            // MainWindow.Dispose();
-            dtrEntry?.Remove();
-            CommandManager.RemoveHandler(CommandName);
+                pluginLog.Info("The plugin is uninstalled");
+            }
+            catch (Exception ex)
+            {
+                pluginLog.Error($"Dispose error: {ex}");
+            }
+            finally
+            {
+                GC.SuppressFinalize(this);
+            }
         }
 
         public void InitializeDtrBar(IDtrBar dtrBar, Localization loc)
         {
-            //PluginLog.Log("Initializing Dtr Bar...");
             var dtrBarTitle = "DutyPusher";
-            var enable = Configuration.Enable;
             try
             {
-                dtrEntry = dtrBar.Get(dtrBarTitle);
-                if (enable)
-                {
-                    dtrEntry.Text = loc.GetString("PluginName") + ": " + loc.GetString("On");
-                }
-                else
-                {
-                    dtrEntry.Text = loc.GetString("PluginName") + ": " + loc.GetString("Off");
-                }
-                dtrEntry.Shown = true;
-
+                dtrEntry ??= DtrBar.Get(dtrBarTitle);
                 dtrEntry.OnClick += () =>
                 {
-                    if (enable)
+                    try
                     {
-                        enable = false;
-                        Configuration.Enable = false;
+                        Configuration.Enable = !Configuration.Enable;
                         Configuration.Save();
-                        dtrEntry.Text = loc.GetString("PluginName") + ": " + loc.GetString("Off");
+                        pluginLog.Info($"Dtr bar toggle switch enable: {Configuration.Enable}");
+                        UpdateDtrBarState(loc);
                     }
-                    else
+                    catch (Exception ex)
                     {
-                        enable = true;
-                        Configuration.Enable = true;
-                        Configuration.Save();
-                        dtrEntry.Text = loc.GetString("PluginName") + ": " + loc.GetString("On");
+                        pluginLog.Error($"Dtr bar toggle error: {ex}");
                     }
                 };
-
+                UpdateDtrBarState(loc);
             }
             catch (Exception e)
             {
-                //PluginLog.Log(e,$"Failed to acquire DtrBarEntry {dtrBarTitle}");
+                pluginLog.Error($"DTR bar initalize error: {e.Message}");
             }
         }
 
+        public void UpdateDtrBarState(Localization loc)
+        {
+            if (dtrEntry == null) return;
+            try
+            {
+                dtrEntry.Text = $"{loc.GetString("PluginName")}: " +
+                               (Configuration.Enable ?
+                                loc.GetString("On") :
+                                loc.GetString("Off"));
+                pluginLog.Debug("DTR bar Updated");
+            }
+            catch (Exception ex)
+            {
+                pluginLog.Error($"DTR bar update error: {ex}");
+            }
+        }
 
         private void OnCommand(string command, string args)
         {
