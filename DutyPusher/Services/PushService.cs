@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace DutyPusher.Services
@@ -51,17 +52,33 @@ namespace DutyPusher.Services
             }
         }
 
-        public async Task SendNotificationAsync(string title, string content)
+        public async Task<bool> SendNotificationAsync(string title, string content)
         {
+            if (activeChannel == null)
+            {
+                pluginLog.Warning("No channel has been selected!");
+                return false;
+            }
+            using var cts = new CancellationTokenSource(TimeSpan.FromSeconds(10));
             try
             {
-                await activeChannel.SendAsync(title, content, pluginLog);
+                await activeChannel.SendAsync(title, content, pluginLog)
+                    .ConfigureAwait(false); // 避免同步上下文问题
+                return true;
+            }
+            catch (TaskCanceledException)
+            {
+                pluginLog.Error("Network timeout!");
             }
             catch (HttpRequestException ex)
             {
-                pluginLog.Error($"Wrong: {ex.Message}");
-                throw;
+                pluginLog.Error($"Network error: ({ex.StatusCode}): {ex.Message}");
             }
+            catch (Exception ex)
+            {
+                pluginLog.Error($"Failed: {ex.GetType().Name} - {ex.Message}");
+            }
+            return false;
         }
 
     }

@@ -13,7 +13,7 @@ namespace DutyPusher.PushChannels
         public BarkChannel(string serverUrl, bool timeSensitive)
         {
             httpClient = new HttpClient();
-            serverUrl = serverUrl.TrimEnd('/');
+            this.serverUrl = serverUrl.TrimEnd('/');
             timeSensitiveEnable = timeSensitive;
         }
 
