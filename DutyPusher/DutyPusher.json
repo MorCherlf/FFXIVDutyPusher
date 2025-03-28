@@ -6,7 +6,7 @@
     "Punchline": "Push notify to your device when your duty is ready",
     "Description": "You can use this plugin to push notify to your device when your duty is ready",
     "ApplicableVersion": "any",
-    "DalamudApiLevel": 11,
+    "DalamudApiLevel": 12,
     "Tags": [
         "utility",
         "Notification"
