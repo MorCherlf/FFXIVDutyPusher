@@ -1,6 +1,6 @@
 # DutyPusher
 
-![Downloads](https://img.shields.io/badge/downloads-0-brightgreen)
+![Downloads](https://img.shields.io/badge/downloads-95-brightgreen)
 
 [中文](#狒狒排本小助手)
 
