@@ -21,15 +21,18 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
+          pip install requests
 
       - name: Update README with download count
         run: |
+          import requests
           import json
           import re
 
-          # 读取 JSON 文件
-          with open('plugins.json', 'r') as file:
-              data = json.load(file)
+          # 从网络获取 JSON 数据
+          url = "https://kamori.goats.dev/Plugin/PluginMaster"  # 替换为实际的 JSON 文件 URL
+          response = requests.get(url)
+          data = response.json()
 
           # 查找指定项目的下载量
           project_name = "DutyPusher"
