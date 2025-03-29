@@ -9,6 +9,9 @@ jobs:
   update-badge:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write # 授予写权限
+      
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
