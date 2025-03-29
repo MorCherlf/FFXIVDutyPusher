@@ -1,0 +1,71 @@
+name: Update Download Badge
+
+on:
+  schedule:
+    - cron: '0 0 */3 * *' # 每 3 天运行一次
+  workflow_dispatch: # 允许手动触发
+
+jobs:
+  update-badge:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+
+      - name: Update README with download count
+        run: |
+          import json
+          import re
+
+          # 读取 JSON 文件
+          with open('plugins.json', 'r') as file:
+              data = json.load(file)
+
+          # 查找指定项目的下载量
+          project_name = "DutyPusher"
+          download_count = None
+
+          for plugin in data:
+              if plugin['Name'] == project_name:
+                  download_count = plugin['DownloadCount']
+                  break
+
+          if download_count is not None:
+              # 生成徽章 URL
+              badge_url = f"https://img.shields.io/badge/downloads-{download_count}-brightgreen"
+              
+              # 读取 README.md 文件
+              with open('README.md', 'r') as file:
+                  readme_content = file.read()
+              
+              # 替换 README.md 中的徽章 URL
+              new_readme_content = re.sub(r'!\[Downloads\]\(https://img.shields.io/badge/downloads-\d+-brightgreen\)', 
+                                          f'![Downloads]({badge_url})', 
+                                          readme_content)
+              
+              # 写回 README.md 文件
+              with open('README.md', 'w') as file:
+                  file.write(new_readme_content)
+              
+              print(f"Updated README.md with download count: {download_count}")
+          else:
+              print(f"Project {project_name} not found.")
+        shell: python
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add README.md
+          git commit -m "Update download badge"
+          git push

@@ -1,5 +1,7 @@
 # DutyPusher
 
+![Downloads](https://img.shields.io/badge/downloads-0-brightgreen)
+
 [中文](#狒狒排本小助手)
 
 This plugin is a Dalamud plugin for the game **Final Fantasy XIV**
