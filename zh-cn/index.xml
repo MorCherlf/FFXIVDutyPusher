@@ -1,6 +1,6 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DutyPusher – 狒狒排本小助手</title><link>https://MorCherlf.github.io/FFXIVDutyPusher/zh-cn/</link><description>Recent content in 狒狒排本小助手 on DutyPusher</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 30 Mar 2025 11:27:53 +0300</lastBuildDate><atom:link href="https://MorCherlf.github.io/FFXIVDutyPusher/zh-cn/index.xml" rel="self" type="application/rss+xml"/><item><title>关于</title><link>https://MorCherlf.github.io/FFXIVDutyPusher/zh-cn/about/</link><pubDate>Sun, 30 Mar 2025 11:27:58 +0300</pubDate><guid>https://MorCherlf.github.io/FFXIVDutyPusher/zh-cn/about/</guid><description>
 &lt;h2>关于狒狒排本小助手&lt;span class="hx-absolute -hx-mt-20" id="关于狒狒排本小助手">&lt;/span>
-&lt;a href="#%e5%85%b3%e4%ba%8e%e7%8b%92%e7%8b%92%e6%8e%92%e6%9c%ac%e5%b0%8f%e5%8a%a9%e6%89%8b" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>狒狒排本小助手由MorCherlf开发的一款适用于《最终幻想XIV》FF14 的Dalamud开源插件，旨在帮助玩家在排队等待副本时远离电脑放松一下，通过可扩展的多种推送渠道，让玩家可以在排队成功时立即收到提醒，避免错过副本。&lt;/p>
+&lt;a href="#%e5%85%b3%e4%ba%8e%e7%8b%92%e7%8b%92%e6%8e%92%e6%9c%ac%e5%b0%8f%e5%8a%a9%e6%89%8b" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>狒狒排本小助手是由MorCherlf开发的一款适用于《最终幻想XIV》FF14 的Dalamud开源插件，旨在帮助玩家在排队等待副本时远离电脑放松一下，通过可扩展的多种推送渠道，让玩家可以在排队成功时立即收到提醒，避免错过副本。&lt;/p>
 &lt;p>&lt;strong>主要特点&lt;/strong>&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>多推送渠道支持&lt;/strong>：目前支持Bark、PushDeer和Telegram Bot官方API，未来将持续拓展更多推送渠道。&lt;/li>
