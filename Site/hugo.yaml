@@ -1,0 +1,345 @@
+# Configuration
+baseURL: "https://MorCherlf.github.io/FFXIVDutyPusher/"
+title: "DutyPusher"
+
+enableRobotsTXT: true
+enableGitInfo: true
+hasCJKLanguage: true
+
+outputs:
+  home: [HTML]
+  page: [HTML]
+  section: [HTML, RSS]
+
+defaultContentLanguage: en
+languages:
+  en:
+    languageName: English
+    weight: 1
+    title: DutyPusher
+    menu:
+      main:
+        - identifier: home
+          name: Home
+          url: "/"
+          weight: 1
+        - identifier: guide
+          name: Setting Guide
+          pageRef: /docs
+          weight: 2
+        - identifier: faq
+          name: FAQ
+          pageRef: /faq
+          weight: 3
+        - identifier: about
+          name: About
+          pageRef: /about
+          weight: 4
+  zh-cn:
+    languageName: 简体中文
+    weight: 2
+    title: 狒狒排本小助手
+    contentDir: content/zh-cn
+    menu:
+      main:
+        - identifier: home
+          name: 首页
+          url: "/zh-cn/"
+          weight: 1
+        - identifier: guide
+          name: 设置指南
+          pageRef: /docs
+          weight: 2
+        - identifier: faq
+          name: 常见问题
+          pageRef: /faq
+          weight: 3
+        - identifier: about
+          name: 关于
+          pageRef: /about
+          weight: 4
+  de:
+    languageName: Deutsch
+    weight: 3
+    title: DutyPusher
+    contentDir: content/de
+    menu:
+      main:
+        - identifier: home
+          name: Startseite
+          url: "/de/"
+          weight: 1
+        - identifier: guide
+          name: Einstellungsanleitung
+          pageRef: /docs
+          weight: 2
+        - identifier: faq
+          name: FAQ
+          pageRef: /faq
+          weight: 3
+        - identifier: about
+          name: Über uns
+          pageRef: /about
+          weight: 4
+  es:
+    languageName: Español
+    weight: 4
+    title: DutyPusher
+    contentDir: content/es
+    menu:
+      main:
+        - identifier: home
+          name: Inicio
+          url: "/es/"
+          weight: 1
+        - identifier: guide
+          name: Guía de configuración
+          pageRef: /docs
+          weight: 2
+        - identifier: faq
+          name: Preguntas frecuentes
+          pageRef: /faq
+          weight: 3
+        - identifier: about
+          name: Acerca de
+          pageRef: /about
+          weight: 4
+  fr:
+    languageName: Français
+    weight: 5
+    title: DutyPusher
+    contentDir: content/fr
+    menu:
+      main:
+        - identifier: home
+          name: Accueil
+          url: "/fr/"
+          weight: 1
+        - identifier: guide
+          name: Guide de configuration
+          pageRef: /docs
+          weight: 2
+        - identifier: faq
+          name: FAQ
+          pageRef: /faq
+          weight: 3
+        - identifier: about
+          name: À propos
+          pageRef: /about
+          weight: 4
+  it:
+    languageName: Italiano
+    weight: 6
+    title: DutyPusher
+    contentDir: content/it
+    menu:
+      main:
+        - identifier: home
+          name: Home
+          url: "/it/"
+          weight: 1
+        - identifier: guide
+          name: Guida alle impostazioni
+          pageRef: /docs
+          weight: 2
+        - identifier: faq
+          name: FAQ
+          pageRef: /faq
+          weight: 3
+        - identifier: about
+          name: Informazioni
+          pageRef: /about
+          weight: 4
+  ja:
+    languageName: 日本語
+    weight: 7
+    title: DutyPusher
+    contentDir: content/ja
+    menu:
+      main:
+        - identifier: home
+          name: ホーム
+          url: "/ja/"
+          weight: 1
+        - identifier: guide
+          name: 設定ガイド
+          pageRef: /docs
+          weight: 2
+        - identifier: faq
+          name: よくある質問
+          pageRef: /faq
+          weight: 3
+        - identifier: about
+          name: について
+          pageRef: /about
+          weight: 4
+  ko:
+    languageName: 한국어
+    weight: 8
+    title: DutyPusher
+    contentDir: content/ko
+    menu:
+      main:
+        - identifier: home
+          name: 홈
+          url: "/ko/"
+          weight: 1
+        - identifier: guide
+          name: 설정 가이드
+          pageRef: /docs
+          weight: 2
+        - identifier: faq
+          name: 자주 묻는 질문
+          pageRef: /faq
+          weight: 3
+        - identifier: about
+          name: 소개
+          pageRef: /about
+          weight: 4
+  nor:
+    languageName: Norsk
+    weight: 9
+    title: DutyPusher
+    contentDir: content/nor
+    menu:
+      main:
+        - identifier: home
+          name: Hjem
+          url: "/nor/"
+          weight: 1
+        - identifier: guide
+          name: Innstillingsguide
+          pageRef: /docs
+          weight: 2
+        - identifier: faq
+          name: FAQ
+          pageRef: /faq
+          weight: 3
+        - identifier: about
+          name: Om
+          pageRef: /about
+          weight: 4
+  ru:
+    languageName: Русский
+    weight: 10
+    title: DutyPusher
+    contentDir: content/ru
+    menu:
+      main:
+        - identifier: home
+          name: Главная
+          url: "/ru/"
+          weight: 1
+        - identifier: guide
+          name: Руководство по настройке
+          pageRef: /docs
+          weight: 2
+        - identifier: faq
+          name: Часто задаваемые вопросы
+          pageRef: /faq
+          weight: 3
+        - identifier: about
+          name: О проекте
+          pageRef: /about
+          weight: 4
+  tw:
+    languageName: 繁體中文
+    weight: 11
+    title: DutyPusher
+    contentDir: content/tw
+    menu:
+      main:
+        - identifier: home
+          name: 首頁
+          url: "/tw/"
+          weight: 1
+        - identifier: guide
+          name: 設定指南
+          pageRef: /docs
+          weight: 2
+        - identifier: faq
+          name: 常見問題
+          pageRef: /faq
+          weight: 3
+        - identifier: about
+          name: 關於
+          pageRef: /about
+          weight: 4
+
+module:
+  imports:
+    - path: github.com/imfing/hextra
+
+markup:
+  highlight:
+    noClasses: false
+  goldmark:
+    renderer:
+      unsafe: true
+    extensions:
+      passthrough:
+        delimiters:
+          block: [['\[', '\]'], ['$$', '$$']]
+          inline: [['\(', '\)']]
+        enable: true
+
+enableInlineShortcodes: true
+
+params:
+  description: "A Final Fantasy XIV Dalamud plugin for duty notifications."
+  navbar:
+    displayTitle: true
+    displayLogo: true
+    logo:
+      path: images/logo.svg
+      dark: images/logo-dark.svg
+    width: wide
+
+  page:
+    width: normal
+
+  theme:
+    default: system
+    displayToggle: true
+
+  footer:
+    enable: true
+    displayCopyright: true
+    displayPoweredBy: true
+    width: normal
+
+  displayUpdatedDate: true
+  dateFormat: "January 2, 2006"
+
+  search:
+    enable: true
+    type: flexsearch
+    flexsearch:
+      index: content
+      tokenize: forward
+
+  editURL:
+    enable: true
+    base: "https://github.com/MorCherlf/FFXIVDutyPusher/edit/main/Site/content"
+
+  blog:
+    list:
+      displayTags: true
+      sortBy: date
+      sortOrder: desc
+    article:
+      displayPagination: true
+
+  highlight:
+    copy:
+      enable: true
+      display: hover
+
+  comments:
+    enable: false
+    type: giscus
+    giscus:
+      repo: MorCherlf/FFXIVDutyPusher
+      repoId: R_kgDOJ9fJag
+      category: General
+      categoryId: DIC_kwDOJ9fJas4CY7gW

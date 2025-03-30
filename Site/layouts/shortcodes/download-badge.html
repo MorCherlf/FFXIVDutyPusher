@@ -1,0 +1,12 @@
+{{ $jsonUrl := "https://kamori.goats.dev/Plugin/PluginMaster" }}
+{{ $jsonData := resources.GetRemote $jsonUrl | transform.Unmarshal }}
+
+{{ if $jsonData }}
+  {{ range $jsonData }}
+    {{ if eq .Name "DutyPusher" }}
+      <img src="https://img.shields.io/badge/Downloads-{{ .DownloadCount }}-brightgreen" alt="Downloads">
+    {{ end }}
+  {{ end }}
+{{ else }}
+  <p>Failed to load JSON data.</p>
+{{ end }}

@@ -1,118 +1,196 @@
 # DutyPusher
 
-![Downloads](https://img.shields.io/badge/downloads-95-brightgreen)
+![Logo](https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/icon.png?raw=true)
 
-[中文](#狒狒排本小助手)
+Download Count in Dalamud: ![Downloads Count](https://img.shields.io/badge/downloads-95-brightgreen)
 
-This plugin is a Dalamud plugin for the game **Final Fantasy XIV**
+This is a **Final Fantasy XIV** Dalamud plugin.
 
-It can push a notification to your device when your duty's queue is ready
+When you enable this plugin and configure a push channel, it will send a notification to your device when a duty queue is ready in the game.
 
 ## Notice
 
-**BEFORE YOU USE THIS PLUGIN, YOU SHOULD KNOW THAT YOUR ACCOUNT COULD BE BANNED WHEN YOU ARE USING ANY THIRD PLUGIN AND UNOFFICIAL SOFTWARE!!!!!!**
+**To ensure the safety of your account, please avoid using repository links and plugins from untrusted sources.**
 
-**DON'T SEND YOUR PLUGIN'S CONFIG TO ANYONE!!!!!! YOU SHOULD BEAR YOUR OWN RESPONSIBILITY FOR ANY LOSSES CAUSED BY THIS!!!!!!**
+**Using any third-party plugins may result in your account being banned. Please be aware of this before using the plugin.**
 
-**PLEASE DON'T SEND ANY ISSUE TO Dalamud WHEN YOU HAVE ANY PROBLEM WHEN YOU'RE USING DutyPusher!!!!!!**
+**Do not share your plugin configuration file with anyone. You are solely responsible for any losses caused by this.**
 
-Please ensure you're already using Dalamud
+**If you encounter any issues while using this plugin, please do not send feedback to Dalamud.**
 
-To use Dalamud, the easiest way is to launch your game with XIVLanucher
+## Plugin Settings
 
-[XIVLanucher](https://goatcorp.github.io/)  [XIVLanucher CN](https://ottercorp.github.io/)
+You can open the DutyPusher settings page in one of the following ways:
 
-## Device Setting
+1. Click the DutyPusher settings button in the Plugin Center.
+2. Enter the `/dutypusher` command in the game.
 
-You can open the setting page of the DutyPusher by click the DutyPusher's setting button in plugin center or input the command /dutypusher in game
+![Plugin Settings](https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/settings-en.png?raw=true)
 
-Until now, the DutyPusher supported two push channel: **Bark** and **PushDeer**. And for this time, both of these channels only support iOS/iPadOS/macOS.
+First, select the push channel you want to use from the dropdown menu.
 
-GitHub Repo： [Bark](https://github.com/Finb/Bark) [PushDeer](https://github.com/easychen/pushdeer)
+Then, fill in the required Token/URL/Key for the selected push channel, enable the plugin, and save the settings to start using it.
 
-**PLEASE DON'T SEND ANY ISSUE TO Bark/PushDeer WHEN YOU HAVE ANY PROBLEM WHEN YOU'RE USING DutyPusher!!!!!!**
+After configuring the push channel, you can check the activation status of DutyPusher in the **DTR Bar** at the top-right corner of the game’s main interface. Click the status icon to toggle it on or off.
 
-**PLEASE DON'T SEND YOUR CHANNEL URL OR CHANNEL KEY TO ANYONE!!!!!!**
+![DTRBar](https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/dtrbar-en.png?raw=true)
 
-### Bark Setting
+## Push Channel Configuration
 
-Please search Bark in App Store and install it
+Currently, DutyPusher supports the following push channels: **Bark**, **PushDeer**, and **Telegram Bot Official API**.
 
-Open the Bark and click the register first, and give Bart the notification access
+**If you would like to add support for a new platform, please submit an Issue to this repository.**
 
-Open the setting page of the DutyPusher, select Push Channel to Bark
+Repo Links: [Bark](https://github.com/Finb/Bark) | [PushDeer](https://github.com/easychen/pushdeer)
 
-![Bark](https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/bark.jpg?raw=true)
+Telegram Bot: [Telegram Bot API](https://core.telegram.org/bots/api)
 
-Copy the first URL in Bark to the Channel URL/KEY in DutyPusher, and click save button
+**If you encounter any issues while using this plugin, please do not send feedback to any push channel/platform.**
 
-> Option Config
+**Do not share your channel URL/Key with anyone!**
+
+### Bark Configuration
+
+Search for **Bark** in the App Store and install it.
+
+Open the Bark app, click **Register Device**, and allow it to send notifications.
+
+![Bark Interface](https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/bark-en.jpg?raw=true)
+
+Copy the first URL in Bark and paste it into the Channel URL/Key field in the DutyPusher settings. Click **Save** to start using it.
+
+> Optional Configurations
 >
-> You can active the Time Sensitive, you can receive the push even when your device in a Focus mode 
->
-> You can click the View All Rings in Bark and import [This Ring](https://github.com/MorCherlf/FFXIVDutyPusher/raw/master/Resources/ff14.caf), please rename it to ff14.caf before you import it
+> - You can enable **Time Sensitive Notifications** in the plugin settings to receive push notifications even when your device is in Focus Mode.
+> - In Bark, click **View All Sounds** and import this [Duty Sound](https://github.com/MorCherlf/FFXIVDutyPusher/raw/master/Resources/ff14.caf). Make sure to rename the file to `ff14.caf` before importing it.
 
-### PushDeer Setting
+### PushDeer Configuration
 
 iOS/iPadOS (14+)
 
-You can use your system camera to scan this App Clip Code to use PushDeer
+Use your system camera to scan the App Clip Code below to start using PushDeer.
 
-![enter image description here](https://github.com/easychen/pushdeer/raw/main/doc/image/clipcode.png)
+![App Clip Code](https://github.com/easychen/pushdeer/raw/main/doc/image/clipcode.png)
 
-Or you can search PushDeer in App Store and install it
+Alternatively, search for **PushDeer** in the App Store and install it.
 
-![PushDeerDevice](https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/pushdeer-device.jpg?raw=true)
+![PushDeer Device Interface](https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/pushdeer-device-en.png?raw=true)
 
-Open the PushDeer and click the + button in the label Device first, and give PushDeer the notification access
+Open the PushDeer app, go to the **Devices** tab, click the plus (+) button in the top-right corner, and allow it to send notifications.
 
-Open the setting page of the DutyPusher, select Push Channel to PushDeer
+![PushDeer Key Interface](https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/pushdeer-key-en.jpg?raw=true)
 
-![PushDeerKey](https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/pushdeer-key.jpg?raw=true)
+Go to the **Key** tab in PushDeer, copy your key, and paste it into the Channel URL/Key field in the DutyPusher settings. Click **Save** to start using it.
 
-Click the Key Label in PushDeer, and copy your key to the Channel URL/KEY in DutyPusher, and click save button
+### Telegram Bot Official API Configuration
+
+Official Documentation: [Telegram Bot API](https://core.telegram.org/bots#how-do-i-create-a-bot)
+
+**The following steps may change at any time. Please refer to the official Telegram documentation for the latest instructions.**
+
+#### Creating a Bot
+
+1. Use your Telegram account to send the `/start` command to [@BotFather](https://t.me/botfather).
+2. Then send the `/newbot` command and follow the instructions to set a name and username for your bot.
+3. You will receive detailed information about your bot, including a link to your bot (starting with `t.me/`) and a token (starting with numbers: `0000000000:xxxxxxxxxxxxxxxxxxxxxxxxxxxx`).
+
+#### Plugin Settings
+
+![Telegram Settings](https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/settings-en-telegram.png?raw=true)
+
+1. Send the `/start` command to your newly created bot in Telegram.
+2. Copy the token provided by BotFather and paste it into the Token field in the DutyPusher settings. Click **Get Chat ID** and wait for the Chat ID to be automatically filled.
+3. Once the Chat ID is retrieved, click **Test** to confirm that you can receive a message from your bot in Telegram. If everything works, click **Save** to start using it.
+
+> [!TIP]
+>
+> If the plugin cannot automatically retrieve your Chat ID, try the following steps:
+>
+> 1. Ensure the token is entered correctly.
+> 2. Send any message to your bot and try retrieving the Chat ID again.
+>
+> If the above steps do not work:
+>
+> 1. Open your browser and visit the following URL:
+>    `https://api.telegram.org/bot$YOUR_BOT_TOKEN_HERE/getUpdates`
+>    Note: Replace `$YOUR_BOT_TOKEN_HERE` with your bot token.
+> 2. Locate the `message` -> `chat` -> `id` field in the JSON response and copy it into the Chat ID field in the plugin settings.
+
+---
+
+## Frequently Asked Questions (FAQ)
+
+- **Q: Why am I not receiving push notifications?**
+  A: Please check if the push channel is configured correctly and ensure that your device allows notifications.
+
+- **Q: How do I uninstall the plugin?**
+  A: Find DutyPusher in the Plugin Center, disable it, and then click the **Delete** button.
+
+- **Q: Can you add support for [X] push channel?**
+  A: Please submit an Issue to this repository with the push channel name/platform, and we will try to add it to the plugin.
+
+
+
+---
+
+
 
 # 狒狒排本小助手
 
+![Logo](https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/icon.png?raw=true)
+
+Dalamud中下载量: ![Downloads](https://img.shields.io/badge/downloads-95-brightgreen)
+
 这是一个**最终幻想14**的Dalamud(卫月)插件
 
-可以当游戏内任务器搜索到任务时，给您的设备发送一则通知
+当您启用此插件并配置好推送通道后，游戏内任务器搜索到任务时，此插件将会通过配置好的推送通道向您的设备发送一则通知
 
 ## 注意事项
 
-**请不要使用来源不明的仓库链接及插件，可能会损害您的账号财产安全！！！**
+**为了保障您的账号安全，请避免使用来源不明的仓库链接及插件。**
 
-**任何第三方插件都可能导致您的账号遭到封禁，请您使用前知悉！！！**
+**任何第三方插件都可能导致您的账号遭到封禁，请您使用前知悉**
 
-**不要将您的插件配置文件发送给任何人，如因此造成的损失，请您自己承担！！！**
+**不要将您的插件配置文件发送给任何人，如因此造成的损失，请您自己承担**
 
-**在使用本插件过程中遇到了问题，请不要向Dalamud发送反馈！！！**
+**在使用本插件过程中遇到了问题，请不要向Dalamud发送反馈**
 
-首先请你确认是否已使用Dalamud 
+## 插件设置
 
-如需使用Dalamud，最简单的方法是使用XIVLanucher启动游戏
+您可以通过以下两种方式打开DutyPusher的设置页面：
 
-[XIVLanucher](https://goatcorp.github.io/)  [XIVLanucher CN](https://ottercorp.github.io/)
+1. 在插件中心点击DutyPusher的设置按钮。
+2. 在游戏内输入`/dutypusher`指令。
 
-## 手机配置
+![插件设置](https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/settings-zh-cn.png?raw=true)
 
-在插件中心点击DutyPusher的设置按钮或是在游戏内输入/dutypusher指令均可打开DutyPusher的设置页面
+首先，在下拉菜单中选择你想使用的推送渠道
 
-目前狒狒排本小助手支持**Bark**和**PushDeer**两个推送渠道，其两者日前均仅支持iOS/iPadOS/macOS端
+然后在下方填写该推送渠道所需的Token/URL/Key等内容，勾选启用并保存就可以开始使用了
 
-Github 链接： [Bark](https://github.com/Finb/Bark) [PushDeer](https://github.com/easychen/pushdeer)
+配置好推送渠道后，您可以在游戏主页面右上方的**DTR Bar**中查看狒狒排本小助手的启用状态。点击状态图标即可切换启用或禁用状态。
 
-**在使用本插件过程中遇到了问题，请不要向Bark/PushDeer发送反馈！！！**
+![DTRBar](https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/dtrbar-en.png?raw=true)
 
-**请不要把您的渠道URL/Key泄露给任何人！！！**
+## 推送通道配置
+
+目前狒狒排本小助手支持**Bark**，**PushDeer**，和**Telegram Bot 官方API**推送渠道
+
+**如果想要增加某一平台的推送渠道，可以向此仓库提交Issue**
+
+Repo 链接： [Bark](https://github.com/Finb/Bark) [PushDeer](https://github.com/easychen/pushdeer)
+
+Telegram Bot：[Telegram Bot API](https://core.telegram.org/bots/api)
+
+**在使用本插件过程中遇到了问题，请不要向任一推送渠道/平台发送反馈**
+
+**请不要把您的渠道URL/Key泄露给任何人！**
 
 ### Bark配置
 
 请在App Store中搜索Bark并安装 
 
-打开Bark后首先请点击注册设备，并允许其发送通知
-
-打开DutyPusher的设置页面，推送渠道选择Bark
+打开Bark应用后，首先点击**注册设备**，并允许其发送通知。
 
 ![Bark界面](https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/bark.jpg?raw=true)
 
@@ -120,9 +198,8 @@ Github 链接： [Bark](https://github.com/Finb/Bark) [PushDeer](https://github.
 
 > 可选配置
 >
-> 可以勾选时效通知，即使在您的设备开启专注模式后仍会收到推送
->
-> 可以在Bark中点击**查看所有铃声**并导入[排本音效](https://github.com/MorCherlf/FFXIVDutyPusher/raw/master/Resources/ff14.caf)，请将铃声命名为ff14.caf后导入
+> - 您可以在插件设置中勾选上时效通知，这样即使在您的设备开启专注模式时仍会收到排本推送
+> - 您可以在Bark中点击**查看所有铃声**，然后导入此[排本音效](https://github.com/MorCherlf/FFXIVDutyPusher/raw/master/Resources/ff14.caf)。请确保将铃声文件命名为`ff14.caf`后再导入。
 
 ### PushDeer配置
 
@@ -136,10 +213,55 @@ iOS/iPadOS (14+)
 
 ![PushDeer设备界面](https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/pushdeer-device.jpg?raw=true)
 
-打开PushDeer后首先请在设备选项卡中点击右上角加号，并允许其发送通知
-
-打开DutyPusher的设置页面，推送渠道选择PushDeer
+打开PushDeer应用后，首先进入**设备**选项卡，点击右上角的加号（+）按钮，并允许其发送通知。
 
 ![PushDeerKey界面](https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/pushdeer-key.jpg?raw=true)
 
-点击PushDeer选项卡Key，将您的Key复制并粘贴到DutyPusher插件设置中的渠道URL/Key中，点击保存即可开始使用
+点击PushDeer选项卡Key，将您的Key复制并粘贴到插件设置中的渠道URL/Key中，点击保存即可开始使用
+
+
+
+### Telegram Bot Official API 配置
+
+官方参考说明：[Telegram Bot API 文档](https://core.telegram.org/bots#how-do-i-create-a-bot)
+
+**以下步骤可能随时会更改，请以Telegram 官方说明为准**
+
+#### 创建Bot
+
+1. 使用你的Telegram 账号向 [@BotFather](https://t.me/botfather) 发送`/start`指令
+2. 然后再向其发送`/newbot`指令，根据其提示给你的Bot设置名字和username
+3. 接下来你将收到关于你的Bot的详细信息，其中包含一个指向你创建的Bot的链接`以t.me/开头`，一串以数字开头的Token`0000000000:xxxxxxxxxxxxxxxxxxxxxxxxxxxx`
+
+#### 插件设置
+
+![Telegram设置](https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/settings-zh-cn-telegram.png?raw=true)
+
+1. 在Telegram中向你刚刚创建的Bot发送`/start`指令
+2. 将BotFather发送的Token复制并粘贴到插件设置中的Token中，点击`获取 ChatID`后，等待Chat ID 中自动填充你的Chat ID
+3. 当自动获取到Chat ID后，点击`测试`，确认是否能在你的Telegram账号中接收到来自你刚刚创建的Bot的消息，如果一切正常点击保存后即可开始使用
+
+> [!TIP]
+>
+> 如果插件无法自动获取到您的Chat ID，请尝试以下步骤：
+>
+> 1. 确认Token填写正确
+> 2. 向你创建的Bot发送任一消息后，再次尝试获取
+>
+> 如果以上步骤均无效：
+>
+> 1. 打开浏览器访问以下URL：
+>     `https://api.telegram.org/bot$YOUR_BOT_TOKEN_HERE/getUpdates`
+>     注意：请将`$YOUR_BOT_TOKEN_HERE`替换为您的Bot Token。
+> 2. 查看获取到的JSON文本，定位到`message`-`chat`-`id`，并将其复制到插件设置中的Chat ID中即可
+
+------
+
+## 常见问题（FAQ）
+
+- **Q：为什么我收不到推送通知？**
+  A：请检查推送渠道的配置是否正确，并确保您的设备已允许接收通知
+- **Q：如何卸载插件？**
+  A：在插件中心找到DutyPusher，禁用插件后点击删除按钮即可
+- **Q：能不能添加xx推送渠道？**
+  A：请在此Repo中提交Issue，请提供推送渠道名称/平台，我会尝试将其添加到插件中

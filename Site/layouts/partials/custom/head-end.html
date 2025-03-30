@@ -1,0 +1,42 @@
+<script>
+  (function() {
+    // 检查是否已经执行过跳转
+    if (sessionStorage.getItem('languageRedirectExecuted')) {
+      console.log('Language redirect already executed.');
+      return;
+    }
+
+    // 标记跳转已执行
+    sessionStorage.setItem('languageRedirectExecuted', true);
+
+    var preferredLanguage = navigator.language || navigator.userLanguage;
+    var supportedLanguages = ['en', 'zh-cn', 'zh-CN', 'de', 'es', 'fr', 'it', 'ja', 'ko', 'nor', 'ru', 'tw'];
+    var defaultLanguage = 'en';
+
+    // 检查当前路径是否已经是目标语言路径
+    var currentPath = window.location.pathname;
+    var isAlreadyOnTargetLanguage = supportedLanguages.some(function(lang) {
+      return currentPath.startsWith('/' + lang + '/');
+    });
+
+    // 如果当前路径已经是目标语言路径，不再重定向
+    if (isAlreadyOnTargetLanguage) {
+      console.log('Already on target language:', currentPath);
+      return;
+    }
+
+    // 检查浏览器语言是否在支持的语言列表中（忽略大小写）
+    var language = supportedLanguages.find(function(lang) {
+      return preferredLanguage.toLowerCase().startsWith(lang.toLowerCase());
+    });
+
+    console.log('Preferred language:', preferredLanguage);
+    console.log('Matched language:', language);
+
+    // 如果找到匹配的语言，重定向到对应的语言页面
+    if (language && language !== defaultLanguage) {
+      console.log('Redirecting to:', '/' + language.toLowerCase() + '/');
+      window.location.href = '/' + language.toLowerCase() + '/';
+    }
+  })();
+</script>
