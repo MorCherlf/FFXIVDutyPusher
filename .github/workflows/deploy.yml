@@ -3,7 +3,9 @@ name: Deploy Hugo Site to GitHub Pages
 on:
   push:
     branches:
-      - master
+      - master  
+    paths:
+      - 'Site/**'
 
 jobs:
   deploy:
