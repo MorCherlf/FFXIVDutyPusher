@@ -320,7 +320,7 @@ params:
 
   editURL:
     enable: true
-    base: "https://github.com/MorCherlf/FFXIVDutyPusher/edit/main/Site/content"
+    base: "https://github.com/MorCherlf/FFXIVDutyPusher/edit/master/Site/content"
 
   blog:
     list:
