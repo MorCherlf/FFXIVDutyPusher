@@ -1,0 +1,146 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DutyPusher – DutyPusher</title><link>https://MorCherlf.github.io/FFXIVDutyPusher/ru/</link><description>Recent content on DutyPusher</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 30 Mar 2025 11:27:53 +0300</lastBuildDate><atom:link href="https://MorCherlf.github.io/FFXIVDutyPusher/ru/index.xml" rel="self" type="application/rss+xml"/><item><title>О проекте</title><link>https://MorCherlf.github.io/FFXIVDutyPusher/ru/about/</link><pubDate>Sun, 30 Mar 2025 11:27:58 +0300</pubDate><guid>https://MorCherlf.github.io/FFXIVDutyPusher/ru/about/</guid><description>
+&lt;h2>О DutyPusher&lt;span class="hx-absolute -hx-mt-20" id="о-dutypusher">&lt;/span>
+&lt;a href="#%d0%be-dutypusher" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>DutyPusher — это открытый плагин для Dalamud, разработанный MorCherlf для &lt;em>Final Fantasy XIV&lt;/em> (FFXIV). Он призван помочь игрокам расслабиться вдали от компьютера, ожидая своей очереди на подземелья. Используя несколько расширяемых каналов уведомлений, игроки могут получать мгновенные оповещения, когда их очередь подходит, чтобы не пропустить вход в подземелье.&lt;/p>
+&lt;p>&lt;strong>Основные функции&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Поддержка нескольких каналов уведомлений&lt;/strong>: В настоящее время поддерживаются официальные API Bark, PushDeer и Telegram Bot, с планами расширения на большее количество каналов в будущем.&lt;/li>
+&lt;li>&lt;strong>Мгновенные уведомления&lt;/strong>: Когда ваша очередь на подземелье подходит, DutyPusher сразу же отправляет уведомление на ваше устройство.&lt;/li>
+&lt;li>&lt;strong>Простота в использовании&lt;/strong>: Простая настройка позволяет начать использование сразу же.&lt;/li>
+&lt;li>&lt;strong>Настраиваемые опции&lt;/strong>: Поддерживает пользовательские звуки уведомлений и мгновенные уведомления (Bark).&lt;/li>
+&lt;li>&lt;strong>Полностью открытый код&lt;/strong>: DutyPusher полностью открыт. Вы можете создать свою собственную версию или отправить Pull Request нам.&lt;/li>
+&lt;li>&lt;strong>Максимальная безопасность&lt;/strong>: DutyPusher не взаимодействует с игровым сервером и не изменяет/управляет игрой напрямую. За исключением отправки уведомлений, которые требуют сетевых запросов к серверам соответствующих каналов уведомлений, плагин не собирает, не записывает и не хранит никакой информации.&lt;/li>
+&lt;/ul>
+&lt;h2>О разработчике&lt;span class="hx-absolute -hx-mt-20" id="о-разработчике">&lt;/span>
+&lt;a href="#%d0%be-%d1%80%d0%b0%d0%b7%d1%80%d0%b0%d0%b1%d0%be%d1%82%d1%87%d0%b8%d0%ba%d0%b5" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>Привет, я &lt;a href="https://link.mor.icu" target="_blank" rel="noopener">MorCherlf&lt;/a>. Я программист, геймер, любитель музыки, фурри и многое другое…&lt;/p>
+&lt;p>Это мой первый плагин для Dalamud. Если у вас есть предложения или вопросы, не стесняйтесь отправить Issue или Pull Request на &lt;a href="https://github.com/MorCherlf/FFXIVDutyPusher" target="_blank" rel="noopener">GitHub&lt;/a>.&lt;/p>
+&lt;p>Если у вас есть вопросы, вы также можете связаться со мной по &lt;a href="mailto:morcherlfy@outlook.com" >электронной почте&lt;/a>.&lt;/p>
+&lt;h2>Авторские права и отказ от ответственности&lt;span class="hx-absolute -hx-mt-20" id="авторские-права-и-отказ-от-ответственности">&lt;/span>
+&lt;a href="#%d0%b0%d0%b2%d1%82%d0%be%d1%80%d1%81%d0%ba%d0%b8%d0%b5-%d0%bf%d1%80%d0%b0%d0%b2%d0%b0-%d0%b8-%d0%be%d1%82%d0%ba%d0%b0%d0%b7-%d0%be%d1%82-%d0%be%d1%82%d0%b2%d0%b5%d1%82%d1%81%d1%82%d0%b2%d0%b5%d0%bd%d0%bd%d0%be%d1%81%d1%82%d0%b8" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>Уведомление об авторских правах&lt;span class="hx-absolute -hx-mt-20" id="уведомление-об-авторских-правах">&lt;/span>
+&lt;a href="#%d1%83%d0%b2%d0%b5%d0%b4%d0%be%d0%bc%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5-%d0%be%d0%b1-%d0%b0%d0%b2%d1%82%d0%be%d1%80%d1%81%d0%ba%d0%b8%d1%85-%d0%bf%d1%80%d0%b0%d0%b2%d0%b0%d1%85" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Открытая лицензия&lt;/strong>
+Этот плагин распространяется под лицензией &lt;a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" rel="noopener">AGPL-3.0&lt;/a>. Вы можете свободно использовать, изменять и распространять этот плагин при условии соблюдения условий лицензии AGPL-3.0.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Генерация сайта и тема&lt;/strong>
+Этот сайт создан с помощью &lt;a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo&lt;/a>, а тема основана на &lt;a href="https://github.com/imfing/hextra" target="_blank" rel="noopener">hextra&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Каналы уведомлений&lt;/strong>
+Каналы уведомлений, используемые этим плагином, предоставляются соответствующими платформами/провайдерами услуг, включая, но не ограничиваясь, Bark, PushDeer и Telegram Bot. Эти платформы/провайдеры сохраняют независимые права на интеллектуальную собственность и ответственность за свои услуги.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Товарный знак FINAL FANTASY&lt;/strong>
+FINAL FANTASY является зарегистрированным товарным знаком Square Enix Holdings Co., Ltd. FINAL FANTASY XIV © 2010-2022 SQUARE ENIX CO., LTD. Все права защищены.
+&lt;strong>Мы не связаны с SQUARE ENIX CO., LTD.&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3>Отказ от ответственности&lt;span class="hx-absolute -hx-mt-20" id="отказ-от-ответственности">&lt;/span>
+&lt;a href="#%d0%be%d1%82%d0%ba%d0%b0%d0%b7-%d0%be%d1%82-%d0%be%d1%82%d0%b2%d0%b5%d1%82%d1%81%d1%82%d0%b2%d0%b5%d0%bd%d0%bd%d0%be%d1%81%d1%82%d0%b8" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Риски использования плагина&lt;/strong>
+Используя этот плагин, вы признаете и соглашаетесь с Условиями обслуживания &lt;em>Final Fantasy XIV&lt;/em> (FFXIV).
+Обратите внимание, что технически этот плагин может нарушать Условия обслуживания FFXIV, даже если мы не выполняем никаких автоматизированных операций или изменений в игре.
+Вы принимаете на себя все риски, связанные с использованием этого плагина, включая, но не ограничиваясь, блокировкой аккаунта, потерей данных или другими последствиями.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Ограничение ответственности&lt;/strong>
+Разработчики и участники этого плагина не несут ответственности за любые прямые или косвенные убытки, возникшие в результате использования этого плагина, включая, но не ограничиваясь, блокировкой аккаунта, потерей данных, повреждением устройств или другими юридическими или финансовыми обязательствами.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Использование на свой страх и риск&lt;/strong>
+Используя этот плагин, вы признаете и принимаете указанные выше риски и соглашаетесь нести все возможные последствия. Мы рекомендуем использовать плагин с осторожностью и соблюдать Условия обслуживания FFXIV.&lt;/p>
+&lt;/li>
+&lt;/ol></description></item><item><title>Руководство по настройке</title><link>https://MorCherlf.github.io/FFXIVDutyPusher/ru/docs/</link><pubDate>Sun, 30 Mar 2025 11:27:58 +0300</pubDate><guid>https://MorCherlf.github.io/FFXIVDutyPusher/ru/docs/</guid><description>
+&lt;h2>Настройки плагина&lt;span class="hx-absolute -hx-mt-20" id="настройки-плагина">&lt;/span>
+&lt;a href="#%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b8-%d0%bf%d0%bb%d0%b0%d0%b3%d0%b8%d0%bd%d0%b0" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>Вы можете открыть страницу настроек DutyPusher одним из следующих способов:&lt;/p>
+&lt;ol>
+&lt;li>Нажмите кнопку настроек DutyPusher в центре плагинов.&lt;/li>
+&lt;li>Введите команду &lt;code>/dutypusher&lt;/code> в игре.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/settings-ru.png?raw=true" alt="Настройки плагина" loading="lazy" />&lt;/p>
+&lt;p>Сначала выберите канал уведомлений, который вы хотите использовать, из выпадающего меню.&lt;/p>
+&lt;p>Затем заполните необходимый Token/URL/Key для выбранного канала уведомлений, активируйте плагин и сохраните настройки, чтобы начать его использование.&lt;/p>
+&lt;p>После настройки канала уведомлений вы можете проверить статус активации DutyPusher в &lt;strong>DTR Bar&lt;/strong> в верхнем правом углу основного интерфейса игры. Нажмите на значок статуса, чтобы включить или выключить его.&lt;/p>
+&lt;p>&lt;img src="https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/dtrbar-ru.png?raw=true" alt="DTRBar" loading="lazy" />&lt;/p>
+&lt;h2>Настройка каналов уведомлений&lt;span class="hx-absolute -hx-mt-20" id="настройка-каналов-уведомлений">&lt;/span>
+&lt;a href="#%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%ba%d0%b0%d0%bd%d0%b0%d0%bb%d0%be%d0%b2-%d1%83%d0%b2%d0%b5%d0%b4%d0%be%d0%bc%d0%bb%d0%b5%d0%bd%d0%b8%d0%b9" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>В настоящее время DutyPusher поддерживает следующие каналы уведомлений: &lt;strong>Bark&lt;/strong>, &lt;strong>PushDeer&lt;/strong> и &lt;strong>Официальный API Telegram Bot&lt;/strong>.&lt;/p>
+&lt;p>&lt;strong>Если вы хотите добавить поддержку новой платформы, пожалуйста, отправьте Issue в этот репозиторий.&lt;/strong>&lt;/p>
+&lt;p>Ссылки на репозитории: &lt;a href="https://github.com/Finb/Bark" target="_blank" rel="noopener">Bark&lt;/a> | &lt;a href="https://github.com/easychen/pushdeer" target="_blank" rel="noopener">PushDeer&lt;/a>&lt;/p>
+&lt;p>Telegram Bot: &lt;a href="https://core.telegram.org/bots/api" target="_blank" rel="noopener">Telegram Bot API&lt;/a>&lt;/p>
+&lt;p>&lt;strong>Если вы столкнулись с проблемами при использовании этого плагина, пожалуйста, не отправляйте отзывы на любой канал уведомлений/платформу.&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>Не делитесь своим URL/Key канала с кем-либо!&lt;/strong>&lt;/p>
+&lt;h3>Настройка Bark&lt;span class="hx-absolute -hx-mt-20" id="настройка-bark">&lt;/span>
+&lt;a href="#%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-bark" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>Найдите &lt;strong>Bark&lt;/strong> в App Store и установите его.&lt;/p>
+&lt;p>Откройте приложение Bark, нажмите &lt;strong>Register Device&lt;/strong> и разрешите отправку уведомлений.&lt;/p>
+&lt;p>&lt;img src="https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/bark-en.jpg?raw=true" alt="Интерфейс Bark" loading="lazy" />&lt;/p>
+&lt;p>Скопируйте первый URL в Bark и вставьте его в поле Channel URL/Key в настройках DutyPusher. Нажмите &lt;strong>Сохранить&lt;/strong>, чтобы начать использование.&lt;/p>
+&lt;blockquote>
+&lt;p>Дополнительные настройки&lt;/p>
+&lt;ul>
+&lt;li>Вы можете включить &lt;strong>Срочные уведомления&lt;/strong> в настройках плагина, чтобы получать push-уведомления, даже если ваше устройство находится в режиме &amp;ldquo;Не беспокоить&amp;rdquo;.&lt;/li>
+&lt;li>В Bark нажмите &lt;strong>View All Sounds&lt;/strong> и импортируйте этот &lt;a href="https://github.com/MorCherlf/FFXIVDutyPusher/raw/master/Resources/ff14.caf" target="_blank" rel="noopener">Звук Duty&lt;/a>. Убедитесь, что переименовали файл в &lt;code>ff14.caf&lt;/code> перед импортом.&lt;/li>
+&lt;/ul>
+&lt;/blockquote>
+&lt;h3>Настройка PushDeer&lt;span class="hx-absolute -hx-mt-20" id="настройка-pushdeer">&lt;/span>
+&lt;a href="#%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-pushdeer" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>iOS/iPadOS (14+)&lt;/p>
+&lt;p>Используйте камеру вашего устройства, чтобы отсканировать App Clip Code ниже, чтобы начать использование PushDeer.&lt;/p>
+&lt;p>&lt;img src="https://github.com/easychen/pushdeer/raw/main/doc/image/clipcode.png" alt="App Clip Code" loading="lazy" />&lt;/p>
+&lt;p>Либо найдите &lt;strong>PushDeer&lt;/strong> в App Store и установите его.&lt;/p>
+&lt;p>&lt;img src="https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/pushdeer-device-en.png?raw=true" alt="Интерфейс устройства PushDeer" loading="lazy" />&lt;/p>
+&lt;p>Откройте приложение PushDeer, перейдите на вкладку &lt;strong>Devices&lt;/strong>, нажмите на плюс (+) в верхнем правом углу и разрешите отправку уведомлений.&lt;/p>
+&lt;p>&lt;img src="https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/pushdeer-key-en.jpg?raw=true" alt="Интерфейс ключа PushDeer" loading="lazy" />&lt;/p>
+&lt;p>Перейдите на вкладку &lt;strong>Key&lt;/strong> в PushDeer, скопируйте ваш ключ и вставьте его в поле Channel URL/Key в настройках DutyPusher. Нажмите &lt;strong>Сохранить&lt;/strong>, чтобы начать использование.&lt;/p>
+&lt;h3>Настройка Официального API Telegram Bot&lt;span class="hx-absolute -hx-mt-20" id="настройка-официального-api-telegram-bot">&lt;/span>
+&lt;a href="#%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%be%d1%84%d0%b8%d1%86%d0%b8%d0%b0%d0%bb%d1%8c%d0%bd%d0%be%d0%b3%d0%be-api-telegram-bot" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>Официальная документация: &lt;a href="https://core.telegram.org/bots#how-do-i-create-a-bot" target="_blank" rel="noopener">Telegram Bot API&lt;/a>&lt;/p>
+&lt;p>&lt;strong>Следующие шаги могут измениться в любое время. Пожалуйста, обратитесь к официальной документации Telegram для получения актуальных инструкций.&lt;/strong>&lt;/p>
+&lt;h4>Создание бота&lt;span class="hx-absolute -hx-mt-20" id="создание-бота">&lt;/span>
+&lt;a href="#%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b1%d0%be%d1%82%d0%b0" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;ol>
+&lt;li>Используйте ваш аккаунт Telegram, чтобы отправить команду &lt;code>/start&lt;/code> &lt;a href="https://t.me/botfather" target="_blank" rel="noopener">@BotFather&lt;/a>.&lt;/li>
+&lt;li>Затем отправьте команду `/newbot** и следуйте инструкциям, чтобы задать имя и username для вашего бота.&lt;/li>
+&lt;li>Вы получите подробную информацию о вашем боте, включая ссылку на бота (начинающуюся с &lt;code>t.me/&lt;/code>) и токен (начинающийся с цифр: &lt;code>0000000000:xxxxxxxxxxxxxxxxxxxxxxxxxxxx&lt;/code>).&lt;/li>
+&lt;/ol>
+&lt;h4>Настройки плагина&lt;span class="hx-absolute -hx-mt-20" id="настройки-плагина-1">&lt;/span>
+&lt;a href="#%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b8-%d0%bf%d0%bb%d0%b0%d0%b3%d0%b8%d0%bd%d0%b0-1" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>&lt;img src="https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/settings-ru-telegram.png?raw=true" alt="Настройки Telegram" loading="lazy" />&lt;/p>
+&lt;ol>
+&lt;li>Отправьте команду &lt;code>/start&lt;/code> вашему новому боту в Telegram.&lt;/li>
+&lt;li>Скопируйте токен, предоставленный BotFather, и вставьте его в поле Token в настройках DutyPusher. Нажмите &lt;strong>Получить Chat ID&lt;/strong> и дождитесь автоматического заполнения Chat ID.&lt;/li>
+&lt;li>После получения Chat ID нажмите &lt;strong>Тест&lt;/strong>, чтобы убедиться, что вы можете получить сообщение от вашего бота в Telegram. Если всё работает, нажмите &lt;strong>Сохранить&lt;/strong>, чтобы начать использование.&lt;/li>
+&lt;/ol>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-flex-col hx-rounded-lg hx-border hx-py-4 hx-px-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-green-200 hx-bg-green-100 hx-text-green-900 dark:hx-border-green-200/30 dark:hx-bg-green-900/30 dark:hx-text-green-200">
+&lt;p class="hx-flex hx-items-center hx-font-medium">&lt;svg height=16px class="hx-inline-block hx-align-middle hx-mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>&lt;/svg>Tip&lt;/p>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">&lt;p>Если плагин не может автоматически получить ваш Chat ID, попробуйте следующие шаги:&lt;/p>
+&lt;ol>
+&lt;li>Убедитесь, что токен введён правильно.&lt;/li>
+&lt;li>Отправьте любое сообщение вашему боту и попробуйте получить Chat ID снова.&lt;/li>
+&lt;/ol>
+&lt;p>Если вышеуказанные шаги не работают:&lt;/p>
+&lt;ol>
+&lt;li>Откройте ваш браузер и перейдите по следующему URL:
+&lt;code>https://api.telegram.org/bot$YOUR_BOT_TOKEN_HERE/getUpdates&lt;/code>
+Примечание: Замените &lt;code>$YOUR_BOT_TOKEN_HERE&lt;/code> на ваш токен бота.&lt;/li>
+&lt;li>Найдите поле &lt;code>message&lt;/code> -&amp;gt; &lt;code>chat&lt;/code> -&amp;gt; &lt;code>id&lt;/code> в JSON-ответе и скопируйте его в поле Chat ID в настройках плагина.&lt;/li>
+&lt;/ol>&lt;/div>
+&lt;/div>
+&lt;/div></description></item><item><title>Часто задаваемые вопросы (FAQ)</title><link>https://MorCherlf.github.io/FFXIVDutyPusher/ru/faq/</link><pubDate>Sun, 30 Mar 2025 11:27:58 +0300</pubDate><guid>https://MorCherlf.github.io/FFXIVDutyPusher/ru/faq/</guid><description>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Вопрос: Почему я не получаю push-уведомления?&lt;/strong>&lt;/p>
+&lt;p>Ответ: Пожалуйста, проверьте, правильно ли настроен канал уведомлений, и убедитесь, что ваше устройство разрешает получение уведомлений.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Вопрос: Как удалить плагин?&lt;/strong>&lt;/p>
+&lt;p>Ответ: Найдите DutyPusher в центре плагинов, отключите его, а затем нажмите кнопку &lt;strong>Удалить&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Вопрос: Можете ли вы добавить поддержку [XX] канала уведомлений?&lt;/strong>&lt;/p>
+&lt;p>Ответ: Пожалуйста, отправьте &lt;a href="https://github.com/MorCherlf/FFXIVDutyPusher/issues/new/choose" target="_blank" rel="noopener">Issue&lt;/a> в этот репозиторий с указанием названия канала уведомлений/платформы, и мы постараемся добавить его в плагин.&lt;/p>
+&lt;/li>
+&lt;/ul></description></item></channel></rss>

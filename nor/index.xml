@@ -1,0 +1,146 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DutyPusher – DutyPusher</title><link>https://MorCherlf.github.io/FFXIVDutyPusher/nor/</link><description>Recent content on DutyPusher</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 30 Mar 2025 11:27:53 +0300</lastBuildDate><atom:link href="https://MorCherlf.github.io/FFXIVDutyPusher/nor/index.xml" rel="self" type="application/rss+xml"/><item><title>FAQ</title><link>https://MorCherlf.github.io/FFXIVDutyPusher/nor/faq/</link><pubDate>Sun, 30 Mar 2025 11:27:58 +0300</pubDate><guid>https://MorCherlf.github.io/FFXIVDutyPusher/nor/faq/</guid><description>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Q: Hvorfor mottar jeg ikke push-varsler?&lt;/strong>&lt;/p>
+&lt;p>A: Vennligst sjekk om push-kanalen er konfigurert riktig og forsikre deg om at enheten din tillater varsler.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Q: Hvordan avinstallerer jeg plugginen?&lt;/strong>&lt;/p>
+&lt;p>A: Finn DutyPusher i Plugin-senteret, deaktiver den, og klikk deretter på &lt;strong>Slett&lt;/strong>-knappen.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Q: Kan du legge til støtte for [XX] push-kanal?&lt;/strong>&lt;/p>
+&lt;p>A: Vennligst send inn en &lt;a href="https://github.com/MorCherlf/FFXIVDutyPusher/issues/new/choose" target="_blank" rel="noopener">Issue&lt;/a> til dette repositoryet med navnet på push-kanalen/plattformen, så vil vi prøve å legge den til i plugginen.&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>Installasjonsveiledning</title><link>https://MorCherlf.github.io/FFXIVDutyPusher/nor/docs/</link><pubDate>Sun, 30 Mar 2025 11:27:58 +0300</pubDate><guid>https://MorCherlf.github.io/FFXIVDutyPusher/nor/docs/</guid><description>
+&lt;h2>Pluggin-innstillinger&lt;span class="hx-absolute -hx-mt-20" id="pluggin-innstillinger">&lt;/span>
+&lt;a href="#pluggin-innstillinger" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>Du kan åpne innstillingssiden for DutyPusher på en av følgende måter:&lt;/p>
+&lt;ol>
+&lt;li>Klikk på DutyPusher-innstillingsknappen i Plugin-senteret.&lt;/li>
+&lt;li>Skriv inn kommandoen &lt;code>/dutypusher&lt;/code> i spillet.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/settings-no.png?raw=true" alt="Pluggin-innstillinger" loading="lazy" />&lt;/p>
+&lt;p>Først, velg push-kanalen du ønsker å bruke fra rullegardinmenyen.&lt;/p>
+&lt;p>Deretter, fyll ut den nødvendige Token/URL/Nøkkel for den valgte push-kanalen, aktiver plugginen, og lagre innstillingene for å begynne å bruke den.&lt;/p>
+&lt;p>Etter at du har konfigurert push-kanalen, kan du sjekke aktivitetsstatusen til DutyPusher i &lt;strong>DTR Bar&lt;/strong> øverst til høyre i spillets hovedgrensesnitt. Klikk på statusikonet for å slå den av eller på.&lt;/p>
+&lt;p>&lt;img src="https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/dtrbar-no.png?raw=true" alt="DTRBar" loading="lazy" />&lt;/p>
+&lt;h2>Push-kanal konfigurasjon&lt;span class="hx-absolute -hx-mt-20" id="push-kanal-konfigurasjon">&lt;/span>
+&lt;a href="#push-kanal-konfigurasjon" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>For øyeblikket støtter DutyPusher følgende push-kanaler: &lt;strong>Bark&lt;/strong>, &lt;strong>PushDeer&lt;/strong>, og &lt;strong>Telegram Bot Offisiell API&lt;/strong>.&lt;/p>
+&lt;p>&lt;strong>Hvis du ønsker å legge til støtte for en ny plattform, vennligst send inn en Issue til dette repositoryet.&lt;/strong>&lt;/p>
+&lt;p>Repo-lenker: &lt;a href="https://github.com/Finb/Bark" target="_blank" rel="noopener">Bark&lt;/a> | &lt;a href="https://github.com/easychen/pushdeer" target="_blank" rel="noopener">PushDeer&lt;/a>&lt;/p>
+&lt;p>Telegram Bot: &lt;a href="https://core.telegram.org/bots/api" target="_blank" rel="noopener">Telegram Bot API&lt;/a>&lt;/p>
+&lt;p>&lt;strong>Hvis du opplever problemer mens du bruker denne plugginen, vennligst ikke send tilbakemelding til noen push-kanal/plattform.&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>Del ikke kanal-URL/Nøkkel med noen!&lt;/strong>&lt;/p>
+&lt;h3>Bark konfigurasjon&lt;span class="hx-absolute -hx-mt-20" id="bark-konfigurasjon">&lt;/span>
+&lt;a href="#bark-konfigurasjon" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>Søk etter &lt;strong>Bark&lt;/strong> i App Store og installer den.&lt;/p>
+&lt;p>Åpne Bark-appen, klikk på &lt;strong>Registrer enhet&lt;/strong>, og tillat den å sende varsler.&lt;/p>
+&lt;p>&lt;img src="https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/bark-en.jpg?raw=true" alt="Bark-grensesnitt" loading="lazy" />&lt;/p>
+&lt;p>Kopier den første URL-en i Bark og lim den inn i Kanal-URL/Nøkkel-feltet i DutyPusher-innstillingene. Klikk på &lt;strong>Lagre&lt;/strong> for å begynne å bruke den.&lt;/p>
+&lt;blockquote>
+&lt;p>Valgfrie konfigurasjoner&lt;/p>
+&lt;ul>
+&lt;li>Du kan aktivere &lt;strong>Tidsfølsomme varsler&lt;/strong> i pluggin-innstillingene for å motta push-varsler selv når enheten din er i Fokus-modus.&lt;/li>
+&lt;li>I Bark, klikk på &lt;strong>Vis alle lyder&lt;/strong> og importer denne &lt;a href="https://github.com/MorCherlf/FFXIVDutyPusher/raw/master/Resources/ff14.caf" target="_blank" rel="noopener">Duty-lyden&lt;/a>. Sørg for å omdøpe filen til &lt;code>ff14.caf&lt;/code> før du importerer den.&lt;/li>
+&lt;/ul>
+&lt;/blockquote>
+&lt;h3>PushDeer konfigurasjon&lt;span class="hx-absolute -hx-mt-20" id="pushdeer-konfigurasjon">&lt;/span>
+&lt;a href="#pushdeer-konfigurasjon" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>iOS/iPadOS (14+)&lt;/p>
+&lt;p>Bruk systemkameraet ditt til å skanne App Clip-koden under for å begynne å bruke PushDeer.&lt;/p>
+&lt;p>&lt;img src="https://github.com/easychen/pushdeer/raw/main/doc/image/clipcode.png" alt="App Clip-kode" loading="lazy" />&lt;/p>
+&lt;p>Alternativt, søk etter &lt;strong>PushDeer&lt;/strong> i App Store og installer den.&lt;/p>
+&lt;p>&lt;img src="https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/pushdeer-device-en.png?raw=true" alt="PushDeer enhetsgrensesnitt" loading="lazy" />&lt;/p>
+&lt;p>Åpne PushDeer-appen, gå til &lt;strong>Enheter&lt;/strong>-fanen, klikk på pluss (+) -knappen øverst til høyre, og tillat den å sende varsler.&lt;/p>
+&lt;p>&lt;img src="https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/pushdeer-key-en.jpg?raw=true" alt="PushDeer nøkkelgrensesnitt" loading="lazy" />&lt;/p>
+&lt;p>Gå til &lt;strong>Nøkkel&lt;/strong>-fanen i PushDeer, kopier nøkkelen din, og lim den inn i Kanal-URL/Nøkkel-feltet i DutyPusher-innstillingene. Klikk på &lt;strong>Lagre&lt;/strong> for å begynne å bruke den.&lt;/p>
+&lt;h3>Telegram Bot Offisiell API konfigurasjon&lt;span class="hx-absolute -hx-mt-20" id="telegram-bot-offisiell-api-konfigurasjon">&lt;/span>
+&lt;a href="#telegram-bot-offisiell-api-konfigurasjon" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>Offisiell dokumentasjon: &lt;a href="https://core.telegram.org/bots#how-do-i-create-a-bot" target="_blank" rel="noopener">Telegram Bot API&lt;/a>&lt;/p>
+&lt;p>&lt;strong>Følgende trinn kan endres når som helst. Vennligst se den offisielle Telegram-dokumentasjonen for de siste instruksjonene.&lt;/strong>&lt;/p>
+&lt;h4>Opprette en bot&lt;span class="hx-absolute -hx-mt-20" id="opprette-en-bot">&lt;/span>
+&lt;a href="#opprette-en-bot" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;ol>
+&lt;li>Bruk Telegram-kontoen din til å sende &lt;code>/start&lt;/code>-kommandoen til &lt;a href="https://t.me/botfather" target="_blank" rel="noopener">@BotFather&lt;/a>.&lt;/li>
+&lt;li>Send deretter &lt;code>/newbot&lt;/code>-kommandoen og følg instruksjonene for å sette et navn og brukernavn for boten din.&lt;/li>
+&lt;li>Du vil motta detaljert informasjon om boten din, inkludert en lenke til boten din (starter med &lt;code>t.me/&lt;/code>) og en token (starter med tall: &lt;code>0000000000:xxxxxxxxxxxxxxxxxxxxxxxxxxxx&lt;/code>).&lt;/li>
+&lt;/ol>
+&lt;h4>Pluggin-innstillinger&lt;span class="hx-absolute -hx-mt-20" id="pluggin-innstillinger-1">&lt;/span>
+&lt;a href="#pluggin-innstillinger-1" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>&lt;img src="https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/settings-no-telegram.png?raw=true" alt="Telegram-innstillinger" loading="lazy" />&lt;/p>
+&lt;ol>
+&lt;li>Send &lt;code>/start&lt;/code>-kommandoen til den nylig opprettede boten din i Telegram.&lt;/li>
+&lt;li>Kopier tokenen som ble gitt av BotFather og lim den inn i Token-feltet i DutyPusher-innstillingene. Klikk på &lt;strong>Hent Chat ID&lt;/strong> og vent til Chat ID-en automatisk fylles ut.&lt;/li>
+&lt;li>Når Chat ID-en er hentet, klikk på &lt;strong>Test&lt;/strong> for å bekrefte at du kan motta en melding fra boten din i Telegram. Hvis alt fungerer, klikk på &lt;strong>Lagre&lt;/strong> for å begynne å bruke den.&lt;/li>
+&lt;/ol>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-flex-col hx-rounded-lg hx-border hx-py-4 hx-px-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-green-200 hx-bg-green-100 hx-text-green-900 dark:hx-border-green-200/30 dark:hx-bg-green-900/30 dark:hx-text-green-200">
+&lt;p class="hx-flex hx-items-center hx-font-medium">&lt;svg height=16px class="hx-inline-block hx-align-middle hx-mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>&lt;/svg>Tip&lt;/p>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">&lt;p>Hvis plugginen ikke automatisk kan hente Chat ID-en din, prøv følgende trinn:&lt;/p>
+&lt;ol>
+&lt;li>Sørg for at tokenen er skrevet inn riktig.&lt;/li>
+&lt;li>Send en hvilken som helst melding til boten din og prøv å hente Chat ID-en på nytt.&lt;/li>
+&lt;/ol>
+&lt;p>Hvis trinnene ovenfor ikke fungerer:&lt;/p>
+&lt;ol>
+&lt;li>Åpne nettleseren din og besøk følgende URL:
+&lt;code>https://api.telegram.org/bot$YOUR_BOT_TOKEN_HERE/getUpdates&lt;/code>
+Merk: Erstatt &lt;code>$YOUR_BOT_TOKEN_HERE&lt;/code> med bot-tokenen din.&lt;/li>
+&lt;li>Finn &lt;code>message&lt;/code> -&amp;gt; &lt;code>chat&lt;/code> -&amp;gt; &lt;code>id&lt;/code>-feltet i JSON-svaret og kopier det inn i Chat ID-feltet i pluggin-innstillingene.&lt;/li>
+&lt;/ol>&lt;/div>
+&lt;/div>
+&lt;/div></description></item><item><title>Om</title><link>https://MorCherlf.github.io/FFXIVDutyPusher/nor/about/</link><pubDate>Sun, 30 Mar 2025 11:27:58 +0300</pubDate><guid>https://MorCherlf.github.io/FFXIVDutyPusher/nor/about/</guid><description>
+&lt;h2>Om DutyPusher&lt;span class="hx-absolute -hx-mt-20" id="om-dutypusher">&lt;/span>
+&lt;a href="#om-dutypusher" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>DutyPusher er en open-source Dalamud-plug-in utviklet av MorCherlf for &lt;em>Final Fantasy XIV&lt;/em> (FFXIV). Den har som mål å hjelpe spillere å slappe av bort fra datamaskinen mens de venter i kø til dungeons. Ved å bruke flere utvidbare push-kanaler kan spillere motta umiddelbare varsler når køen deres er klar, noe som sikrer at de ikke går glipp av en dungeon.&lt;/p>
+&lt;p>&lt;strong>Nøkkelfunksjoner&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Støtte for flere push-kanaler&lt;/strong>: Støtter for øyeblikket Bark, PushDeer og Telegram Bot offisielle API-er, med planer om å utvide til flere push-kanaler i fremtiden.&lt;/li>
+&lt;li>&lt;strong>Umiddelbare varsler&lt;/strong>: Når dungeon-køen din er klar, sender DutyPusher umiddelbart et varsel til enheten din.&lt;/li>
+&lt;li>&lt;strong>Enkel å bruke&lt;/strong>: Enkel oppsett gjør det mulig å begynne å bruke den med en gang.&lt;/li>
+&lt;li>&lt;strong>Tilpassbare alternativer&lt;/strong>: Støtter egendefinerte varsellyder og umiddelbare varsler (Bark).&lt;/li>
+&lt;li>&lt;strong>Fullstendig open-source&lt;/strong>: DutyPusher er fullstendig open-source. Du kan lage din egen forgrening eller sende en Pull Request til oss.&lt;/li>
+&lt;li>&lt;strong>Så sikker som mulig&lt;/strong>: DutyPusher samhandler ikke med spillserveren eller endrer/opererer spillet direkte på noen måte. Bortsett fra å sende varsler, som krever nettverksforespørsler til de respektive push-kanalserverne, samler den ikke inn, registrerer eller lagrer noen informasjon.&lt;/li>
+&lt;/ul>
+&lt;h2>Om utvikleren&lt;span class="hx-absolute -hx-mt-20" id="om-utvikleren">&lt;/span>
+&lt;a href="#om-utvikleren" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>Hei, jeg er &lt;a href="https://link.mor.icu" target="_blank" rel="noopener">MorCherlf&lt;/a>. Jeg er en programmerer, gamer, musikkentusiast, Furry og mer…&lt;/p>
+&lt;p>Dette er min første Dalamud-plug-in. Hvis du har noen forslag eller spørsmål, kan du gjerne sende en Issue eller Pull Request på &lt;a href="https://github.com/MorCherlf/FFXIVDutyPusher" target="_blank" rel="noopener">GitHub&lt;/a>.&lt;/p>
+&lt;p>Hvis du har noen spørsmål, kan du også nå meg via &lt;a href="mailto:morcherlfy@outlook.com" >e-post&lt;/a>.&lt;/p>
+&lt;h2>Opphavsrett og ansvarsfraskrivelse&lt;span class="hx-absolute -hx-mt-20" id="opphavsrett-og-ansvarsfraskrivelse">&lt;/span>
+&lt;a href="#opphavsrett-og-ansvarsfraskrivelse" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>Opphavsrettsmerknad&lt;span class="hx-absolute -hx-mt-20" id="opphavsrettsmerknad">&lt;/span>
+&lt;a href="#opphavsrettsmerknad" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Open-source-lisens&lt;/strong>
+Denne plug-inen er open-source under &lt;a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" rel="noopener">AGPL-3.0-lisensen&lt;/a>. Du har frihet til å bruke, endre og distribuere denne plug-inen, forutsatt at du overholder vilkårene i AGPL-3.0-lisensen.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Generering av nettsted og tema&lt;/strong>
+Dette nettstedet er generert av &lt;a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo&lt;/a>, og temaet er basert på &lt;a href="https://github.com/imfing/hextra" target="_blank" rel="noopener">hextra&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Push-kanaler&lt;/strong>
+Push-kanalene som brukes av denne plug-inen, leveres av sine respektive plattformer/tjenesteleverandører, inkludert, men ikke begrenset til, Bark, PushDeer og Telegram Bot. Disse plattformene/tjenesteleverandørene beholder uavhengige intellektuelle eiendomsrettigheter og ansvar for sine tjenester.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>FINAL FANTASY-varemerke&lt;/strong>
+FINAL FANTASY er et registrert varemerke for Square Enix Holdings Co., Ltd. FINAL FANTASY XIV © 2010-2022 SQUARE ENIX CO., LTD. Alle rettigheter forbeholdt.
+&lt;strong>Vi er ikke tilknyttet SQUARE ENIX CO., LTD.&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3>Ansvarsfraskrivelse&lt;span class="hx-absolute -hx-mt-20" id="ansvarsfraskrivelse">&lt;/span>
+&lt;a href="#ansvarsfraskrivelse" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Risiko ved bruk av plug-in&lt;/strong>
+Ved å bruke denne plug-inen erkjenner og godtar du bruksvilkårene for &lt;em>Final Fantasy XIV&lt;/em> (FFXIV).
+Vær oppmerksom på at denne plug-inen teknisk sett kan bryte FFXIVs bruksvilkår, selv om vi ikke utfører noen automatiserte operasjoner eller endringer i spillet.
+Du påtar deg alle risikoer knyttet til bruken av denne plug-inen, inkludert, men ikke begrenset til, kontostans, datatap eller andre konsekvenser.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Begrensning av ansvar&lt;/strong>
+Utviklere og bidragsytere til denne plug-inen er ikke ansvarlige for noen direkte eller indirekte skader som oppstår fra bruken av denne plug-inen, inkludert, men ikke begrenset til, kontostans, datatap, skade på enheter eller andre juridiske eller økonomiske forpliktelser.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Bruk på eget ansvar&lt;/strong>
+Ved å bruke denne plug-inen erkjenner og godtar du risikoene nevnt ovenfor og samtykker i å bære alle mulige konsekvenser. Vi anbefaler å bruke plug-inen med forsiktighet og overholde FFXIVs bruksvilkår.&lt;/p>
+&lt;/li>
+&lt;/ol></description></item></channel></rss>

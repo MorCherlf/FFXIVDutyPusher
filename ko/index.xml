@@ -1,0 +1,146 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DutyPusher – DutyPusher</title><link>https://MorCherlf.github.io/FFXIVDutyPusher/ko/</link><description>Recent content on DutyPusher</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 30 Mar 2025 11:27:53 +0300</lastBuildDate><atom:link href="https://MorCherlf.github.io/FFXIVDutyPusher/ko/index.xml" rel="self" type="application/rss+xml"/><item><title>설정 가이드</title><link>https://MorCherlf.github.io/FFXIVDutyPusher/ko/docs/</link><pubDate>Sun, 30 Mar 2025 11:27:58 +0300</pubDate><guid>https://MorCherlf.github.io/FFXIVDutyPusher/ko/docs/</guid><description>
+&lt;h2>플러그인 설정&lt;span class="hx-absolute -hx-mt-20" id="플러그인-설정">&lt;/span>
+&lt;a href="#%ed%94%8c%eb%9f%ac%ea%b7%b8%ec%9d%b8-%ec%84%a4%ec%a0%95" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>DutyPusher 설정 페이지는 다음 방법 중 하나로 열 수 있습니다:&lt;/p>
+&lt;ol>
+&lt;li>플러그인 센터에서 DutyPusher 설정 버튼을 클릭합니다.&lt;/li>
+&lt;li>게임 내에서 &lt;code>/dutypusher&lt;/code> 명령어를 입력합니다.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/settings-ko.png?raw=true" alt="플러그인 설정" loading="lazy" />&lt;/p>
+&lt;p>먼저, 드롭다운 메뉴에서 사용할 푸시 채널을 선택합니다.&lt;/p>
+&lt;p>그런 다음, 선택한 푸시 채널에 필요한 Token/URL/Key를 입력하고, 플러그인을 활성화한 후 설정을 저장하여 사용을 시작합니다.&lt;/p>
+&lt;p>푸시 채널을 구성한 후, 게임 메인 인터페이스의 오른쪽 상단에 있는 &lt;strong>DTR Bar&lt;/strong>에서 DutyPusher의 활성화 상태를 확인할 수 있습니다. 상태 아이콘을 클릭하여 활성화 또는 비활성화를 전환할 수 있습니다.&lt;/p>
+&lt;p>&lt;img src="https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/dtrbar-en.png?raw=true" alt="DTRBar" loading="lazy" />&lt;/p>
+&lt;h2>푸시 채널 구성&lt;span class="hx-absolute -hx-mt-20" id="푸시-채널-구성">&lt;/span>
+&lt;a href="#%ed%91%b8%ec%8b%9c-%ec%b1%84%eb%84%90-%ea%b5%ac%ec%84%b1" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>현재 DutyPusher는 다음 푸시 채널을 지원합니다: &lt;strong>Bark&lt;/strong>, &lt;strong>PushDeer&lt;/strong>, &lt;strong>Telegram Bot Official API&lt;/strong>.&lt;/p>
+&lt;p>&lt;strong>새로운 플랫폼 지원을 추가하고 싶다면, 이 저장소에 Issue를 제출해 주세요.&lt;/strong>&lt;/p>
+&lt;p>저장소 링크: &lt;a href="https://github.com/Finb/Bark" target="_blank" rel="noopener">Bark&lt;/a> | &lt;a href="https://github.com/easychen/pushdeer" target="_blank" rel="noopener">PushDeer&lt;/a>&lt;/p>
+&lt;p>Telegram Bot: &lt;a href="https://core.telegram.org/bots/api" target="_blank" rel="noopener">Telegram Bot API&lt;/a>&lt;/p>
+&lt;p>&lt;strong>이 플러그인 사용 중 문제가 발생하면 어떤 푸시 채널/플랫폼에도 피드백을 보내지 마십시오.&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>채널 URL/Key를 다른 사람과 공유하지 마십시오!&lt;/strong>&lt;/p>
+&lt;h3>Bark 구성&lt;span class="hx-absolute -hx-mt-20" id="bark-구성">&lt;/span>
+&lt;a href="#bark-%ea%b5%ac%ec%84%b1" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>App Store에서 &lt;strong>Bark&lt;/strong>를 검색하여 설치합니다.&lt;/p>
+&lt;p>Bark 앱을 열고, &lt;strong>Register Device&lt;/strong>를 클릭한 후 알림 전송을 허용합니다.&lt;/p>
+&lt;p>&lt;img src="https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/bark-en.jpg?raw=true" alt="Bark 인터페이스" loading="lazy" />&lt;/p>
+&lt;p>Bark에서 첫 번째 URL을 복사하여 DutyPusher 설정의 Channel URL/Key 필드에 붙여넣습니다. &lt;strong>저장&lt;/strong>을 클릭하여 사용을 시작합니다.&lt;/p>
+&lt;blockquote>
+&lt;p>선택적 구성&lt;/p>
+&lt;ul>
+&lt;li>플러그인 설정에서 &lt;strong>시간 민감 알림&lt;/strong>을 활성화하여 기기가 Focus 모드일 때도 푸시 알림을 받을 수 있습니다.&lt;/li>
+&lt;li>Bark에서 &lt;strong>View All Sounds&lt;/strong>를 클릭하고 이 &lt;a href="https://github.com/MorCherlf/FFXIVDutyPusher/raw/master/Resources/ff14.caf" target="_blank" rel="noopener">Duty 사운드&lt;/a>를 가져옵니다. 파일을 &lt;code>ff14.caf&lt;/code>로 이름을 변경한 후 가져오는 것을 확인하세요.&lt;/li>
+&lt;/ul>
+&lt;/blockquote>
+&lt;h3>PushDeer 구성&lt;span class="hx-absolute -hx-mt-20" id="pushdeer-구성">&lt;/span>
+&lt;a href="#pushdeer-%ea%b5%ac%ec%84%b1" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>iOS/iPadOS (14+)&lt;/p>
+&lt;p>시스템 카메라를 사용하여 아래 App Clip 코드를 스캔하여 PushDeer 사용을 시작합니다.&lt;/p>
+&lt;p>&lt;img src="https://github.com/easychen/pushdeer/raw/main/doc/image/clipcode.png" alt="App Clip 코드" loading="lazy" />&lt;/p>
+&lt;p>또는 App Store에서 &lt;strong>PushDeer&lt;/strong>를 검색하여 설치합니다.&lt;/p>
+&lt;p>&lt;img src="https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/pushdeer-device-en.png?raw=true" alt="PushDeer 디바이스 인터페이스" loading="lazy" />&lt;/p>
+&lt;p>PushDeer 앱을 열고, &lt;strong>Devices&lt;/strong> 탭으로 이동한 후 오른쪽 상단의 더하기 (+) 버튼을 클릭하여 알림 전송을 허용합니다.&lt;/p>
+&lt;p>&lt;img src="https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/pushdeer-key-en.jpg?raw=true" alt="PushDeer Key 인터페이스" loading="lazy" />&lt;/p>
+&lt;p>PushDeer에서 &lt;strong>Key&lt;/strong> 탭으로 이동하여 키를 복사하고, DutyPusher 설정의 Channel URL/Key 필드에 붙여넣습니다. &lt;strong>저장&lt;/strong>을 클릭하여 사용을 시작합니다.&lt;/p>
+&lt;h3>Telegram Bot Official API 구성&lt;span class="hx-absolute -hx-mt-20" id="telegram-bot-official-api-구성">&lt;/span>
+&lt;a href="#telegram-bot-official-api-%ea%b5%ac%ec%84%b1" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>공식 문서: &lt;a href="https://core.telegram.org/bots#how-do-i-create-a-bot" target="_blank" rel="noopener">Telegram Bot API&lt;/a>&lt;/p>
+&lt;p>&lt;strong>다음 단계는 언제든지 변경될 수 있습니다. 최신 지침은 공식 Telegram 문서를 참조하십시오.&lt;/strong>&lt;/p>
+&lt;h4>봇 생성&lt;span class="hx-absolute -hx-mt-20" id="봇-생성">&lt;/span>
+&lt;a href="#%eb%b4%87-%ec%83%9d%ec%84%b1" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;ol>
+&lt;li>Telegram 계정을 사용하여 &lt;a href="https://t.me/botfather" target="_blank" rel="noopener">@BotFather&lt;/a>에게 &lt;code>/start&lt;/code> 명령어를 보냅니다.&lt;/li>
+&lt;li>그런 다음 &lt;code>/newbot&lt;/code> 명령어를 보내고 지시에 따라 봇의 이름과 사용자 이름을 설정합니다.&lt;/li>
+&lt;li>봇에 대한 상세 정보를 받게 되며, 이는 봇 링크(&lt;code>t.me/&lt;/code>로 시작)와 토큰(숫자로 시작: &lt;code>0000000000:xxxxxxxxxxxxxxxxxxxxxxxxxxxx&lt;/code>)을 포함합니다.&lt;/li>
+&lt;/ol>
+&lt;h4>플러그인 설정&lt;span class="hx-absolute -hx-mt-20" id="플러그인-설정-1">&lt;/span>
+&lt;a href="#%ed%94%8c%eb%9f%ac%ea%b7%b8%ec%9d%b8-%ec%84%a4%ec%a0%95-1" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>&lt;img src="https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/settings-ko-telegram.png?raw=true" alt="Telegram 설정" loading="lazy" />&lt;/p>
+&lt;ol>
+&lt;li>Telegram에서 새로 생성한 봇에게 &lt;code>/start&lt;/code> 명령어를 보냅니다.&lt;/li>
+&lt;li>BotFather가 제공한 토큰을 복사하여 DutyPusher 설정의 Token 필드에 붙여넣습니다. &lt;strong>Get Chat ID&lt;/strong>를 클릭하고 Chat ID가 자동으로 채워질 때까지 기다립니다.&lt;/li>
+&lt;li>Chat ID가 검색되면, &lt;strong>Test&lt;/strong>를 클릭하여 Telegram에서 봇으로부터 메시지를 받을 수 있는지 확인합니다. 모든 것이 작동하면 &lt;strong>저장&lt;/strong>을 클릭하여 사용을 시작합니다.&lt;/li>
+&lt;/ol>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-flex-col hx-rounded-lg hx-border hx-py-4 hx-px-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-green-200 hx-bg-green-100 hx-text-green-900 dark:hx-border-green-200/30 dark:hx-bg-green-900/30 dark:hx-text-green-200">
+&lt;p class="hx-flex hx-items-center hx-font-medium">&lt;svg height=16px class="hx-inline-block hx-align-middle hx-mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>&lt;/svg>Tip&lt;/p>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">&lt;p>플러그인이 Chat ID를 자동으로 검색할 수 없는 경우, 다음 단계를 시도해 보십시오:&lt;/p>
+&lt;ol>
+&lt;li>토큰이 올바르게 입력되었는지 확인합니다.&lt;/li>
+&lt;li>봇에게 아무 메시지나 보내고 Chat ID를 다시 검색해 보십시오.&lt;/li>
+&lt;/ol>
+&lt;p>위의 단계가 작동하지 않는 경우:&lt;/p>
+&lt;ol>
+&lt;li>브라우저를 열고 다음 URL을 방문합니다:
+&lt;code>https://api.telegram.org/bot$YOUR_BOT_TOKEN_HERE/getUpdates&lt;/code>
+참고: &lt;code>$YOUR_BOT_TOKEN_HERE&lt;/code>를 봇 토큰으로 대체합니다.&lt;/li>
+&lt;li>JSON 응답에서 &lt;code>message&lt;/code> -&amp;gt; &lt;code>chat&lt;/code> -&amp;gt; &lt;code>id&lt;/code> 필드를 찾아 플러그인 설정의 Chat ID 필드에 복사합니다.&lt;/li>
+&lt;/ol>&lt;/div>
+&lt;/div>
+&lt;/div></description></item><item><title>소개</title><link>https://MorCherlf.github.io/FFXIVDutyPusher/ko/about/</link><pubDate>Sun, 30 Mar 2025 11:27:58 +0300</pubDate><guid>https://MorCherlf.github.io/FFXIVDutyPusher/ko/about/</guid><description>
+&lt;h2>DutyPusher 소개&lt;span class="hx-absolute -hx-mt-20" id="dutypusher-소개">&lt;/span>
+&lt;a href="#dutypusher-%ec%86%8c%ea%b0%9c" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>DutyPusher는 &lt;em>Final Fantasy XIV&lt;/em>(FFXIV)를 위한 MorCherlf가 개발한 오픈소스 Dalamud 플러그인입니다. 이 플러그인은 던전 대기 중에 플레이어가 컴퓨터에서 떨어져 편안하게 시간을 보낼 수 있도록 돕는 것을 목표로 합니다. 여러 확장 가능한 푸시 알림 채널을 활용하여, 플레이어는 대기가 완료되었을 때 즉각적으로 알림을 받아 던전을 놓치지 않을 수 있습니다.&lt;/p>
+&lt;p>&lt;strong>주요 기능&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>다중 푸시 알림 채널 지원&lt;/strong>: 현재 Bark, PushDeer, Telegram Bot 공식 API를 지원하며, 향후 더 많은 푸시 알림 채널을 추가할 계획입니다.&lt;/li>
+&lt;li>&lt;strong>즉각적인 알림&lt;/strong>: 던전 대기가 완료되면 DutyPusher가 즉시 디바이스로 알림을 보냅니다.&lt;/li>
+&lt;li>&lt;strong>사용이 간편&lt;/strong>: 간단한 설정으로 바로 사용할 수 있습니다.&lt;/li>
+&lt;li>&lt;strong>커스터마이징 가능한 옵션&lt;/strong>: 커스텀 알림음 및 즉각적인 알림(Bark)을 지원합니다.&lt;/li>
+&lt;li>&lt;strong>완전한 오픈소스&lt;/strong>: DutyPusher는 완전히 오픈소스입니다. 자신만의 포크를 만들거나 Pull Request를 제출할 수 있습니다.&lt;/li>
+&lt;li>&lt;strong>최대한 안전&lt;/strong>: DutyPusher는 게임 서버와 상호작용하지 않으며, 게임을 직접 수정하거나 조작하지 않습니다. 알림을 보내기 위해 각 푸시 알림 채널 서버에 네트워크 요청을 보내는 것 외에는 어떠한 정보도 수집, 기록, 저장하지 않습니다.&lt;/li>
+&lt;/ul>
+&lt;h2>개발자 소개&lt;span class="hx-absolute -hx-mt-20" id="개발자-소개">&lt;/span>
+&lt;a href="#%ea%b0%9c%eb%b0%9c%ec%9e%90-%ec%86%8c%ea%b0%9c" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>안녕하세요, 저는 &lt;a href="https://link.mor.icu" target="_blank" rel="noopener">MorCherlf&lt;/a>입니다. 저는 프로그래머, 게이머, 음악 애호가, 퍼리 등 다양한 관심사를 가지고 있습니다…&lt;/p>
+&lt;p>이것은 제가 처음으로 개발한 Dalamud 플러그인입니다. 제안이나 질문이 있다면 &lt;a href="https://github.com/MorCherlf/FFXIVDutyPusher" target="_blank" rel="noopener">GitHub&lt;/a>에 Issue나 Pull Request를 제출해 주세요.&lt;/p>
+&lt;p>궁금한 점이 있다면 &lt;a href="mailto:morcherlfy@outlook.com" >이메일&lt;/a>로도 연락할 수 있습니다.&lt;/p>
+&lt;h2>저작권 및 면책 조항&lt;span class="hx-absolute -hx-mt-20" id="저작권-및-면책-조항">&lt;/span>
+&lt;a href="#%ec%a0%80%ec%9e%91%ea%b6%8c-%eb%b0%8f-%eb%a9%b4%ec%b1%85-%ec%a1%b0%ed%95%ad" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>저작권 공지&lt;span class="hx-absolute -hx-mt-20" id="저작권-공지">&lt;/span>
+&lt;a href="#%ec%a0%80%ec%9e%91%ea%b6%8c-%ea%b3%b5%ec%a7%80" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>오픈소스 라이선스&lt;/strong>
+이 플러그인은 &lt;a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" rel="noopener">AGPL-3.0 라이선스&lt;/a> 하에 오픈소스로 제공됩니다. AGPL-3.0 라이선스의 조건을 준수하는 한, 이 플러그인을 자유롭게 사용, 수정, 배포할 수 있습니다.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>웹사이트 생성 및 테마&lt;/strong>
+이 웹사이트는 &lt;a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo&lt;/a>로 생성되었으며, 테마는 &lt;a href="https://github.com/imfing/hextra" target="_blank" rel="noopener">hextra&lt;/a>를 기반으로 합니다.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>푸시 알림 채널&lt;/strong>
+이 플러그인에서 사용하는 푸시 알림 채널은 Bark, PushDeer, Telegram Bot 등 각 플랫폼/서비스 제공자에 의해 제공됩니다. 이러한 플랫폼/서비스 제공자는 각자의 서비스에 대한 독립적인 지적 재산권과 책임을 보유합니다.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>FINAL FANTASY 상표&lt;/strong>
+FINAL FANTASY는 Square Enix Holdings Co., Ltd.의 등록 상표입니다. FINAL FANTASY XIV © 2010-2022 SQUARE ENIX CO., LTD. All rights reserved.
+&lt;strong>저희는 SQUARE ENIX CO., LTD.와 제휴 관계가 없습니다.&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3>면책 조항&lt;span class="hx-absolute -hx-mt-20" id="면책-조항">&lt;/span>
+&lt;a href="#%eb%a9%b4%ec%b1%85-%ec%a1%b0%ed%95%ad" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>플러그인 사용의 위험성&lt;/strong>
+이 플러그인을 사용함으로써, &lt;em>Final Fantasy XIV&lt;/em>(FFXIV)의 이용 약관에 동의한 것으로 간주됩니다.
+기술적으로 이 플러그인은 FFXIV의 이용 약관을 위반할 가능성이 있으므로 주의가 필요합니다. 저희는 게임에 대한 자동화된 조작이나 수정을 수행하지 않지만, 여전히 위험이 존재할 수 있습니다.
+이 플러그인 사용과 관련된 모든 위험(계정 정지, 데이터 손실, 기타 결과 포함)은 사용자 본인의 책임 하에 있습니다.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>책임의 제한&lt;/strong>
+이 플러그인의 개발자 및 기여자는 이 플러그인 사용으로 인해 발생하는 직접적 또는 간접적 손해(게임 계정 정지, 데이터 손실, 기기 손상, 기타 법적 또는 재정적 책임 포함)에 대해 어떠한 책임도 지지 않습니다.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>자기 책임 하에 사용&lt;/strong>
+이 플러그인을 사용함으로써, 위에서 언급한 위험을 인지하고 모든 가능한 결과를 자기 책임 하에 감수하는 데 동의한 것으로 간주됩니다. 플러그인을 신중하게 사용하고 FFXIV의 이용 약관을 준수할 것을 권장합니다.&lt;/p>
+&lt;/li>
+&lt;/ol></description></item><item><title>자주 묻는 질문</title><link>https://MorCherlf.github.io/FFXIVDutyPusher/ko/faq/</link><pubDate>Sun, 30 Mar 2025 11:27:58 +0300</pubDate><guid>https://MorCherlf.github.io/FFXIVDutyPusher/ko/faq/</guid><description>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Q: 푸시 알림을 받지 못하는 이유는 무엇인가요?&lt;/strong>&lt;/p>
+&lt;p>A: 푸시 채널이 올바르게 구성되었는지 확인하고, 기기에서 알림을 허용했는지 확인하세요.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Q: 플러그인을 어떻게 삭제하나요?&lt;/strong>&lt;/p>
+&lt;p>A: 플러그인 센터에서 DutyPusher를 찾아 비활성화한 후, &lt;strong>삭제&lt;/strong> 버튼을 클릭하세요.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Q: [XX] 푸시 채널을 지원할 수 있나요?&lt;/strong>&lt;/p>
+&lt;p>A: 이 저장소에 &lt;a href="https://github.com/MorCherlf/FFXIVDutyPusher/issues/new/choose" target="_blank" rel="noopener">Issue&lt;/a>를 제출하고 푸시 채널 이름/플랫폼을 알려주시면, 플러그인에 추가하도록 노력하겠습니다.&lt;/p>
+&lt;/li>
+&lt;/ul></description></item></channel></rss>

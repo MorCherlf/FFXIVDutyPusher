@@ -1,0 +1,146 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DutyPusher – DutyPusher</title><link>https://MorCherlf.github.io/FFXIVDutyPusher/ja/</link><description>Recent content on DutyPusher</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 30 Mar 2025 12:00:29 +0300</lastBuildDate><atom:link href="https://MorCherlf.github.io/FFXIVDutyPusher/ja/index.xml" rel="self" type="application/rss+xml"/><item><title>について</title><link>https://MorCherlf.github.io/FFXIVDutyPusher/ja/about/</link><pubDate>Sun, 30 Mar 2025 11:27:58 +0300</pubDate><guid>https://MorCherlf.github.io/FFXIVDutyPusher/ja/about/</guid><description>
+&lt;h2>DutyPusherについて&lt;span class="hx-absolute -hx-mt-20" id="dutypusherについて">&lt;/span>
+&lt;a href="#dutypusher%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>DutyPusherは、MorCherlfによって開発された&lt;em>Final Fantasy XIV&lt;/em>（FFXIV）向けのオープンソースのDalamudプラグインです。このプラグインは、ダンジョンの待機中にプレイヤーがコンピューターから離れてリラックスできるよう支援することを目的としています。複数の拡張可能なプッシュ通知チャネルを利用することで、プレイヤーは待機が完了した際に即座に通知を受け取り、ダンジョンを見逃すことがないようにします。&lt;/p>
+&lt;p>&lt;strong>主な機能&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>複数のプッシュ通知チャネルをサポート&lt;/strong>：現在、Bark、PushDeer、Telegram Botの公式APIをサポートしており、将来的にはさらに多くのプッシュ通知チャネルに対応する予定です。&lt;/li>
+&lt;li>&lt;strong>即時通知&lt;/strong>：ダンジョンの待機が完了すると、DutyPusherはすぐにデバイスに通知を送信します。&lt;/li>
+&lt;li>&lt;strong>使いやすい&lt;/strong>：簡単な設定で、すぐに使い始めることができます。&lt;/li>
+&lt;li>&lt;strong>カスタマイズ可能なオプション&lt;/strong>：カスタム通知音や即時通知（Bark）をサポートしています。&lt;/li>
+&lt;li>&lt;strong>完全なオープンソース&lt;/strong>：DutyPusherは完全にオープンソースです。独自のフォークを作成したり、Pull Requestを送信したりすることができます。&lt;/li>
+&lt;li>&lt;strong>可能な限り安全&lt;/strong>：DutyPusherはゲームサーバーとやり取りせず、ゲームを直接変更/操作しません。通知を送信するためにそれぞれのプッシュ通知チャネルサーバーへのネットワークリクエストが必要な場合を除き、情報を収集、記録、保存することはありません。&lt;/li>
+&lt;/ul>
+&lt;h2>開発者について&lt;span class="hx-absolute -hx-mt-20" id="開発者について">&lt;/span>
+&lt;a href="#%e9%96%8b%e7%99%ba%e8%80%85%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>こんにちは、私は&lt;a href="https://link.mor.icu" target="_blank" rel="noopener">MorCherlf&lt;/a>です。プログラマー、ゲーマー、音楽愛好家、Furryなど、多様な側面を持っています…&lt;/p>
+&lt;p>これは私にとって初めてのDalamudプラグインです。ご提案や質問があれば、&lt;a href="https://github.com/MorCherlf/FFXIVDutyPusher" target="_blank" rel="noopener">GitHub&lt;/a>でIssueやPull Requestを送信してください。&lt;/p>
+&lt;p>質問がある場合は、&lt;a href="mailto:morcherlfy@outlook.com" >メール&lt;/a>でもご連絡いただけます。&lt;/p>
+&lt;h2>著作権と免責事項&lt;span class="hx-absolute -hx-mt-20" id="著作権と免責事項">&lt;/span>
+&lt;a href="#%e8%91%97%e4%bd%9c%e6%a8%a9%e3%81%a8%e5%85%8d%e8%b2%ac%e4%ba%8b%e9%a0%85" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>著作権について&lt;span class="hx-absolute -hx-mt-20" id="著作権について">&lt;/span>
+&lt;a href="#%e8%91%97%e4%bd%9c%e6%a8%a9%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>オープンソースライセンス&lt;/strong>
+このプラグインは、&lt;a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" rel="noopener">AGPL-3.0ライセンス&lt;/a>の下でオープンソースとして提供されています。AGPL-3.0ライセンスの条件に従う限り、このプラグインを自由に使用、変更、配布することができます。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>ウェブサイトの生成とテーマ&lt;/strong>
+このウェブサイトは&lt;a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo&lt;/a>で生成されており、テーマは&lt;a href="https://github.com/imfing/hextra" target="_blank" rel="noopener">hextra&lt;/a>をベースにしています。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>プッシュ通知チャネル&lt;/strong>
+このプラグインで使用されるプッシュ通知チャネルは、Bark、PushDeer、Telegram Botなどの各プラットフォーム/サービスプロバイダーによって提供されています。これらのプラットフォーム/サービスプロバイダーは、それぞれのサービスに対する独立した知的財産権と責任を保持しています。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>FINAL FANTASYの商標&lt;/strong>
+FINAL FANTASYはSquare Enix Holdings Co., Ltd.の登録商標です。FINAL FANTASY XIV © 2010-2022 SQUARE ENIX CO., LTD. All rights reserved.
+&lt;strong>私たちはSQUARE ENIX CO., LTD.とは提携していません。&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3>免責事項&lt;span class="hx-absolute -hx-mt-20" id="免責事項">&lt;/span>
+&lt;a href="#%e5%85%8d%e8%b2%ac%e4%ba%8b%e9%a0%85" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>プラグイン使用のリスク&lt;/strong>
+このプラグインを使用する際は、&lt;em>Final Fantasy XIV&lt;/em>（FFXIV）の利用規約に同意したものとみなされます。
+技術的には、このプラグインはFFXIVの利用規約に違反する可能性があることにご注意ください。私たちはゲームに対する自動操作や変更を行いませんが、それでもリスクが存在します。
+このプラグインの使用に伴うすべてのリスク（アカウント停止、データ損失、その他の結果を含むがこれに限らない）を自己責任で負うことになります。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>責任の制限&lt;/strong>
+このプラグインの開発者および貢献者は、このプラグインの使用に起因する直接的または間接的な損害（ゲームアカウントの停止、データ損失、デバイスの損傷、その他の法的または金銭的責任を含むがこれに限らない）について一切の責任を負いません。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>自己責任での使用&lt;/strong>
+このプラグインを使用する際は、上記のリスクを認識し、すべての可能な結果を自己責任で負うことに同意したものとみなされます。プラグインを慎重に使用し、FFXIVの利用規約を遵守することをお勧めします。&lt;/p>
+&lt;/li>
+&lt;/ol></description></item><item><title>よくある質問</title><link>https://MorCherlf.github.io/FFXIVDutyPusher/ja/faq/</link><pubDate>Sun, 30 Mar 2025 11:27:58 +0300</pubDate><guid>https://MorCherlf.github.io/FFXIVDutyPusher/ja/faq/</guid><description>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Q: プッシュ通知が届かないのはなぜですか？&lt;/strong>&lt;/p>
+&lt;p>A: プッシュチャネルが正しく設定されているか確認し、デバイスが通知を許可しているか確認してください。&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Q: プラグインをアンインストールするにはどうすればいいですか？&lt;/strong>&lt;/p>
+&lt;p>A: プラグインセンターでDutyPusherを見つけ、無効にしてから&lt;strong>削除&lt;/strong>ボタンをクリックしてください。&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Q: ○○プッシュチャネルのサポートを追加できますか？&lt;/strong>&lt;/p>
+&lt;p>A: プッシュチャネル名/プラットフォームを記載して、このリポジトリに&lt;a href="https://github.com/MorCherlf/FFXIVDutyPusher/issues/new/choose" target="_blank" rel="noopener">Issue&lt;/a>を提出してください。プラグインに追加できるよう検討します。&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>設定ガイド</title><link>https://MorCherlf.github.io/FFXIVDutyPusher/ja/docs/</link><pubDate>Sun, 30 Mar 2025 11:27:58 +0300</pubDate><guid>https://MorCherlf.github.io/FFXIVDutyPusher/ja/docs/</guid><description>
+&lt;h2>プラグイン設定&lt;span class="hx-absolute -hx-mt-20" id="プラグイン設定">&lt;/span>
+&lt;a href="#%e3%83%97%e3%83%a9%e3%82%b0%e3%82%a4%e3%83%b3%e8%a8%ad%e5%ae%9a" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>DutyPusherの設定ページは以下の方法で開くことができます:&lt;/p>
+&lt;ol>
+&lt;li>プラグインセンターでDutyPusherの設定ボタンをクリックする。&lt;/li>
+&lt;li>ゲーム内で&lt;code>/dutypusher&lt;/code>コマンドを入力する。&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/settings-ja.png?raw=true" alt="プラグイン設定" loading="lazy" />&lt;/p>
+&lt;p>まず、ドロップダウンメニューから使用したいプッシュチャネルを選択してください。&lt;/p>
+&lt;p>次に、選択したプッシュチャネルに必要なToken/URL/Keyを入力し、プラグインを有効にして設定を保存すると使用を開始できます。&lt;/p>
+&lt;p>プッシュチャネルの設定が完了したら、ゲームのメインインターフェースの右上にある&lt;strong>DTR Bar&lt;/strong>でDutyPusherの有効状態を確認できます。ステータスアイコンをクリックして有効/無効を切り替えてください。&lt;/p>
+&lt;p>&lt;img src="https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/dtrbar-ja.png?raw=true" alt="DTRBar" loading="lazy" />&lt;/p>
+&lt;h2>プッシュチャネル設定&lt;span class="hx-absolute -hx-mt-20" id="プッシュチャネル設定">&lt;/span>
+&lt;a href="#%e3%83%97%e3%83%83%e3%82%b7%e3%83%a5%e3%83%81%e3%83%a3%e3%83%8d%e3%83%ab%e8%a8%ad%e5%ae%9a" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>現在、DutyPusherは以下のプッシュチャネルをサポートしています: &lt;strong>Bark&lt;/strong>、&lt;strong>PushDeer&lt;/strong>、&lt;strong>Telegram Bot公式API&lt;/strong>。&lt;/p>
+&lt;p>&lt;strong>新しいプラットフォームのサポートを追加したい場合は、このリポジトリにIssueを提出してください。&lt;/strong>&lt;/p>
+&lt;p>リポジトリリンク: &lt;a href="https://github.com/Finb/Bark" target="_blank" rel="noopener">Bark&lt;/a> | &lt;a href="https://github.com/easychen/pushdeer" target="_blank" rel="noopener">PushDeer&lt;/a>&lt;/p>
+&lt;p>Telegram Bot: &lt;a href="https://core.telegram.org/bots/api" target="_blank" rel="noopener">Telegram Bot API&lt;/a>&lt;/p>
+&lt;p>&lt;strong>このプラグインの使用中に問題が発生した場合、プッシュチャネル/プラットフォームにフィードバックを送信しないでください。&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>チャネルURL/Keyを他人と共有しないでください！&lt;/strong>&lt;/p>
+&lt;h3>Bark設定&lt;span class="hx-absolute -hx-mt-20" id="bark設定">&lt;/span>
+&lt;a href="#bark%e8%a8%ad%e5%ae%9a" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>App Storeで&lt;strong>Bark&lt;/strong>を検索してインストールしてください。&lt;/p>
+&lt;p>Barkアプリを開き、&lt;strong>Register Device&lt;/strong>をクリックして通知の送信を許可します。&lt;/p>
+&lt;p>&lt;img src="https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/bark-ja.jpg?raw=true" alt="Barkインターフェース" loading="lazy" />&lt;/p>
+&lt;p>Barkの最初のURLをコピーし、DutyPusher設定のChannel URL/Key欄に貼り付けて、&lt;strong>Save&lt;/strong>をクリックすると使用を開始できます。&lt;/p>
+&lt;blockquote>
+&lt;p>オプション設定&lt;/p>
+&lt;ul>
+&lt;li>プラグイン設定で&lt;strong>Time Sensitive Notifications&lt;/strong>を有効にすると、デバイスがフォーカスモード中でもプッシュ通知を受信できます。&lt;/li>
+&lt;li>Barkで&lt;strong>View All Sounds&lt;/strong>をクリックし、&lt;a href="https://github.com/MorCherlf/FFXIVDutyPusher/raw/master/Resources/ff14.caf" target="_blank" rel="noopener">このダンジョン音&lt;/a>をインポートしてください。インポート前にファイル名を&lt;code>ff14.caf&lt;/code>に変更してください。&lt;/li>
+&lt;/ul>
+&lt;/blockquote>
+&lt;h3>PushDeer設定&lt;span class="hx-absolute -hx-mt-20" id="pushdeer設定">&lt;/span>
+&lt;a href="#pushdeer%e8%a8%ad%e5%ae%9a" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>iOS/iPadOS (14+)&lt;/p>
+&lt;p>システムカメラで以下のApp ClipコードをスキャンしてPushDeerを使用開始できます。&lt;/p>
+&lt;p>&lt;img src="https://github.com/easychen/pushdeer/raw/main/doc/image/clipcode.png" alt="App Clipコード" loading="lazy" />&lt;/p>
+&lt;p>または、App Storeで&lt;strong>PushDeer&lt;/strong>を検索してインストールしてください。&lt;/p>
+&lt;p>&lt;img src="https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/pushdeer-device-en.png?raw=true" alt="PushDeerデバイスインターフェース" loading="lazy" />&lt;/p>
+&lt;p>PushDeerアプリを開き、&lt;strong>Devices&lt;/strong>タブで右上のプラス（+）ボタンをクリックして通知の送信を許可します。&lt;/p>
+&lt;p>&lt;img src="https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/pushdeer-key-en.jpg?raw=true" alt="PushDeerキーインターフェース" loading="lazy" />&lt;/p>
+&lt;p>PushDeerの&lt;strong>Key&lt;/strong>タブでキーをコピーし、DutyPusher設定のChannel URL/Key欄に貼り付けて、&lt;strong>Save&lt;/strong>をクリックすると使用を開始できます。&lt;/p>
+&lt;h3>Telegram Bot公式API設定&lt;span class="hx-absolute -hx-mt-20" id="telegram-bot公式api設定">&lt;/span>
+&lt;a href="#telegram-bot%e5%85%ac%e5%bc%8fapi%e8%a8%ad%e5%ae%9a" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>公式ドキュメント: &lt;a href="https://core.telegram.org/bots#how-do-i-create-a-bot" target="_blank" rel="noopener">Telegram Bot API&lt;/a>&lt;/p>
+&lt;p>&lt;strong>以下の手順は変更される可能性があります。最新の手順についてはTelegramの公式ドキュメントを参照してください。&lt;/strong>&lt;/p>
+&lt;h4>Botの作成&lt;span class="hx-absolute -hx-mt-20" id="botの作成">&lt;/span>
+&lt;a href="#bot%e3%81%ae%e4%bd%9c%e6%88%90" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;ol>
+&lt;li>Telegramアカウントで&lt;a href="https://t.me/botfather" target="_blank" rel="noopener">@BotFather&lt;/a>に&lt;code>/start&lt;/code>コマンドを送信します。&lt;/li>
+&lt;li>次に&lt;code>/newbot&lt;/code>コマンドを送信し、指示に従ってBotの名前とユーザー名を設定します。&lt;/li>
+&lt;li>Botの詳細情報が送信されます。これにはBotへのリンク（&lt;code>t.me/&lt;/code>で始まる）とトークン（数字で始まる: &lt;code>0000000000:xxxxxxxxxxxxxxxxxxxxxxxxxxxx&lt;/code>）が含まれます。&lt;/li>
+&lt;/ol>
+&lt;h4>プラグイン設定&lt;span class="hx-absolute -hx-mt-20" id="プラグイン設定-1">&lt;/span>
+&lt;a href="#%e3%83%97%e3%83%a9%e3%82%b0%e3%82%a4%e3%83%b3%e8%a8%ad%e5%ae%9a-1" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>&lt;img src="https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/settings-ja-telegram.png?raw=true" alt="Telegram設定" loading="lazy" />&lt;/p>
+&lt;ol>
+&lt;li>Telegramで新しく作成したBotに&lt;code>/start&lt;/code>コマンドを送信します。&lt;/li>
+&lt;li>BotFatherから提供されたトークンをコピーし、DutyPusher設定のToken欄に貼り付けます。&lt;strong>Get Chat ID&lt;/strong>をクリックし、Chat IDが自動的に入力されるのを待ちます。&lt;/li>
+&lt;li>Chat IDが取得されたら、&lt;strong>Test&lt;/strong>をクリックしてTelegramでBotからのメッセージを受信できるか確認します。すべて正常に動作する場合、&lt;strong>Save&lt;/strong>をクリックして使用を開始できます。&lt;/li>
+&lt;/ol>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-flex-col hx-rounded-lg hx-border hx-py-4 hx-px-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-green-200 hx-bg-green-100 hx-text-green-900 dark:hx-border-green-200/30 dark:hx-bg-green-900/30 dark:hx-text-green-200">
+&lt;p class="hx-flex hx-items-center hx-font-medium">&lt;svg height=16px class="hx-inline-block hx-align-middle hx-mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>&lt;/svg>Tip&lt;/p>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">&lt;p>プラグインが自動的にChat IDを取得できない場合、以下の手順を試してください:&lt;/p>
+&lt;ol>
+&lt;li>トークンが正しく入力されていることを確認します。&lt;/li>
+&lt;li>Botに任意のメッセージを送信し、再度Chat IDを取得してみます。&lt;/li>
+&lt;/ol>
+&lt;p>上記の手順でも解決しない場合:&lt;/p>
+&lt;ol>
+&lt;li>ブラウザで以下のURLにアクセスします:
+&lt;code>https://api.telegram.org/bot$YOUR_BOT_TOKEN_HERE/getUpdates&lt;/code>
+注: &lt;code>$YOUR_BOT_TOKEN_HERE&lt;/code>をBotのトークンに置き換えてください。&lt;/li>
+&lt;li>JSONレスポンス内の&lt;code>message&lt;/code> -&amp;gt; &lt;code>chat&lt;/code> -&amp;gt; &lt;code>id&lt;/code>フィールドを見つけ、プラグイン設定のChat ID欄にコピーします。&lt;/li>
+&lt;/ol>&lt;/div>
+&lt;/div>
+&lt;/div></description></item></channel></rss>

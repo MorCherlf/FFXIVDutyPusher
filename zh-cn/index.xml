@@ -1,0 +1,132 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DutyPusher – 狒狒排本小助手</title><link>https://MorCherlf.github.io/FFXIVDutyPusher/zh-cn/</link><description>Recent content in 狒狒排本小助手 on DutyPusher</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 30 Mar 2025 11:27:53 +0300</lastBuildDate><atom:link href="https://MorCherlf.github.io/FFXIVDutyPusher/zh-cn/index.xml" rel="self" type="application/rss+xml"/><item><title>关于</title><link>https://MorCherlf.github.io/FFXIVDutyPusher/zh-cn/about/</link><pubDate>Sun, 30 Mar 2025 11:27:58 +0300</pubDate><guid>https://MorCherlf.github.io/FFXIVDutyPusher/zh-cn/about/</guid><description>
+&lt;h2>关于狒狒排本小助手&lt;span class="hx-absolute -hx-mt-20" id="关于狒狒排本小助手">&lt;/span>
+&lt;a href="#%e5%85%b3%e4%ba%8e%e7%8b%92%e7%8b%92%e6%8e%92%e6%9c%ac%e5%b0%8f%e5%8a%a9%e6%89%8b" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>狒狒排本小助手由MorCherlf开发的一款适用于《最终幻想XIV》FF14 的Dalamud开源插件，旨在帮助玩家在排队等待副本时远离电脑放松一下，通过可扩展的多种推送渠道，让玩家可以在排队成功时立即收到提醒，避免错过副本。&lt;/p>
+&lt;p>&lt;strong>主要特点&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>多推送渠道支持&lt;/strong>：目前支持Bark、PushDeer和Telegram Bot官方API，未来将持续拓展更多推送渠道。&lt;/li>
+&lt;li>&lt;strong>即时通知&lt;/strong>：当副本排队成功时，狒狒排本小助手会立即发送通知到您的设备。&lt;/li>
+&lt;li>&lt;strong>简单易用&lt;/strong>：只需简单设置即可开始使用。&lt;/li>
+&lt;li>&lt;strong>自定义选项&lt;/strong>：支持自定义通知音效和即时通知（Bark）。&lt;/li>
+&lt;li>&lt;strong>完全开源&lt;/strong>: 狒狒排本小助手完全开源，你可以创建属于你自己的分支，或向我们提交Pull Request。&lt;/li>
+&lt;li>&lt;strong>尽可能安全&lt;/strong>：狒狒排本小助手不与游戏服务器进行任何交互，也不直接对游戏进行任何修改/操作，除发送通知时会与对应推送渠道的服务器发送网络请求外，不收集/记录/保存任何信息&lt;/li>
+&lt;/ul>
+&lt;h2>关于开发者&lt;span class="hx-absolute -hx-mt-20" id="关于开发者">&lt;/span>
+&lt;a href="#%e5%85%b3%e4%ba%8e%e5%bc%80%e5%8f%91%e8%80%85" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>你好，我是&lt;a href="https://link.mor.icu" target="_blank" rel="noopener">MorCherlf&lt;/a>，我是一名程序员/游戏玩家/音乐爱好者/Furry/……&lt;/p>
+&lt;p>这是我开发的第一款Dalamud 插件，如果您有任何建议或问题，欢迎在&lt;a href="https://github.com/MorCherlf/FFXIVDutyPusher" target="_blank" rel="noopener">Github&lt;/a>上提交Issue或是Pull Request。&lt;/p>
+&lt;p>如果您有任何问题，欢迎向我发送&lt;a href="mailto:morcherlfy@outlook.com" >邮件&lt;/a>&lt;/p>
+&lt;h2>版权声明与免责声明&lt;span class="hx-absolute -hx-mt-20" id="版权声明与免责声明">&lt;/span>
+&lt;a href="#%e7%89%88%e6%9d%83%e5%a3%b0%e6%98%8e%e4%b8%8e%e5%85%8d%e8%b4%a3%e5%a3%b0%e6%98%8e" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>版权声明&lt;span class="hx-absolute -hx-mt-20" id="版权声明">&lt;/span>
+&lt;a href="#%e7%89%88%e6%9d%83%e5%a3%b0%e6%98%8e" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;ol>
+&lt;li>&lt;strong>开源协议&lt;/strong>
+本插件基于 &lt;a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" rel="noopener">AGPL-3.0 License&lt;/a> 开源。您可以自由使用、修改和分发本插件，但需遵守 AGPL-3.0 协议的相关规定。&lt;/li>
+&lt;li>&lt;strong>网页生成与主题&lt;/strong>
+本网页生成由 &lt;a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo&lt;/a> 提供，页面主题基于 &lt;a href="https://github.com/imfing/hextra" target="_blank" rel="noopener">hextra&lt;/a> 构建。&lt;/li>
+&lt;li>&lt;strong>推送渠道&lt;/strong>
+本插件使用的推送渠道由各自推送平台/服务商提供，包括但不限于 Bark、PushDeer 和 Telegram Bot。这些平台/服务商对其提供的服务拥有独立的知识产权和责任。&lt;/li>
+&lt;li>&lt;strong>FINAL FANTASY 商标&lt;/strong>
+FINAL FANTASY 是 Square Enix Holdings Co., Ltd. 的注册商标。FINAL FANTASY XIV © 2010-2022 SQUARE ENIX CO., LTD. 保留所有权利。
+&lt;strong>我们与 SQUARE ENIX CO., LTD. 没有任何关联。&lt;/strong>&lt;/li>
+&lt;/ol>
+&lt;h3>免责声明&lt;span class="hx-absolute -hx-mt-20" id="免责声明">&lt;/span>
+&lt;a href="#%e5%85%8d%e8%b4%a3%e5%a3%b0%e6%98%8e" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;ol>
+&lt;li>&lt;strong>插件使用风险&lt;/strong>
+使用此插件默认您了解并同意《最终幻想14》（FFXIV）的服务条款。
+请注意，从技术上讲，该插件可能违反了 FFXIV 的服务条款，即使我们没有对游戏进行自动化操作或修改。
+您应自行承担使用本插件可能带来的风险，包括但不限于账号封禁、数据丢失或其他后果。&lt;/li>
+&lt;li>&lt;strong>责任限制&lt;/strong>
+本插件的开发者及贡献者不对因使用本插件而产生的任何直接或间接损失负责，包括但不限于游戏账号封禁、数据丢失、设备损坏或其他法律或财务责任。&lt;/li>
+&lt;li>&lt;strong>自行承担风险&lt;/strong>
+使用本插件即表示您已知晓并接受上述风险，并同意自行承担所有可能的后果。我们建议您在使用插件时谨慎行事，并遵守 FFXIV 的服务条款。&lt;/li>
+&lt;/ol></description></item><item><title>常见问题</title><link>https://MorCherlf.github.io/FFXIVDutyPusher/zh-cn/faq/</link><pubDate>Sun, 30 Mar 2025 11:27:58 +0300</pubDate><guid>https://MorCherlf.github.io/FFXIVDutyPusher/zh-cn/faq/</guid><description>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Q: 为什么我收不到推送通知？&lt;/strong>&lt;/p>
+&lt;p>A: 请检查推送渠道的配置是否正确，并确保您的设备已允许接收通知&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Q: 如何卸载插件？&lt;/strong>&lt;/p>
+&lt;p>A: 在插件中心找到DutyPusher，禁用插件后点击删除按钮即可&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Q: 能不能添加xx推送渠道？&lt;/strong>&lt;/p>
+&lt;p>A: 请在此Repo中提交 &lt;a href="https://github.com/MorCherlf/FFXIVDutyPusher/issues/new/choose" target="_blank" rel="noopener">Issue&lt;/a> ，请提供推送渠道名称/平台，我会尝试将其添加到插件中&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>设置指南</title><link>https://MorCherlf.github.io/FFXIVDutyPusher/zh-cn/docs/</link><pubDate>Sun, 30 Mar 2025 11:27:58 +0300</pubDate><guid>https://MorCherlf.github.io/FFXIVDutyPusher/zh-cn/docs/</guid><description>
+&lt;h2>插件设置&lt;span class="hx-absolute -hx-mt-20" id="插件设置">&lt;/span>
+&lt;a href="#%e6%8f%92%e4%bb%b6%e8%ae%be%e7%bd%ae" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>您可以通过以下两种方式打开DutyPusher的设置页面：&lt;/p>
+&lt;ol>
+&lt;li>在插件中心点击DutyPusher的设置按钮。&lt;/li>
+&lt;li>在游戏内输入&lt;code>/dutypusher&lt;/code>指令。&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/settings-zh-cn.png?raw=true" alt="插件设置" loading="lazy" />&lt;/p>
+&lt;p>首先，在下拉菜单中选择你想使用的推送渠道&lt;/p>
+&lt;p>然后在下方填写该推送渠道所需的Token/URL/Key等内容，勾选启用并保存就可以开始使用了&lt;/p>
+&lt;p>配置好推送渠道后，您可以在游戏主页面右上方的&lt;strong>DTR Bar&lt;/strong>中查看狒狒排本小助手的启用状态。点击状态图标即可切换启用或禁用状态。&lt;/p>
+&lt;p>&lt;img src="https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/dtrbar-en.png?raw=true" alt="DTRBar" loading="lazy" />&lt;/p>
+&lt;h2>推送通道配置&lt;span class="hx-absolute -hx-mt-20" id="推送通道配置">&lt;/span>
+&lt;a href="#%e6%8e%a8%e9%80%81%e9%80%9a%e9%81%93%e9%85%8d%e7%bd%ae" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>目前狒狒排本小助手支持&lt;strong>Bark&lt;/strong>，&lt;strong>PushDeer&lt;/strong>，和&lt;strong>Telegram Bot 官方API&lt;/strong>推送渠道&lt;/p>
+&lt;p>&lt;strong>如果想要增加某一平台的推送渠道，可以向此仓库提交Issue&lt;/strong>&lt;/p>
+&lt;p>Repo 链接： &lt;a href="https://github.com/Finb/Bark" target="_blank" rel="noopener">Bark&lt;/a> &lt;a href="https://github.com/easychen/pushdeer" target="_blank" rel="noopener">PushDeer&lt;/a>&lt;/p>
+&lt;p>Telegram Bot：&lt;a href="https://core.telegram.org/bots/api" target="_blank" rel="noopener">Telegram Bot API&lt;/a>&lt;/p>
+&lt;p>&lt;strong>在使用本插件过程中遇到了问题，请不要向任一推送渠道/平台发送反馈&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>请不要把您的渠道URL/Key泄露给任何人！&lt;/strong>&lt;/p>
+&lt;h3>Bark配置&lt;span class="hx-absolute -hx-mt-20" id="bark配置">&lt;/span>
+&lt;a href="#bark%e9%85%8d%e7%bd%ae" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>请在App Store中搜索Bark并安装&lt;/p>
+&lt;p>打开Bark应用后，首先点击&lt;strong>注册设备&lt;/strong>，并允许其发送通知。&lt;/p>
+&lt;p>&lt;img src="https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/bark.jpg?raw=true" alt="Bark界面" loading="lazy" />&lt;/p>
+&lt;p>将Bark中的第一条链接复制并粘贴到DutyPusher插件设置中的渠道URL/Key中，点击保存即可开始使用&lt;/p>
+&lt;blockquote>
+&lt;p>可选配置&lt;/p>
+&lt;ul>
+&lt;li>您可以在插件设置中勾选上时效通知，这样即使在您的设备开启专注模式时仍会收到排本推送&lt;/li>
+&lt;li>您可以在Bark中点击&lt;strong>查看所有铃声&lt;/strong>，然后导入此&lt;a href="https://github.com/MorCherlf/FFXIVDutyPusher/raw/master/Resources/ff14.caf" target="_blank" rel="noopener">排本音效&lt;/a>。请确保将铃声文件命名为&lt;code>ff14.caf&lt;/code>后再导入。&lt;/li>
+&lt;/ul>
+&lt;/blockquote>
+&lt;h3>PushDeer配置&lt;span class="hx-absolute -hx-mt-20" id="pushdeer配置">&lt;/span>
+&lt;a href="#pushdeer%e9%85%8d%e7%bd%ae" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>iOS/iPadOS (14+)&lt;/p>
+&lt;p>请使用系统相机扫描此轻App码即可开始使用PushDeer&lt;/p>
+&lt;p>&lt;img src="https://github.com/easychen/pushdeer/raw/main/doc/image/clipcode.png" alt="enter image description here" loading="lazy" />&lt;/p>
+&lt;p>或在App Store中搜索PushDeer并安装&lt;/p>
+&lt;p>&lt;img src="https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/pushdeer-device.jpg?raw=true" alt="PushDeer设备界面" loading="lazy" />&lt;/p>
+&lt;p>打开PushDeer应用后，首先进入&lt;strong>设备&lt;/strong>选项卡，点击右上角的加号（+）按钮，并允许其发送通知。&lt;/p>
+&lt;p>&lt;img src="https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/pushdeer-key.jpg?raw=true" alt="PushDeerKey界面" loading="lazy" />&lt;/p>
+&lt;p>点击PushDeer选项卡Key，将您的Key复制并粘贴到插件设置中的渠道URL/Key中，点击保存即可开始使用&lt;/p>
+&lt;h3>Telegram Bot Official API 配置&lt;span class="hx-absolute -hx-mt-20" id="telegram-bot-official-api-配置">&lt;/span>
+&lt;a href="#telegram-bot-official-api-%e9%85%8d%e7%bd%ae" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>官方参考说明：&lt;a href="https://core.telegram.org/bots#how-do-i-create-a-bot" target="_blank" rel="noopener">Telegram Bot API 文档&lt;/a>&lt;/p>
+&lt;p>&lt;strong>以下步骤可能随时会更改，请以Telegram 官方说明为准&lt;/strong>&lt;/p>
+&lt;h4>创建Bot&lt;span class="hx-absolute -hx-mt-20" id="创建bot">&lt;/span>
+&lt;a href="#%e5%88%9b%e5%bb%babot" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;ol>
+&lt;li>使用你的Telegram 账号向 &lt;a href="https://t.me/botfather" target="_blank" rel="noopener">@BotFather&lt;/a> 发送&lt;code>/start&lt;/code>指令&lt;/li>
+&lt;li>然后再向其发送&lt;code>/newbot&lt;/code>指令，根据其提示给你的Bot设置名字和username&lt;/li>
+&lt;li>接下来你将收到关于你的Bot的详细信息，其中包含一个指向你创建的Bot的链接&lt;code>以t.me/开头&lt;/code>，一串以数字开头的Token&lt;code>0000000000:xxxxxxxxxxxxxxxxxxxxxxxxxxxx&lt;/code>&lt;/li>
+&lt;/ol>
+&lt;h4>插件设置&lt;span class="hx-absolute -hx-mt-20" id="插件设置-1">&lt;/span>
+&lt;a href="#%e6%8f%92%e4%bb%b6%e8%ae%be%e7%bd%ae-1" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>&lt;img src="https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/settings-zh-cn-telegram.png?raw=true" alt="Telegram设置" loading="lazy" />&lt;/p>
+&lt;ol>
+&lt;li>在Telegram中向你刚刚创建的Bot发送&lt;code>/start&lt;/code>指令&lt;/li>
+&lt;li>将BotFather发送的Token复制并粘贴到插件设置中的Token中，点击&lt;code>获取 ChatID&lt;/code>后，等待Chat ID 中自动填充你的Chat ID&lt;/li>
+&lt;li>当自动获取到Chat ID后，点击&lt;code>测试&lt;/code>，确认是否能在你的Telegram账号中接收到来自你刚刚创建的Bot的消息，如果一切正常点击保存后即可开始使用&lt;/li>
+&lt;/ol>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-flex-col hx-rounded-lg hx-border hx-py-4 hx-px-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-green-200 hx-bg-green-100 hx-text-green-900 dark:hx-border-green-200/30 dark:hx-bg-green-900/30 dark:hx-text-green-200">
+&lt;p class="hx-flex hx-items-center hx-font-medium">&lt;svg height=16px class="hx-inline-block hx-align-middle hx-mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>&lt;/svg>Tip&lt;/p>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">&lt;p>如果插件无法自动获取到您的Chat ID，请尝试以下步骤：&lt;/p>
+&lt;ol>
+&lt;li>确认Token填写正确&lt;/li>
+&lt;li>向你创建的Bot发送任一消息后，再次尝试获取&lt;/li>
+&lt;/ol>
+&lt;p>如果以上步骤均无效：&lt;/p>
+&lt;ol>
+&lt;li>打开浏览器访问以下URL：
+&lt;code>https://api.telegram.org/bot$YOUR_BOT_TOKEN_HERE/getUpdates&lt;/code>
+注意：请将&lt;code>$YOUR_BOT_TOKEN_HERE&lt;/code>替换为您的Bot Token。&lt;/li>
+&lt;li>查看获取到的JSON文本，定位到&lt;code>message&lt;/code>-&lt;code>chat&lt;/code>-&lt;code>id&lt;/code>，并将其复制到插件设置中的Chat ID中即可&lt;/li>
+&lt;/ol>&lt;/div>
+&lt;/div>
+&lt;/div></description></item></channel></rss>

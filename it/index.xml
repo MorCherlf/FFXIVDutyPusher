@@ -1,0 +1,148 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DutyPusher – DutyPusher</title><link>https://MorCherlf.github.io/FFXIVDutyPusher/it/</link><description>Recent content on DutyPusher</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 30 Mar 2025 11:27:53 +0300</lastBuildDate><atom:link href="https://MorCherlf.github.io/FFXIVDutyPusher/it/index.xml" rel="self" type="application/rss+xml"/><item><title>FAQ</title><link>https://MorCherlf.github.io/FFXIVDutyPusher/it/faq/</link><pubDate>Sun, 30 Mar 2025 11:27:58 +0300</pubDate><guid>https://MorCherlf.github.io/FFXIVDutyPusher/it/faq/</guid><description>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>D: Perché non ricevo notifiche push?&lt;/strong>&lt;/p>
+&lt;p>R: Controlla se il canale di notifica è configurato correttamente e assicurati che il tuo dispositivo consenta le notifiche.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>D: Come posso disinstallare il plugin?&lt;/strong>&lt;/p>
+&lt;p>R: Trova DutyPusher nel Centro Plugin, disabilitalo e poi clicca sul pulsante &lt;strong>Elimina&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>D: Puoi aggiungere il supporto per il canale di notifica [XX]?&lt;/strong>&lt;/p>
+&lt;p>R: Invia un &lt;a href="https://github.com/MorCherlf/FFXIVDutyPusher/issues/new/choose" target="_blank" rel="noopener">Issue&lt;/a> a questo repository con il nome del canale di notifica/piattaforma, e cercheremo di aggiungerlo al plugin.&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>Guida alle Impostazioni</title><link>https://MorCherlf.github.io/FFXIVDutyPusher/it/docs/</link><pubDate>Sun, 30 Mar 2025 11:27:58 +0300</pubDate><guid>https://MorCherlf.github.io/FFXIVDutyPusher/it/docs/</guid><description>
+&lt;h2>Impostazioni del Plugin&lt;span class="hx-absolute -hx-mt-20" id="impostazioni-del-plugin">&lt;/span>
+&lt;a href="#impostazioni-del-plugin" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>Puoi aprire la pagina delle impostazioni di DutyPusher in uno dei seguenti modi:&lt;/p>
+&lt;ol>
+&lt;li>Clicca sul pulsante delle impostazioni di DutyPusher nel Centro Plugin.&lt;/li>
+&lt;li>Inserisci il comando &lt;code>/dutypusher&lt;/code> nel gioco.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/settings-it.png?raw=true" alt="Impostazioni del Plugin" loading="lazy" />&lt;/p>
+&lt;p>Per prima cosa, seleziona il canale di notifica che desideri utilizzare dal menu a tendina.&lt;/p>
+&lt;p>Successivamente, inserisci il Token/URL/Chiave richiesto per il canale di notifica selezionato, abilita il plugin e salva le impostazioni per iniziare a utilizzarlo.&lt;/p>
+&lt;p>Dopo aver configurato il canale di notifica, puoi verificare lo stato di attivazione di DutyPusher nella &lt;strong>Barra DTR&lt;/strong> nell&amp;rsquo;angolo superiore destro dell&amp;rsquo;interfaccia principale del gioco. Clicca sull&amp;rsquo;icona dello stato per attivarlo o disattivarlo.&lt;/p>
+&lt;p>&lt;img src="https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/dtrbar-it.png?raw=true" alt="Barra DTR" loading="lazy" />&lt;/p>
+&lt;h2>Configurazione dei Canali di Notifica&lt;span class="hx-absolute -hx-mt-20" id="configurazione-dei-canali-di-notifica">&lt;/span>
+&lt;a href="#configurazione-dei-canali-di-notifica" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>Attualmente, DutyPusher supporta i seguenti canali di notifica: &lt;strong>Bark&lt;/strong>, &lt;strong>PushDeer&lt;/strong> e &lt;strong>API Ufficiale Telegram Bot&lt;/strong>.&lt;/p>
+&lt;p>&lt;strong>Se desideri aggiungere il supporto per una nuova piattaforma, invia un Issue a questo repository.&lt;/strong>&lt;/p>
+&lt;p>Link ai repository: &lt;a href="https://github.com/Finb/Bark" target="_blank" rel="noopener">Bark&lt;/a> | &lt;a href="https://github.com/easychen/pushdeer" target="_blank" rel="noopener">PushDeer&lt;/a>&lt;/p>
+&lt;p>Telegram Bot: &lt;a href="https://core.telegram.org/bots/api" target="_blank" rel="noopener">API Telegram Bot&lt;/a>&lt;/p>
+&lt;p>&lt;strong>Se riscontri problemi durante l&amp;rsquo;uso di questo plugin, non inviare feedback a nessun canale di notifica/piattaforma.&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>Non condividere il tuo URL/Chiave del canale con nessuno!&lt;/strong>&lt;/p>
+&lt;h3>Configurazione di Bark&lt;span class="hx-absolute -hx-mt-20" id="configurazione-di-bark">&lt;/span>
+&lt;a href="#configurazione-di-bark" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>Cerca &lt;strong>Bark&lt;/strong> nell&amp;rsquo;App Store e installalo.&lt;/p>
+&lt;p>Apri l&amp;rsquo;app Bark, clicca su &lt;strong>Registra Dispositivo&lt;/strong> e consenti l&amp;rsquo;invio di notifiche.&lt;/p>
+&lt;p>&lt;img src="https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/bark-en.jpg?raw=true" alt="Interfaccia di Bark" loading="lazy" />&lt;/p>
+&lt;p>Copia il primo URL in Bark e incollalo nel campo URL/Chiave del canale nelle impostazioni di DutyPusher. Clicca su &lt;strong>Salva&lt;/strong> per iniziare a utilizzarlo.&lt;/p>
+&lt;blockquote>
+&lt;p>Configurazioni Opzionali&lt;/p>
+&lt;ul>
+&lt;li>Puoi abilitare &lt;strong>Notifiche Tempodipendenti&lt;/strong> nelle impostazioni del plugin per ricevere notifiche push anche quando il dispositivo è in Modalità Focus.&lt;/li>
+&lt;li>In Bark, clicca su &lt;strong>Visualizza Tutti i Suoni&lt;/strong> e importa questo &lt;a href="https://github.com/MorCherlf/FFXIVDutyPusher/raw/master/Resources/ff14.caf" target="_blank" rel="noopener">Suono del Dungeon&lt;/a>. Assicurati di rinominare il file in &lt;code>ff14.caf&lt;/code> prima di importarlo.&lt;/li>
+&lt;/ul>
+&lt;/blockquote>
+&lt;h3>Configurazione di PushDeer&lt;span class="hx-absolute -hx-mt-20" id="configurazione-di-pushdeer">&lt;/span>
+&lt;a href="#configurazione-di-pushdeer" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>iOS/iPadOS (14+)&lt;/p>
+&lt;p>Usa la fotocamera del tuo sistema per scansionare il codice App Clip qui sotto per iniziare a utilizzare PushDeer.&lt;/p>
+&lt;p>&lt;img src="https://github.com/easychen/pushdeer/raw/main/doc/image/clipcode.png" alt="Codice App Clip" loading="lazy" />&lt;/p>
+&lt;p>In alternativa, cerca &lt;strong>PushDeer&lt;/strong> nell&amp;rsquo;App Store e installalo.&lt;/p>
+&lt;p>&lt;img src="https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/pushdeer-device-en.png?raw=true" alt="Interfaccia Dispositivo PushDeer" loading="lazy" />&lt;/p>
+&lt;p>Apri l&amp;rsquo;app PushDeer, vai alla scheda &lt;strong>Dispositivi&lt;/strong>, clicca sul pulsante più (+) in alto a destra e consenti l&amp;rsquo;invio di notifiche.&lt;/p>
+&lt;p>&lt;img src="https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/pushdeer-key-en.jpg?raw=true" alt="Interfaccia Chiave PushDeer" loading="lazy" />&lt;/p>
+&lt;p>Vai alla scheda &lt;strong>Chiave&lt;/strong> in PushDeer, copia la tua chiave e incollala nel campo URL/Chiave del canale nelle impostazioni di DutyPusher. Clicca su &lt;strong>Salva&lt;/strong> per iniziare a utilizzarlo.&lt;/p>
+&lt;h3>Configurazione dell&amp;rsquo;API Ufficiale Telegram Bot&lt;span class="hx-absolute -hx-mt-20" id="configurazione-dellapi-ufficiale-telegram-bot">&lt;/span>
+&lt;a href="#configurazione-dellapi-ufficiale-telegram-bot" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>Documentazione Ufficiale: &lt;a href="https://core.telegram.org/bots#how-do-i-create-a-bot" target="_blank" rel="noopener">API Telegram Bot&lt;/a>&lt;/p>
+&lt;p>&lt;strong>I seguenti passaggi potrebbero cambiare in qualsiasi momento. Fai riferimento alla documentazione ufficiale di Telegram per le istruzioni più recenti.&lt;/strong>&lt;/p>
+&lt;h4>Creazione di un Bot&lt;span class="hx-absolute -hx-mt-20" id="creazione-di-un-bot">&lt;/span>
+&lt;a href="#creazione-di-un-bot" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;ol>
+&lt;li>Usa il tuo account Telegram per inviare il comando `/start** a &lt;a href="https://t.me/botfather" target="_blank" rel="noopener">@BotFather&lt;/a>.&lt;/li>
+&lt;li>Invia poi il comando `/newbot** e segui le istruzioni per impostare un nome e un username per il tuo bot.&lt;/li>
+&lt;li>Riceverai informazioni dettagliate sul tuo bot, inclusi un link al tuo bot (che inizia con &lt;code>t.me/&lt;/code>) e un token (che inizia con numeri: &lt;code>0000000000:xxxxxxxxxxxxxxxxxxxxxxxxxxxx&lt;/code>).&lt;/li>
+&lt;/ol>
+&lt;h4>Impostazioni del Plugin&lt;span class="hx-absolute -hx-mt-20" id="impostazioni-del-plugin-1">&lt;/span>
+&lt;a href="#impostazioni-del-plugin-1" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>&lt;img src="https://github.com/MorCherlf/FFXIVDutyPusher/blob/master/Resources/img/settings-it-telegram.png?raw=true" alt="Impostazioni Telegram" loading="lazy" />&lt;/p>
+&lt;ol>
+&lt;li>Invia il comando `/start** al tuo bot appena creato su Telegram.&lt;/li>
+&lt;li>Copia il token fornito da BotFather e incollalo nel campo Token nelle impostazioni di DutyPusher. Clicca su &lt;strong>Ottieni Chat ID&lt;/strong> e attendi che il Chat ID venga compilato automaticamente.&lt;/li>
+&lt;li>Una volta ottenuto il Chat ID, clicca su &lt;strong>Test&lt;/strong> per confermare che puoi ricevere un messaggio dal tuo bot su Telegram. Se tutto funziona, clicca su &lt;strong>Salva&lt;/strong> per iniziare a utilizzarlo.&lt;/li>
+&lt;/ol>
+&lt;div class="hx-overflow-x-auto hx-mt-6 hx-flex hx-flex-col hx-rounded-lg hx-border hx-py-4 hx-px-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-green-200 hx-bg-green-100 hx-text-green-900 dark:hx-border-green-200/30 dark:hx-bg-green-900/30 dark:hx-text-green-200">
+&lt;p class="hx-flex hx-items-center hx-font-medium">&lt;svg height=16px class="hx-inline-block hx-align-middle hx-mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>&lt;/svg>Tip&lt;/p>
+&lt;div class="hx-w-full hx-min-w-0 hx-leading-7">
+&lt;div class="hx-mt-6 hx-leading-7 first:hx-mt-0">&lt;p>Se il plugin non riesce a recuperare automaticamente il tuo Chat ID, prova i seguenti passaggi:&lt;/p>
+&lt;ol>
+&lt;li>Assicurati che il token sia inserito correttamente.&lt;/li>
+&lt;li>Invia un messaggio qualsiasi al tuo bot e prova a recuperare nuovamente il Chat ID.&lt;/li>
+&lt;/ol>
+&lt;p>Se i passaggi sopra non funzionano:&lt;/p>
+&lt;ol>
+&lt;li>Apri il tuo browser e visita il seguente URL:
+&lt;code>https://api.telegram.org/bot$YOUR_BOT_TOKEN_HERE/getUpdates&lt;/code>
+Nota: Sostituisci &lt;code>$YOUR_BOT_TOKEN_HERE&lt;/code> con il token del tuo bot.&lt;/li>
+&lt;li>Trova il campo &lt;code>message&lt;/code> -&amp;gt; &lt;code>chat&lt;/code> -&amp;gt; &lt;code>id&lt;/code> nella risposta JSON e copialo nel campo Chat ID nelle impostazioni del plugin.&lt;/li>
+&lt;/ol>&lt;/div>
+&lt;/div>
+&lt;/div></description></item><item><title>Informazioni</title><link>https://MorCherlf.github.io/FFXIVDutyPusher/it/about/</link><pubDate>Sun, 30 Mar 2025 11:27:58 +0300</pubDate><guid>https://MorCherlf.github.io/FFXIVDutyPusher/it/about/</guid><description>
+&lt;h2>Informazioni su DutyPusher&lt;span class="hx-absolute -hx-mt-20" id="informazioni-su-dutypusher">&lt;/span>
+&lt;a href="#informazioni-su-dutypusher" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>DutyPusher è un plugin open source per Dalamud sviluppato da MorCherlf per &lt;em>Final Fantasy XIV&lt;/em> (FFXIV). Il suo obiettivo è aiutare i giocatori a rilassarsi lontano dai propri computer mentre aspettano in coda per i dungeon. Utilizzando più canali di notifica estensibili, i giocatori possono ricevere avvisi immediati quando la loro coda è pronta, assicurandosi di non perdere nessun dungeon.&lt;/p>
+&lt;p>&lt;strong>Caratteristiche principali&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Supporto per più canali di notifica&lt;/strong>: Attualmente supporta le API ufficiali di Bark, PushDeer e Telegram Bot, con piani per espandersi a più canali di notifica in futuro.&lt;/li>
+&lt;li>&lt;strong>Notifiche istantanee&lt;/strong>: Quando la tua coda per il dungeon è pronta, DutyPusher invierà immediatamente una notifica al tuo dispositivo.&lt;/li>
+&lt;li>&lt;strong>Facile da usare&lt;/strong>: Una configurazione semplice ti permette di iniziare a usarlo subito.&lt;/li>
+&lt;li>&lt;strong>Opzioni personalizzabili&lt;/strong>: Supporta suoni di notifica personalizzati e notifiche istantanee (Bark).&lt;/li>
+&lt;li>&lt;strong>Completamente open source&lt;/strong>: DutyPusher è completamente open source. Puoi creare il tuo fork o inviarci una Pull Request.&lt;/li>
+&lt;li>&lt;strong>Il più sicuro possibile&lt;/strong>: DutyPusher non interagisce con il server di gioco né modifica/opera il gioco in alcun modo. Tranne per l&amp;rsquo;invio di notifiche, che richiede richieste di rete ai server dei rispettivi canali di notifica, non raccoglie, registra o memorizza alcuna informazione.&lt;/li>
+&lt;/ul>
+&lt;h2>Informazioni sullo sviluppatore&lt;span class="hx-absolute -hx-mt-20" id="informazioni-sullo-sviluppatore">&lt;/span>
+&lt;a href="#informazioni-sullo-sviluppatore" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>Ciao, sono &lt;a href="https://link.mor.icu" target="_blank" rel="noopener">MorCherlf&lt;/a>. Sono un programmatore, giocatore, appassionato di musica, Furry e altro ancora…&lt;/p>
+&lt;p>Questo è il mio primo plugin per Dalamud. Se hai suggerimenti o domande, sentiti libero di inviare un Issue o una Pull Request su &lt;a href="https://github.com/MorCherlf/FFXIVDutyPusher" target="_blank" rel="noopener">GitHub&lt;/a>.&lt;/p>
+&lt;p>Se hai domande, puoi anche contattarmi via &lt;a href="mailto:morcherlfy@outlook.com" >email&lt;/a>.&lt;/p>
+&lt;h2>Diritti d&amp;rsquo;autore e dichiarazione di non responsabilità&lt;span class="hx-absolute -hx-mt-20" id="diritti-dautore-e-dichiarazione-di-non-responsabilità">&lt;/span>
+&lt;a href="#diritti-dautore-e-dichiarazione-di-non-responsabilit%c3%a0" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>Avviso sui diritti d&amp;rsquo;autore&lt;span class="hx-absolute -hx-mt-20" id="avviso-sui-diritti-dautore">&lt;/span>
+&lt;a href="#avviso-sui-diritti-dautore" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Licenza open source&lt;/strong>
+Questo plugin è open source sotto la licenza &lt;a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" rel="noopener">AGPL-3.0&lt;/a>. Sei libero di usare, modificare e distribuire questo plugin, a patto di rispettare i termini della licenza AGPL-3.0.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Generazione del sito web e tema&lt;/strong>
+Questo sito web è generato con &lt;a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo&lt;/a>, e il tema è basato su &lt;a href="https://github.com/imfing/hextra" target="_blank" rel="noopener">hextra&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Canali di notifica&lt;/strong>
+I canali di notifica utilizzati da questo plugin sono forniti dalle rispettive piattaforme/fornitori di servizi, tra cui, ma non limitati a, Bark, PushDeer e Telegram Bot. Queste piattaforme/fornitori di servizi conservano i diritti di proprietà intellettuale e le responsabilità dei loro servizi.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Marchio FINAL FANTASY&lt;/strong>
+FINAL FANTASY è un marchio registrato di Square Enix Holdings Co., Ltd. FINAL FANTASY XIV © 2010-2022 SQUARE ENIX CO., LTD. Tutti i diritti riservati.
+&lt;strong>Non siamo affiliati con SQUARE ENIX CO., LTD.&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3>Dichiarazione di non responsabilità&lt;span class="hx-absolute -hx-mt-20" id="dichiarazione-di-non-responsabilità">&lt;/span>
+&lt;a href="#dichiarazione-di-non-responsabilit%c3%a0" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Rischi legati all&amp;rsquo;uso del plugin&lt;/strong>
+Utilizzando questo plugin, riconosci e accetti i Termini di Servizio di &lt;em>Final Fantasy XIV&lt;/em> (FFXIV).
+Tieni presente che, tecnicamente, questo plugin potrebbe violare i Termini di Servizio di FFXIV, anche se non eseguiamo operazioni automatizzate o modifiche al gioco.
+Accetti tutti i rischi associati all&amp;rsquo;uso di questo plugin, inclusi, ma non limitati a, la sospensione dell&amp;rsquo;account, la perdita di dati o altre conseguenze.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Limitazione di responsabilità&lt;/strong>
+Gli sviluppatori e i collaboratori di questo plugin non sono responsabili per eventuali danni diretti o indiretti derivanti dall&amp;rsquo;uso di questo plugin, inclusi, ma non limitati a, la sospensione dell&amp;rsquo;account, la perdita di dati, danni al dispositivo o altre responsabilità legali o finanziarie.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Utilizzo a proprio rischio&lt;/strong>
+Utilizzando questo plugin, riconosci e accetti i rischi menzionati sopra e accetti di assumerti tutte le possibili conseguenze. Ti raccomandiamo di usare il plugin con cautela e di rispettare i Termini di Servizio di FFXIV.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;p>Fammi sapere se hai bisogno di ulteriori modifiche!&lt;/p></description></item></channel></rss>
