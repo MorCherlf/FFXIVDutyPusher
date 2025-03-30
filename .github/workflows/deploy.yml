@@ -9,24 +9,29 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      # Step 1: Checkout main branch
+      - name: Checkout main branch
         uses: actions/checkout@v4
         with:
           submodules: true
 
+      # Step 2: Set up Hugo
       - name: Set up Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: "latest"
           extended: true
 
+      # Step 3: Build Hugo site
       - name: Build
         run: |
           cd Site
           hugo --minify
 
-      - name: Deploy
+      # Step 4: Deploy to gh-pages branch
+      - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./Site/public
+          publish_branch: gh-pages
