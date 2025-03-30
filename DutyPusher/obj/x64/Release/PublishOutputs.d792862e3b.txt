@@ -1,6 +1,0 @@
-C:\Users\morch\Source\Repos\MorCherlf\FFXIVDutyPusher\DutyPusher\bin\x64\Release\publish\loc\en.json
-C:\Users\morch\Source\Repos\MorCherlf\FFXIVDutyPusher\DutyPusher\bin\x64\Release\publish\loc\zh.json
-C:\Users\morch\Source\Repos\MorCherlf\FFXIVDutyPusher\DutyPusher\bin\x64\Release\publish\DutyPusher.dll
-C:\Users\morch\Source\Repos\MorCherlf\FFXIVDutyPusher\DutyPusher\bin\x64\Release\publish\DutyPusher.deps.json
-C:\Users\morch\Source\Repos\MorCherlf\FFXIVDutyPusher\DutyPusher\bin\x64\Release\publish\DutyPusher.pdb
-C:\Users\morch\Source\Repos\MorCherlf\FFXIVDutyPusher\DutyPusher\bin\x64\Release\publish\Dalamud.Loc.dll
