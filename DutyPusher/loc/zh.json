@@ -1,7 +1,7 @@
 {
     "PluginName": "狒狒排本小助手",
     "WelcomeLine": "欢迎使用狒狒排本小助手，请在使用前阅读使用教程",
-    "GuideURL": "https://github.com/MorCherlf/FFXIVDutyPusher?tab=readme-ov-file#%E6%89%8B%E6%9C%BA%E9%85%8D%E7%BD%AE",
+    "GuideURL": "https://morcherlf.github.io/FFXIVDutyPusher/docs/",
     "PushChannel": "推送渠道",
     "Bark": "Bark",
     "PushDeer": "PushDeer",

@@ -1,7 +1,7 @@
 {
     "PluginName": "DutyPusher",
     "WelcomeLine": "DutyPusher를 사용해 주셔서 감사합니다. 사용 전 가이드를 읽어주세요",
-    "GuideURL": "https://github.com/MorCherlf/FFXIVDutyPusher?tab=readme-ov-file#device-setting",
+    "GuideURL": "https://morcherlf.github.io/FFXIVDutyPusher/docs/",
     "PushChannel": "푸시 채널",
     "Bark": "Bark",
     "PushDeer": "PushDeer",
