@@ -16,7 +16,7 @@
     // 检查当前路径是否已经是目标语言路径
     var currentPath = window.location.pathname;
     var isAlreadyOnTargetLanguage = supportedLanguages.some(function(lang) {
-      return currentPath.startsWith('/' + lang + '/');
+      return currentPath.startsWith('/FFXIVDutyPusher/' + lang + '/');
     });
 
     // 如果当前路径已经是目标语言路径，不再重定向
@@ -35,8 +35,8 @@
 
     // 如果找到匹配的语言，重定向到对应的语言
     if (language && language !== defaultLanguage) {
-      console.log('Redirecting to:', '/' + language.toLowerCase() + '/');
-      window.location.href = '/' + language.toLowerCase() + '/';
+      console.log('Redirecting to:', '/FFXIVDutyPusher/' + language.toLowerCase() + '/');
+      window.location.href = '/FFXIVDutyPusher/' + language.toLowerCase() + '/';
     }
   })();
 </script>
