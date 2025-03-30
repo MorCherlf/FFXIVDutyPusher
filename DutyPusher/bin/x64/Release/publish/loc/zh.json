@@ -1,0 +1,18 @@
+{
+    "PluginName": "狒狒排本小助手",
+    "PushChannel": "推送渠道",
+    "Bark": "Bark",
+    "PushDeer":  "PushDeer",
+    "ChannelDetails": "渠道URL/Key",
+    "Test": "测试",
+    "TimeSensitive": "即时通知",
+    "Enable": "启用",
+    "Save": "保存",
+    "PushTitle": "狒狒排本小助手",
+    "PushContent": "你的副本已经排到了！",
+    "TestContent": "这是一条来自卫月插件<狒狒排本小助手>的测试推送!",
+    "LocalizationLoading": "成功加载语言：中文！",
+    "IsPluginActive": "当前排本通知",
+    "On": "开",
+    "Off": "关"
+}

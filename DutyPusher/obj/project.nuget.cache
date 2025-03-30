@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "00/bz9qsx3k=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\morch\\source\\repos\\MorCherlf\\FFXIVDutyPusher\\DutyPusher\\DutyPusher.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\morch\\.nuget\\packages\\dalamud.loc\\1.2.1\\dalamud.loc.1.2.1.nupkg.sha512",
+    "C:\\Users\\morch\\.nuget\\packages\\dalamudpackager\\12.0.0\\dalamudpackager.12.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

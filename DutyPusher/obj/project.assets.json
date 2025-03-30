@@ -1,0 +1,155 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0-windows7.0": {
+      "Dalamud.Loc/1.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-windows7.0/Dalamud.Loc.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows7.0/Dalamud.Loc.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "DalamudPackager/12.0.0": {
+        "type": "package",
+        "build": {
+          "build/DalamudPackager.props": {},
+          "build/DalamudPackager.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/DalamudPackager.props": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Dalamud.Loc/1.2.1": {
+      "sha512": "zOSjsstzBtgyCyjYbvGHoW+VH4APoivJZiWLaCKGecBqCySC3r2TcYhWt1s7xZLxA39SrsScNagFkPnnv4c8aw==",
+      "type": "package",
+      "path": "dalamud.loc/1.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "dalamud.loc.1.2.1.nupkg.sha512",
+        "dalamud.loc.nuspec",
+        "icon.png",
+        "lib/net8.0-windows7.0/Dalamud.Loc.dll",
+        "lib/net8.0-windows7.0/Dalamud.Loc.xml"
+      ]
+    },
+    "DalamudPackager/12.0.0": {
+      "sha512": "J5TJLV3f16T/E2H2P17ClWjtfEBPpq3yxvqW46eN36JCm6wR+EaoaYkqG9Rm5sHqs3/nK/vKjWWyvEs/jhKoXw==",
+      "type": "package",
+      "path": "dalamudpackager/12.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/DalamudPackager.props",
+        "build/DalamudPackager.targets",
+        "buildMultiTargeting/DalamudPackager.props",
+        "dalamudpackager.12.0.0.nupkg.sha512",
+        "dalamudpackager.nuspec",
+        "tasks/net48/DalamudPackager.dll",
+        "tasks/net48/Newtonsoft.Json.dll",
+        "tasks/net48/YamlDotNet.dll",
+        "tasks/netstandard2.1/DalamudPackager.dll",
+        "tasks/netstandard2.1/Newtonsoft.Json.dll",
+        "tasks/netstandard2.1/YamlDotNet.dll"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0-windows7.0": [
+      "Dalamud.Loc >= 1.2.1",
+      "DalamudPackager >= 12.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\morch\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "0.1.3",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\morch\\source\\repos\\MorCherlf\\FFXIVDutyPusher\\DutyPusher\\DutyPusher.csproj",
+      "projectName": "DutyPusher",
+      "projectPath": "C:\\Users\\morch\\source\\repos\\MorCherlf\\FFXIVDutyPusher\\DutyPusher\\DutyPusher.csproj",
+      "packagesPath": "C:\\Users\\morch\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\morch\\source\\repos\\MorCherlf\\FFXIVDutyPusher\\DutyPusher\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\morch\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0-windows7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0-windows7.0": {
+          "targetAlias": "net9.0-windows7.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreLockProperties": {
+        "restorePackagesWithLockFile": "true"
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.200"
+    },
+    "frameworks": {
+      "net9.0-windows7.0": {
+        "targetAlias": "net9.0-windows7.0",
+        "dependencies": {
+          "Dalamud.Loc": {
+            "target": "Package",
+            "version": "[1.2.1, )"
+          },
+          "DalamudPackager": {
+            "target": "Package",
+            "version": "[12.0.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

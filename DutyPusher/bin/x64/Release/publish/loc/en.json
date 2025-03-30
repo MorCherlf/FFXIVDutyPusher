@@ -1,0 +1,18 @@
+{
+    "PluginName": "DutyPusher",
+    "PushChannel": "Push Channel",
+    "Bark": "Bark",
+    "PushDeer": "PushDeer",
+    "ChannelDetails": "Channel Details",
+    "Test": "Test",
+    "TimeSensitive": "Time Sensitive",
+    "Enable": "Enable",
+    "Save": "Save",
+    "PushTitle": "DutyPusher",
+    "PushContent": "Your Duty is ready!",
+    "TestContent": "This is a test notify from FFXIV Dalamud Plugin <DutyPusher>!",
+    "LocalizationLoading": "Sucessed to load Language English!",
+    "IsPluginActive": "The DutyPusher is",
+    "On": "Active",
+    "Off": "Inactive"
+}
