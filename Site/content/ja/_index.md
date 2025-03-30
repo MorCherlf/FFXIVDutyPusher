@@ -1,6 +1,5 @@
 ---
 date: '2025-03-30T12:00:29+03:00'
-draft: true
 title: 'DutyPusher'
 ---
 

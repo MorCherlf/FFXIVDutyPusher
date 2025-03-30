@@ -1,6 +1,5 @@
 ---
 date: '2025-03-30T11:27:58+03:00'
-draft: true
 title: 'Installasjonsveiledning'
 ---
 

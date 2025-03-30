@@ -33,7 +33,7 @@
     console.log('Preferred language:', preferredLanguage);
     console.log('Matched language:', language);
 
-    // 如果找到匹配的语言，重定向到对应的语言页面
+    // 如果找到匹配的语言，重定向到对应的语言
     if (language && language !== defaultLanguage) {
       console.log('Redirecting to:', '/' + language.toLowerCase() + '/');
       window.location.href = '/' + language.toLowerCase() + '/';

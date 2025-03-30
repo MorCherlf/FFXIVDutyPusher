@@ -28,6 +28,7 @@ jobs:
       - name: Build
         run: |
           cd Site
+          hugo mod get -u
           hugo --minify
 
       # Step 4: Deploy to gh-pages branch
