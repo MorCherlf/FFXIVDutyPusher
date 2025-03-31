@@ -215,7 +215,7 @@ If you have any questions, you can also reach me via [email](mailto:morcherlfy@o
 
 **在使用本插件过程中遇到了问题，请不要向Dalamud发送反馈**
 
-Dalamud中下载量: ![Downloads](https://img.shields.io/badge/downloads-95-brightgreen)
+Dalamud中下载量: ![Downloads](https://img.shields.io/badge/downloads-139-brightgreen)
 
 ------
 
