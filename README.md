@@ -20,7 +20,7 @@ When you enable this plugin and configure a push channel, it will send a notific
 
 **If you encounter any issues while using this plugin, please do not send feedback to Dalamud.**
 
-Download Count in Dalamud: ![Downloads](https://img.shields.io/badge/downloads-290-brightgreen)
+Download Count in Dalamud: ![Downloads](https://img.shields.io/badge/downloads-310-brightgreen)
 
 ------
 
@@ -215,7 +215,7 @@ If you have any questions, you can also reach me via [email](mailto:morcherlfy@o
 
 **在使用本插件过程中遇到了问题，请不要向Dalamud发送反馈**
 
-Dalamud 中的下载量: ![Downloads](https://img.shields.io/badge/downloads-290-brightgreen)
+Dalamud 中的下载量: ![Downloads](https://img.shields.io/badge/downloads-310-brightgreen)
 
 ------
 
