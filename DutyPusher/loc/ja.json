@@ -22,5 +22,15 @@
     "LocalizationLoading": "言語日本語の読み込みに成功しました！",
     "IsPluginActive": "DutyPusherの状態",
     "On": "有効",
-    "Off": "無効"
+    "Off": "無効",
+    "ntfy": "Ntfy.sh サービス",
+    "ntfy.serverlist": "Ntfy.sh サービスリスト",
+    "ntfy.sh": "公式プッシュサーバー ntfy.sh （推奨）",
+    "ntfy.dutypusher": "DutyPusher 自己ホスト型サービス（TBD）",
+    "ntfy.customer": "カスタムプッシュサービス（URL形式：https://ドメイン.トップレベルドメイン/ ）",
+    "ntfy.custom.serverURL": "カスタムプッシュサービスURL",
+    "ntfy.topic": "トピック",
+    "ntfy.priority": "優先度",
+    "ntfy.priority.descript": "1～5の数字を入力してください（デフォルトは3です）",
+    "ntfy.emoji": "お楽しみに（通知時にランダムな絵文字を送信します）"
 }

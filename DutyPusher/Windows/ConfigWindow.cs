@@ -26,6 +26,11 @@ namespace DutyPusher.Windows
         private string chatID = "";
         private bool enable = false;
         private bool barkTimeSensitive = false;
+        private string selectedNtfy = "";
+        private string ntfyServer = "";
+        private string ntfyTopic = "";
+        private int ntfyPriority = 3;
+        private bool ntfyEmoji = false;
 
         public ConfigWindow(Plugin plugin, PushService pushService, IPluginLog pluginLog, Localization loc) : base(loc.GetString("PluginName") +"###By MorCherlf")
         {
@@ -44,6 +49,11 @@ namespace DutyPusher.Windows
             chatID = configuration.TelegramChatID;
             enable = configuration.Enable;
             barkTimeSensitive = configuration.BarkTimeSensitive;
+            selectedNtfy = configuration.NtfySelection;
+            ntfyServer = configuration.NtfyServer;
+            ntfyTopic = configuration.NtfyTopic;
+            ntfyPriority = configuration.NtfyPriority;
+            ntfyEmoji = configuration.NtfyEmoji;
         }
 
         public void Dispose() { }
@@ -58,6 +68,11 @@ namespace DutyPusher.Windows
             chatID = configuration.TelegramChatID;
             enable = configuration.Enable;
             barkTimeSensitive = configuration.BarkTimeSensitive;
+            selectedNtfy = configuration.NtfySelection;
+            ntfyServer = configuration.NtfyServer;
+            ntfyTopic = configuration.NtfyTopic;
+            ntfyPriority = configuration.NtfyPriority;
+            ntfyEmoji = configuration.NtfyEmoji;
         }
 
         public override void Draw()
@@ -103,6 +118,11 @@ namespace DutyPusher.Windows
                     selectedChannel = "Telegram_Official_API";
                 }
 
+                if (ImGui.Selectable(loc.GetString("ntfy")))
+                {
+                    selectedChannel = "Ntfy";
+                }
+
                 ImGui.EndCombo();
             }
 
@@ -143,6 +163,51 @@ namespace DutyPusher.Windows
                     ImGui.Text(loc.GetString("Chat_ID"));
                     ImGui.SameLine();
                     ImGui.InputText("##ChatID", ref chatID, 256);
+                    ImGui.SameLine();
+                    if (ImGui.Button(loc.GetString("Test")))
+                    {
+                        TestRequest();
+                    }
+                    break;
+                case "Ntfy":
+                    if (ImGui.BeginCombo(loc.GetString("ntfy.serverlist"), selectedNtfy))
+                    {
+                        if (ImGui.Selectable(loc.GetString("ntfy.sh")))
+                        {
+                            selectedNtfy = "ntfy.sh";
+                            ntfyServer = "https://ntfy.sh/";
+                        }
+
+                        if (ImGui.Selectable(loc.GetString("ntfy.dutypusher")))
+                        {
+                            selectedNtfy = "ntfy.dutypusher";
+                            ntfyServer = "https://ntfy.sh/";
+                        }
+
+                        if (ImGui.Selectable(loc.GetString("ntfy.customer")))
+                        {
+                            selectedNtfy = "ntfy.customer";
+                        }
+
+                        ImGui.EndCombo();
+                    }
+
+                    if(selectedNtfy == "ntfy.customer")
+                    {
+                        ImGui.Text(loc.GetString("ntfy.custom.serverURL"));
+                        ImGui.SameLine();
+                        ImGui.InputText("##The Link Should Be Like 'https://domain.xx/' ", ref ntfyServer, 256);
+                    }
+
+                    ImGui.Text(loc.GetString("ntfy.topic"));
+                    ImGui.SameLine();
+                    ImGui.InputText("##Your Topic", ref ntfyTopic, 256);
+
+                    ImGui.InputInt(loc.GetString("ntfy.priority"), ref ntfyPriority);
+                    ImGui.SameLine();
+                    ImGui.Text(loc.GetString("ntfy.priority.descript"));
+
+                    ImGui.Checkbox(loc.GetString("ntfy.emoji"), ref ntfyEmoji);
                     ImGui.SameLine();
                     if (ImGui.Button(loc.GetString("Test")))
                     {
@@ -217,6 +282,11 @@ namespace DutyPusher.Windows
             configuration.PushDeerKey = pushdeerKey;
             configuration.TelegramBotToken = telegramBotToken;
             configuration.TelegramChatID = chatID;
+            configuration.NtfyEmoji = ntfyEmoji;
+            configuration.NtfyPriority = ntfyPriority;
+            configuration.NtfySelection  = selectedNtfy;
+            configuration.NtfyServer = ntfyServer;
+            configuration.NtfyTopic = ntfyTopic;
             configuration.Enable = enable;
             configuration.Save();
         }

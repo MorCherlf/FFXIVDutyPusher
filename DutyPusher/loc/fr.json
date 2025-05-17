@@ -22,5 +22,15 @@
     "LocalizationLoading": "Langue française chargée avec succès !",
     "IsPluginActive": "DutyPusher est",
     "On": "Actif",
-    "Off": "Inactif"
+    "Off": "Inactif",
+    "ntfy": "Service Ntfy.sh",
+    "ntfy.serverlist": "Liste des services Ntfy.sh",
+    "ntfy.sh": "Serveur push officiel ntfy.sh (recommandé)",
+    "ntfy.dutypusher": "Service auto-hébergé DutyPusher (TBD)",
+    "ntfy.customer": "Service push personnalisé (format d'URL : https://domaine.domaineprincipal/ )",
+    "ntfy.custom.serverURL": "URL du service push personnalisé",
+    "ntfy.topic": "Sujet",
+    "ntfy.priority": "Priorité",
+    "ntfy.priority.descript": "Veuillez saisir un nombre de 1 à 5 (la valeur par défaut est 3)",
+    "ntfy.emoji": "Pour un peu de fun (envoie un Emoji aléatoire avec les notifications)"
 }

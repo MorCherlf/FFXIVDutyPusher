@@ -22,5 +22,15 @@
     "LocalizationLoading": "成功載入語言: 繁體中文！",
     "IsPluginActive": "當前副本通知",
     "On": "開啟",
-    "Off": "關閉"
+    "Off": "關閉",
+    "ntfy": "Ntfy.sh 服務",
+    "ntfy.serverlist": "Ntfy.sh 服務列表",
+    "ntfy.sh": "官方推播伺服器 ntfy.sh （推薦）",
+    "ntfy.dutypusher": "DutyPusher 自建服務（TBD）",
+    "ntfy.customer": "自訂推播服務 （URL格式為 https://網域.根網域/ ）",
+    "ntfy.custom.serverURL": "自訂推播服務URL",
+    "ntfy.topic": "主題",
+    "ntfy.priority": "優先級",
+    "ntfy.priority.descript": "請輸入1-5的數字（預設為3）",
+    "ntfy.emoji": "找點樂子（通知時隨機傳送Emoji）"
 }

@@ -22,5 +22,15 @@
     "LocalizationLoading": "成功加载语言：中文！",
     "IsPluginActive": "当前排本通知",
     "On": "开",
-    "Off": "关"
+    "Off": "关",
+    "ntfy": "Ntfy.sh 服务",
+    "ntfy.serverlist": "Ntfy.sh 服务列表",
+    "ntfy.sh": "官方推送服务器 ntfy.sh （推荐）",
+    "ntfy.dutypusher": "DutyPusher自搭建服务（待上线）",
+    "ntfy.customer": "自定义推送服务 （URL格式为 https://域名.根域名/ ）",
+    "ntfy.custom.serverURL": "自定义推送服务URL",
+    "ntfy.topic": "主题",
+    "ntfy.priority": "优先级",
+    "ntfy.priority.descript": "请输入1-5的数字（默认为3）",
+    "ntfy.emoji": "找点乐子（通知时随机发送Emoji）"
 }

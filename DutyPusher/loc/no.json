@@ -22,5 +22,15 @@
     "LocalizationLoading": "Norsk språk lastet inn!",
     "IsPluginActive": "DutyPusher er",
     "On": "Aktiv",
-    "Off": "Inaktiv"
+    "Off": "Inaktiv",
+    "ntfy": "Ntfy.sh-tjeneste",
+    "ntfy.serverlist": "Ntfy.sh-tjenesteliste",
+    "ntfy.sh": "Offisiell push-server ntfy.sh (anbefalt)",
+    "ntfy.dutypusher": "Selvbetjent DutyPusher-tjeneste (TBD)",
+    "ntfy.customer": "Egendefinert push-tjeneste (URL-format: https://domene.toppnivådomene/ )",
+    "ntfy.custom.serverURL": "URL for egendefinert push-tjeneste",
+    "ntfy.topic": "Emne",
+    "ntfy.priority": "Prioritet",
+    "ntfy.priority.descript": "Vennligst skriv inn et tall fra 1-5 (standard er 3)",
+    "ntfy.emoji": "For litt moro (sender en tilfeldig Emoji med varsler)"
 }

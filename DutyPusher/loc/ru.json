@@ -22,5 +22,15 @@
     "LocalizationLoading": "Русский язык успешно загружен!",
     "IsPluginActive": "DutyPusher",
     "On": "Включен",
-    "Off": "Выключен"
+    "Off": "Выключен",
+    "ntfy": "Сервис Ntfy.sh",
+    "ntfy.serverlist": "Список сервисов Ntfy.sh",
+    "ntfy.sh": "Официальный push-сервер ntfy.sh (рекомендуется)",
+    "ntfy.dutypusher": "Собственный хостинг DutyPusher (TBD)",
+    "ntfy.customer": "Пользовательский push-сервис (формат URL: https://домен.доменверхнегоуровня/ )",
+    "ntfy.custom.serverURL": "URL пользовательского push-сервиса",
+    "ntfy.topic": "Тема",
+    "ntfy.priority": "Приоритет",
+    "ntfy.priority.descript": "Введите число от 1 до 5 (по умолчанию 3)",
+    "ntfy.emoji": "Для развлечения (отправляет случайный Emoji с уведомлениями)"
 }

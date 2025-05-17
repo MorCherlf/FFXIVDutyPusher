@@ -22,5 +22,15 @@
     "LocalizationLoading": "한국어 언어가 성공적으로 로드되었습니다!",
     "IsPluginActive": "DutyPusher 상태",
     "On": "활성",
-    "Off": "비활성"
+    "Off": "비활성",
+    "ntfy": "Ntfy.sh 서비스",
+    "ntfy.serverlist": "Ntfy.sh 서비스 목록",
+    "ntfy.sh": "공식 푸시 서버 ntfy.sh (권장)",
+    "ntfy.dutypusher": "DutyPusher 자체 호스팅 서비스 (TBD)",
+    "ntfy.customer": "사용자 지정 푸시 서비스 (URL 형식: https://도메인.최상위도메인/ )",
+    "ntfy.custom.serverURL": "사용자 지정 푸시 서비스 URL",
+    "ntfy.topic": "주제",
+    "ntfy.priority": "우선 순위",
+    "ntfy.priority.descript": "1-5 사이의 숫자를 입력하십시오 (기본값은 3임)",
+    "ntfy.emoji": "재미를 위해 (알림 시 임의의 이모티콘 전송)"
 }

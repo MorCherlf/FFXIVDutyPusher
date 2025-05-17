@@ -16,6 +16,7 @@ namespace DutyPusher
     {
         // 激活窗口的命令
         private const string CommandName = "/dutypusher";
+        private const string CommandNameAlt = "/dp";
 
         // 初始化对象
         private IDalamudPluginInterface PluginInterface { get; init; }
@@ -170,7 +171,12 @@ namespace DutyPusher
 
             CommandManager.AddHandler(CommandName, new CommandInfo(OnCommand)
             {
-                HelpMessage = "A useful message to display in /xlhelp"
+                HelpMessage = "Open DutyPusher Settings"
+            });
+
+            CommandManager.AddHandler(CommandNameAlt, new CommandInfo(OnCommand)
+            {
+                HelpMessage = "Open DutyPusher Settings"
             });
 
             PluginInterface.UiBuilder.Draw += DrawUI;
@@ -219,6 +225,7 @@ namespace DutyPusher
 
                 // 移除命令和钩子
                 CommandManager.RemoveHandler(CommandName);
+                CommandManager.RemoveHandler(CommandNameAlt);
                 PluginInterface.UiBuilder.Draw -= DrawUI;
                 PluginInterface.UiBuilder.OpenConfigUi -= ToggleConfigUI;
 
