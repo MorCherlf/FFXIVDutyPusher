@@ -9,6 +9,9 @@ using DutyPusher.Windows;
 using Dalamud.Game.Gui.Dtr;
 using Dalamud.Loc;
 using DutyPusher.Services;
+using Dalamud.Game.Text;
+using Dalamud.Game.Text.SeStringHandling;
+using Dalamud.Game.Text.SeStringHandling.Payloads;
 
 namespace DutyPusher
 {
@@ -16,7 +19,12 @@ namespace DutyPusher
     {
         // 激活窗口的命令
         private const string CommandName = "/dutypusher";
-        private const string CommandNameAlt = "/dp";
+        private const string CommandSetting = "/dpui";
+
+        // 切换启用状态
+        private const string CommandSwitch = "/dp";
+        private const string CommandEnable = "/dpon";
+        private const string CommandDisable = "/dpoff";
 
         // 初始化对象
         private IDalamudPluginInterface PluginInterface { get; init; }
@@ -32,12 +40,13 @@ namespace DutyPusher
         private IDtrBarEntry dtrEntry;
 
         [PluginService] public static IDtrBar DtrBar { get; private set; } = null!;
+        [PluginService] public static IChatGui ChatGui { get; private set; } = null!;
 
         private ConfigWindow ConfigWindow { get; init; }
         // private MainWindow MainWindow { get; init; }
 
         private readonly IPluginLog pluginLog; 
-        public Dalamud.Loc.Localization loc;
+        public static Dalamud.Loc.Localization loc;
         private PushService pushService;
         private DutyListener dutyListener;
 
@@ -77,7 +86,7 @@ namespace DutyPusher
             var twLoc = File.ReadAllText(PluginInterface.AssemblyLocation.Directory + "/loc/tw.json");
             var zhLoc = File.ReadAllText(PluginInterface.AssemblyLocation.Directory + "/loc/zh.json");
 
-            var loc = new Localization(pluginInterface);
+            Plugin.loc = new Localization(pluginInterface);
 
             loc.LoadLanguage(Dalamud.Loc.Enums.Language.German, deLoc);
             loc.LoadLanguage(Dalamud.Loc.Enums.Language.English, enLoc);
@@ -174,9 +183,24 @@ namespace DutyPusher
                 HelpMessage = "Open DutyPusher Settings"
             });
 
-            CommandManager.AddHandler(CommandNameAlt, new CommandInfo(OnCommand)
+            CommandManager.AddHandler(CommandSetting, new CommandInfo(OnCommand)
             {
                 HelpMessage = "Open DutyPusher Settings"
+            });
+
+            CommandManager.AddHandler(CommandSwitch, new CommandInfo(SwitchEnabledState)
+            {
+                HelpMessage = "Switch the DutyPusher enabled state"
+            });
+
+            CommandManager.AddHandler(CommandEnable, new CommandInfo(SwitchEnable)
+            {
+                HelpMessage = "Enable the DutyPusher"
+            });
+
+            CommandManager.AddHandler(CommandDisable, new CommandInfo(SwitchDisable)
+            {
+                HelpMessage = "Disable the DutyPusher"
             });
 
             PluginInterface.UiBuilder.Draw += DrawUI;
@@ -225,7 +249,10 @@ namespace DutyPusher
 
                 // 移除命令和钩子
                 CommandManager.RemoveHandler(CommandName);
-                CommandManager.RemoveHandler(CommandNameAlt);
+                CommandManager.RemoveHandler(CommandSetting);
+                CommandManager.RemoveHandler(CommandSwitch);
+                CommandManager.RemoveHandler(CommandDisable);
+                CommandManager.RemoveHandler(CommandEnable);
                 PluginInterface.UiBuilder.Draw -= DrawUI;
                 PluginInterface.UiBuilder.OpenConfigUi -= ToggleConfigUI;
 
@@ -254,14 +281,14 @@ namespace DutyPusher
                         Configuration.Enable = !Configuration.Enable;
                         Configuration.Save();
                         pluginLog.Info($"Dtr bar toggle switch enable: {Configuration.Enable}");
-                        UpdateDtrBarState(loc);
+                        UpdateDtrBarState(); // Call without parameter
                     }
                     catch (Exception ex)
                     {
                         pluginLog.Error($"Dtr bar toggle error: {ex}");
                     }
                 };
-                UpdateDtrBarState(loc);
+                UpdateDtrBarState(); // Call without parameter
             }
             catch (Exception e)
             {
@@ -269,15 +296,15 @@ namespace DutyPusher
             }
         }
 
-        public void UpdateDtrBarState(Localization loc)
+        public void UpdateDtrBarState()
         {
             if (dtrEntry == null) return;
             try
             {
-                dtrEntry.Text = $"{loc.GetString("PluginName")}: " +
-                               (Configuration.Enable ?
-                                loc.GetString("On") :
-                                loc.GetString("Off"));
+                dtrEntry.Text = $"{Plugin.loc.GetString("PluginName")}: " +
+                                (Configuration.Enable ?
+                                 Plugin.loc.GetString("On") :
+                                 Plugin.loc.GetString("Off"));
                 pluginLog.Debug("DTR bar Updated");
             }
             catch (Exception ex)
@@ -291,10 +318,80 @@ namespace DutyPusher
             ToggleConfigUI();
         }
 
+        private void SwitchEnabledState(string command, string args)
+        {
+            try
+            {
+                Configuration.Enable = !Configuration.Enable;
+                Configuration.Save();
+                pluginLog.Info($"Command toggle switch enable: {Configuration.Enable}");
+                UpdateDtrBarState();
+                var echoMessage = new XivChatEntry
+                {
+                    Type = XivChatType.Echo,
+                    Message = new SeString(new TextPayload($"{Plugin.loc.GetString("PluginName")}: " +
+                                (Configuration.Enable ?
+                                 Plugin.loc.GetString("On") :
+                                 Plugin.loc.GetString("Off"))))
+                };
+                ChatGui.Print(echoMessage);
+
+            }
+            catch (Exception ex)
+            {
+                pluginLog.Error($"Command toggle error: {ex}");
+            }
+        }
+
+        private void SwitchEnable(string command, string args)
+        {
+            try
+            {
+                Configuration.Enable = true;
+                Configuration.Save();
+                pluginLog.Info($"Command toggle switch enable: {Configuration.Enable}");
+                UpdateDtrBarState();
+                var echoMessage = new XivChatEntry
+                {
+                    Type = XivChatType.Echo,
+                    Message = new SeString(new TextPayload($"{Plugin.loc.GetString("PluginName")}: {Plugin.loc.GetString("On")}" ))
+                };
+                ChatGui.Print(echoMessage);
+
+            }
+            catch (Exception ex)
+            {
+                pluginLog.Error($"Command toggle error: {ex}");
+            }
+        }
+
+        private void SwitchDisable(string command, string args)
+        {
+            try
+            {
+                Configuration.Enable = false;
+                Configuration.Save();
+                pluginLog.Info($"Command toggle switch enable: {Configuration.Enable}");
+                UpdateDtrBarState();
+                var echoMessage = new XivChatEntry
+                {
+                    Type = XivChatType.Echo,
+                    Message = new SeString(new TextPayload($"{Plugin.loc.GetString("PluginName")}: {Plugin.loc.GetString("Off")}"))
+                };
+                ChatGui.Print(echoMessage);
+
+            }
+            catch (Exception ex)
+            {
+                pluginLog.Error($"Command toggle error: {ex}");
+            }
+        }
+
+
         private void DrawUI() => WindowSystem.Draw();
 
         public void ToggleConfigUI() => ConfigWindow.Toggle();
-        // public void ToggleMainUI() => MainWindow.Toggle();
+        
     }
 
 }

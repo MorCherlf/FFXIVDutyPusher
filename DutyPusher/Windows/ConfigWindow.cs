@@ -177,12 +177,7 @@ namespace DutyPusher.Windows
                             selectedNtfy = "ntfy.sh";
                             ntfyServer = "https://ntfy.sh/";
                         }
-
-                        if (ImGui.Selectable(loc.GetString("ntfy.dutypusher")))
-                        {
-                            selectedNtfy = "ntfy.dutypusher";
-                            ntfyServer = "https://ntfy.sh/";
-                        }
+  
 
                         if (ImGui.Selectable(loc.GetString("ntfy.customer")))
                         {
@@ -222,7 +217,7 @@ namespace DutyPusher.Windows
             {
                 configuration.Enable = enable;
                 configuration.Save();
-                Plugin.UpdateDtrBarState(loc); // 即时更新DTR状态
+                Plugin.UpdateDtrBarState(); // 即时更新DTR状态
             }
 
 
@@ -231,7 +226,7 @@ namespace DutyPusher.Windows
             {
                 // 在这里保存配置信息，可以使用保存到配置文件或其他方式
                 SaveConfig();
-                Plugin.UpdateDtrBarState(loc);
+                Plugin.UpdateDtrBarState();
             }
 
         }
