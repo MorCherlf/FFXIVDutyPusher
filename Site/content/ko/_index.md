@@ -21,4 +21,4 @@ title: 'DutyPusher'
 
 **이 플러그인 사용 중 문제가 발생하면 Dalamud에 피드백을 보내지 마십시오.**
 
-Dalamud 다운로드 횟수: {{< download-badge >}}
+Dalamud 다운로드 횟수: ![Downloads](https://dutypusher-badge.morcherlfy.workers.dev/?name=DutyPusher)

@@ -21,4 +21,4 @@ title: 'DutyPusher'
 
 **在使用本插件過程中遇到了問題，請不要向Dalamud發送反饋**
 
-Dalamud中下載量: {{< download-badge >}}
+Dalamud中下載量: ![Downloads](https://dutypusher-badge.morcherlfy.workers.dev/?name=DutyPusher)

@@ -21,4 +21,4 @@ title: 'DutyPusher'
 
 **このプラグインの使用中に問題が発生した場合、Dalamudにフィードバックを送信しないでください。**
 
-Dalamudでのダウンロード数:  {{< download-badge >}}
+Dalamudでのダウンロード数:  ![Downloads](https://dutypusher-badge.morcherlfy.workers.dev/?name=DutyPusher)

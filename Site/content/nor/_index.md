@@ -21,4 +21,4 @@ Når du aktiverer denne plugginen og konfigurerer en push-kanal, vil den sende e
 
 **Hvis du opplever problemer mens du bruker denne plugginen, vennligst ikke send tilbakemelding til Dalamud.**
 
-Nedlastingsantall i Dalamud: {{< download-badge >}}
+Nedlastingsantall i Dalamud: ![Downloads](https://dutypusher-badge.morcherlfy.workers.dev/?name=DutyPusher)

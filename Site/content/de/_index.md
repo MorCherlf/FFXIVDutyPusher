@@ -21,4 +21,4 @@ Wenn Sie dieses Plugin aktivieren und einen Push-Kanal konfigurieren, sendet es 
 
 **Wenn Sie beim Verwenden dieses Plugins auf Probleme stoßen, senden Sie bitte kein Feedback an Dalamud.**
 
-Download-Zähler in Dalamud: {{< download-badge >}}
+Download-Zähler in Dalamud: ![Downloads](https://dutypusher-badge.morcherlfy.workers.dev/?name=DutyPusher)

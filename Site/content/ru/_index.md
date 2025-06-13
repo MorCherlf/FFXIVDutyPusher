@@ -21,4 +21,4 @@ title: 'DutyPusher'
 
 **Если вы столкнулись с проблемами при использовании этого плагина, пожалуйста, не отправляйте отзывы в Dalamud.**
 
-Количество загрузок в Dalamud: {{< download-badge >}}
+Количество загрузок в Dalamud: ![Downloads](https://dutypusher-badge.morcherlfy.workers.dev/?name=DutyPusher)

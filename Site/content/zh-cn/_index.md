@@ -21,4 +21,4 @@ title: '狒狒排本小助手'
 
 **在使用本插件过程中遇到了问题，请不要向Dalamud发送反馈**
 
-Dalamud中下载量: {{< download-badge >}}
+Dalamud中下载量: ![Downloads](https://dutypusher-badge.morcherlfy.workers.dev/?name=DutyPusher)

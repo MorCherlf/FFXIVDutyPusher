@@ -21,4 +21,4 @@ Cuando habilitas este plugin y configuras un canal de notificaciones, enviará u
 
 **Si encuentras algún problema al usar este plugin, no envíes comentarios a Dalamud.**
 
-Descargas en Dalamud: {{< download-badge >}}
+Descargas en Dalamud: ![Downloads](https://dutypusher-badge.morcherlfy.workers.dev/?name=DutyPusher)

@@ -21,4 +21,4 @@ Quando attivi questo plugin e configuri un canale di notifica, invierà una noti
 
 **Se riscontri problemi durante l'uso di questo plugin, non inviare feedback a Dalamud.**
 
-Conteggio dei download in Dalamud: {{< download-badge >}}
+Conteggio dei download in Dalamud: ![Downloads](https://dutypusher-badge.morcherlfy.workers.dev/?name=DutyPusher)

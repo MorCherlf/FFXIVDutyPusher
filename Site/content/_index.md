@@ -21,4 +21,4 @@ When you enable this plugin and configure a push channel, it will send a notific
 
 **If you encounter any issues while using this plugin, please do not send feedback to Dalamud.**
 
-Download Count in Dalamud: {{< download-badge >}}
+Download Count in Dalamud: ![Downloads](https://dutypusher-badge.morcherlfy.workers.dev/?name=DutyPusher)
