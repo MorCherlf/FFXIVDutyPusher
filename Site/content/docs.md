@@ -1,5 +1,5 @@
 ---
-date: '2025-03-30T11:27:58+03:00'
+date: '2025-06-14T02:10:00+03:00'
 title: 'Setting Guide'
 ---
 
@@ -22,13 +22,15 @@ After configuring the push channel, you can check the activation status of DutyP
 
 ## Push Channel Configuration
 
-Currently, DutyPusher supports the following push channels: **Bark**, **PushDeer**, and **Telegram Bot Official API**.
+Currently, DutyPusher supports the following push channels: **Bark**, **PushDeer**, **Telegram Bot Official API**, and **Ntfy.sh**.
 
 **If you would like to add support for a new platform, please submit an Issue to this repository.**
 
 Repo Links: [Bark](https://github.com/Finb/Bark) | [PushDeer](https://github.com/easychen/pushdeer)
 
 Telegram Bot: [Telegram Bot API](https://core.telegram.org/bots/api)
+
+Ntfy.sh: [Ntfy.sh Official Site](https://ntfy.sh/)
 
 **If you encounter any issues while using this plugin, please do not send feedback to any push channel/platform.**
 
@@ -101,3 +103,12 @@ Official Documentation: [Telegram Bot API](https://core.telegram.org/bots#how-do
 >    Note: Replace `$YOUR_BOT_TOKEN_HERE` with your bot token.
 > 2. Locate the `message` -> `chat` -> `id` field in the JSON response and copy it into the Chat ID field in the plugin settings.
 
+### Ntfy.sh Configuration
+
+You can access the Ntfy.sh application from: [Ntfy.sh Official Site](https://ntfy.sh/)
+
+Official Documents：[Ntfy.sh Official Documents](https://docs.ntfy.sh/subscribe/phone/#overview)
+
+The document of this part is to be done, please using with the discription in the game plugin.
+
+P.S. If you are using Ntfy.sh Official Server, please choose an unique topic as your notification topic.

@@ -1,5 +1,5 @@
 ---
-date: '2025-03-30T11:27:58+03:00'
+date: '2025-06-14T02:10:00+03:00'
 title: '设置指南'
 ---
 
@@ -22,13 +22,15 @@ title: '设置指南'
 
 ## 推送通道配置
 
-目前狒狒排本小助手支持**Bark**，**PushDeer**，和**Telegram Bot 官方API**推送渠道
+目前狒狒排本小助手支持**Bark**，**PushDeer**，**Telegram Bot 官方API**，和**Ntfy.sh**推送渠道
 
 **如果想要增加某一平台的推送渠道，可以向此仓库提交Issue**
 
 Repo 链接： [Bark](https://github.com/Finb/Bark) [PushDeer](https://github.com/easychen/pushdeer)
 
 Telegram Bot：[Telegram Bot API](https://core.telegram.org/bots/api)
+
+Ntfy.sh：[Ntfy官方网站](https://ntfy.sh/)
 
 **在使用本插件过程中遇到了问题，请不要向任一推送渠道/平台发送反馈**
 
@@ -102,3 +104,13 @@ iOS/iPadOS (14+)
 >     `https://api.telegram.org/bot$YOUR_BOT_TOKEN_HERE/getUpdates`
 >     注意：请将`$YOUR_BOT_TOKEN_HERE`替换为您的Bot Token。
 > 2. 查看获取到的JSON文本，定位到`message`-`chat`-`id`，并将其复制到插件设置中的Chat ID中即可
+
+### Ntfy.sh 配置
+
+可以通过Ntfy.sh的官方网站获取Ntfy应用：[Ntfy官方网站](https://ntfy.sh/)
+
+官方参考使用文档：[Ntfy官方文档](https://docs.ntfy.sh/subscribe/phone/#overview)
+
+文档施工中，请参考插件内说明进行设置。
+
+注：若使用官方Ntfy.sh服务，请自行取一个不常见的主题名称。

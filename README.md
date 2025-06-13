@@ -43,13 +43,15 @@ After configuring the push channel, you can check the activation status of DutyP
 
 ## Push Channel Configuration
 
-Currently, DutyPusher supports the following push channels: **Bark**, **PushDeer**, and **Telegram Bot Official API**.
+Currently, DutyPusher supports the following push channels: **Bark**, **PushDeer**, **Telegram Bot Official API**, and **Ntfy.sh**.
 
 **If you would like to add support for a new platform, please submit an Issue to this repository.**
 
 Repo Links: [Bark](https://github.com/Finb/Bark) | [PushDeer](https://github.com/easychen/pushdeer)
 
 Telegram Bot: [Telegram Bot API](https://core.telegram.org/bots/api)
+
+Ntfy.sh: [Ntfy.sh Official Site](https://ntfy.sh/)
 
 **If you encounter any issues while using this plugin, please do not send feedback to any push channel/platform.**
 
@@ -121,6 +123,16 @@ Official Documentation: [Telegram Bot API](https://core.telegram.org/bots#how-do
 >    `https://api.telegram.org/bot$YOUR_BOT_TOKEN_HERE/getUpdates`
 >    Note: Replace `$YOUR_BOT_TOKEN_HERE` with your bot token.
 > 2. Locate the `message` -> `chat` -> `id` field in the JSON response and copy it into the Chat ID field in the plugin settings.
+
+### Ntfy.sh Configuration
+
+You can access the Ntfy.sh application from: [Ntfy.sh Official Site](https://ntfy.sh/)
+
+Official Documents：[Ntfy.sh Official Documents](https://docs.ntfy.sh/subscribe/phone/#overview)
+
+The document of this part is to be done, please using with the discription in the game plugin.
+
+P.S. If you are using Ntfy.sh Official Server, please choose an unique topic as your notification topic.
 
 ------
 
@@ -238,13 +250,15 @@ Dalamud 中的下载量: ![Downloads](https://img.shields.io/badge/downloads-792
 
 ## 推送通道配置
 
-目前狒狒排本小助手支持**Bark**，**PushDeer**，和**Telegram Bot 官方API**推送渠道
+目前狒狒排本小助手支持**Bark**，**PushDeer**，**Telegram Bot 官方API**，和**Ntfy.sh**推送渠道
 
 **如果想要增加某一平台的推送渠道，可以向此仓库提交Issue**
 
 Repo 链接： [Bark](https://github.com/Finb/Bark) [PushDeer](https://github.com/easychen/pushdeer)
 
 Telegram Bot：[Telegram Bot API](https://core.telegram.org/bots/api)
+
+Ntfy.sh：[Ntfy官方网站](https://ntfy.sh/)
 
 **在使用本插件过程中遇到了问题，请不要向任一推送渠道/平台发送反馈**
 
@@ -305,19 +319,16 @@ iOS/iPadOS (14+)
 2. 将BotFather发送的Token复制并粘贴到插件设置中的Token中，点击`获取 ChatID`后，等待Chat ID 中自动填充你的Chat ID
 3. 当自动获取到Chat ID后，点击`测试`，确认是否能在你的Telegram账号中接收到来自你刚刚创建的Bot的消息，如果一切正常点击保存后即可开始使用
 
-> [!TIP]
->
-> 如果插件无法自动获取到您的Chat ID，请尝试以下步骤：
->
-> 1. 确认Token填写正确
-> 2. 向你创建的Bot发送任一消息后，再次尝试获取
->
-> 如果以上步骤均无效：
->
-> 1. 打开浏览器访问以下URL：
->     `https://api.telegram.org/bot$YOUR_BOT_TOKEN_HERE/getUpdates`
->     注意：请将`$YOUR_BOT_TOKEN_HERE`替换为您的Bot Token。
-> 2. 查看获取到的JSON文本，定位到`message`-`chat`-`id`，并将其复制到插件设置中的Chat ID中即可
+
+### Ntfy.sh 配置
+
+可以通过Ntfy.sh的官方网站获取Ntfy应用：[Ntfy官方网站](https://ntfy.sh/)
+
+官方参考使用文档：[Ntfy官方文档](https://docs.ntfy.sh/subscribe/phone/#overview)
+
+文档施工中，请参考插件内说明进行设置。
+
+注：若使用官方Ntfy.sh服务，请自行取一个不常见的主题名称。
 
 ------
 

@@ -12,6 +12,8 @@ using DutyPusher.Services;
 using Dalamud.Game.Text;
 using Dalamud.Game.Text.SeStringHandling;
 using Dalamud.Game.Text.SeStringHandling.Payloads;
+using FFXIVClientStructs.FFXIV.Component.GUI;
+using System.Reflection.Metadata;
 
 namespace DutyPusher
 {
@@ -332,7 +334,11 @@ namespace DutyPusher
                     Message = new SeString(new TextPayload($"{Plugin.loc.GetString("PluginName")}: " +
                                 (Configuration.Enable ?
                                  Plugin.loc.GetString("On") :
-                                 Plugin.loc.GetString("Off"))))
+                                 Plugin.loc.GetString("Off"))),
+                                 new IconPayload(
+                                 (Configuration.Enable?
+                                 BitmapFontIcon.Alarm :
+                                 BitmapFontIcon.DoNotDisturb)))
                 };
                 ChatGui.Print(echoMessage);
 
@@ -354,7 +360,7 @@ namespace DutyPusher
                 var echoMessage = new XivChatEntry
                 {
                     Type = XivChatType.Echo,
-                    Message = new SeString(new TextPayload($"{Plugin.loc.GetString("PluginName")}: {Plugin.loc.GetString("On")}" ))
+                    Message = new SeString(new TextPayload($"{Plugin.loc.GetString("PluginName")}: {Plugin.loc.GetString("On")}" ), new IconPayload(BitmapFontIcon.Alarm))
                 };
                 ChatGui.Print(echoMessage);
 
@@ -376,10 +382,9 @@ namespace DutyPusher
                 var echoMessage = new XivChatEntry
                 {
                     Type = XivChatType.Echo,
-                    Message = new SeString(new TextPayload($"{Plugin.loc.GetString("PluginName")}: {Plugin.loc.GetString("Off")}"))
+                    Message = new SeString(new TextPayload($"{Plugin.loc.GetString("PluginName")}: {Plugin.loc.GetString("Off")}"), new IconPayload(BitmapFontIcon.DoNotDisturb))
                 };
                 ChatGui.Print(echoMessage);
-
             }
             catch (Exception ex)
             {
