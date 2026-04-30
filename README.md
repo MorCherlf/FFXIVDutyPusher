@@ -229,6 +229,8 @@ If you have any questions, you can also reach me via [email](mailto:morcherlfy@o
 
 Dalamud 中的下载量: ![Downloads](https://dutypusher-badge.morcherlfy.workers.dev/?name=DutyPusher)
 
+Dalamud CN (OtterCorp) 中的下载量: ![Downloads](https://dutypusher-cn-badge.morcherlfy.workers.dev/?InternalName=DutyPusher)
+
 ------
 
 ## 插件设置
