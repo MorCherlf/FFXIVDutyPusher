@@ -6,7 +6,7 @@
     "Punchline": "在排到本时，通过第三方推送平台向您的设备推送通知",
     "Description": "您可以使用此插件向您的设备推送排本成功通知",
     "ApplicableVersion": "any",
-    "DalamudApiLevel": 14,
+    "DalamudApiLevel": 15,
     "Tags": [
         "utility",
         "Notification"

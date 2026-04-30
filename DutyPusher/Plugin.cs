@@ -184,27 +184,27 @@ namespace DutyPusher
 
             CommandManager.AddHandler(CommandName, new CommandInfo(OnCommand)
             {
-                HelpMessage = "打开 DutyPusher 狒狒排本小助手 设置"
+                HelpMessage = "Open DutyPusher Settings"
             });
 
             CommandManager.AddHandler(CommandSetting, new CommandInfo(OnCommand)
             {
-                HelpMessage = "打开 DutyPusher 狒狒排本小助手 设置"
+                HelpMessage = "Open DutyPusher Settings"
             });
 
             CommandManager.AddHandler(CommandSwitch, new CommandInfo(SwitchEnabledState)
             {
-                HelpMessage = "切换排本通知启用状态"
+                HelpMessage = "Switch the DutyPusher enabled state"
             });
 
             CommandManager.AddHandler(CommandEnable, new CommandInfo(SwitchEnable)
             {
-                HelpMessage = "启用排本通知"
+                HelpMessage = "Enable the DutyPusher"
             });
 
             CommandManager.AddHandler(CommandDisable, new CommandInfo(SwitchDisable)
             {
-                HelpMessage = "禁用排本通知"
+                HelpMessage = "Disable the DutyPusher"
             });
 
             PluginInterface.UiBuilder.Draw += DrawUI;
